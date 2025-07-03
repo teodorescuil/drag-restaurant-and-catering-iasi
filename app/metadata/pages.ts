@@ -7,24 +7,26 @@ export const pagesRo = {
     contact: 'Contact'
 }
 
-export const pages = [
+export const pagesR = [
     {
-        section: 'home', 
+        section: 'acasa', 
         title: pagesRo.home,
     }, {
-        section: 'dailyMenu', 
+        section: 'meniul-zilei', 
         title: pagesRo.dailyMenu,
     }, {
-        section: 'menu', 
+        section: 'meniu', 
         title: pagesRo.fullMenu,
     }, {
-        section: 'aboutUs', 
+        section: 'despre-noi', 
         title: pagesRo.aboutUs,
     }, {
-        section: 'events', 
+        section: 'evenimente', 
         title: pagesRo.events,
     }, {
         section: 'contact', 
         title: pagesRo.contact,
     }
 ];
+
+export const pages = pagesR;

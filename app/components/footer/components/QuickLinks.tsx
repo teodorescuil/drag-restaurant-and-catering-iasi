@@ -1,17 +1,20 @@
 'use client'
 import { footer } from "@/app/metadata/footer";
 import { pages } from "@/app/metadata/pages";
+//TODO: add link instead button
+// import Link from 'next/link';
 export default function QuickLinks() {
+
     const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-        const headerHeight = 64;
-        const elementPosition = element.offsetTop - headerHeight;
-        window.scrollTo({
-        top: elementPosition,
-        behavior: 'smooth'
-        });
-    }
+        const element = document.getElementById(sectionId);
+        if (element) {
+            const headerHeight = 64;
+            const elementPosition = element.offsetTop - headerHeight;
+            window.scrollTo({
+                top: elementPosition,
+                behavior: 'smooth'
+            });
+        }
     };
 
     return (
@@ -21,8 +24,8 @@ export default function QuickLinks() {
                 {pages.map(page => (
                     <li key={page.section}>
                         <button 
-                            onClick={() => scrollToSection('home')}
-                            className="hover:text-gold transition-colors duration-200">
+                        onClick={() => scrollToSection('home')}
+                        className="hover:text-gold/80 transition-colors duration-200">
                             {page.title}
                         </button>
                     </li>

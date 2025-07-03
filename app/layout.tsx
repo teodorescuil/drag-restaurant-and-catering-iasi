@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Playfair_Display, Dancing_Script } from 'next/font/google'
 import "./globals.css";
 import Footer from "./components/footer/Footer";
+import Header from "./components/header/Header";
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfair' })
@@ -36,7 +37,7 @@ export default function RootLayout({
   return (
     <html lang="ro" className={`${inter.variable} ${playfair.variable} ${dancing.variable}`}>
       <body className="font-sans antialiased bg-background text-foreground">
-          {/* <Header /> */}
+          <Header />
           <main>{children}</main>
           <Footer />
       </body>

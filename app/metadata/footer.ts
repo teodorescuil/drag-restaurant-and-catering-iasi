@@ -3,7 +3,7 @@ export const footer = {
     title: metadata.title,
     subtitle: 'Meniuri proaspete zilnic și servicii excepționale pentru toate ocaziile tale speciale.',
     contact: {
-        phone: '0754 824 625',
+        phone: '+40 754 824 625',
         email: 'info@dragcatering.ro',
         address: {
             street: 'Bulevardul Poitiers 12',
@@ -11,7 +11,10 @@ export const footer = {
             zipCode: '700671',
             country: 'România',
         },
-        businessHours: ['L-J 10:00 - 22:00', 'L-J 10:00 - 00:00'] 
+        businessHours: ['L-J 10:00 - 22:00', 'V-D 10:00 - 00:00'] 
     },
-    quickLinks: 'Linkuri rapide'
+    quickLinks: 'Linkuri rapide',
+    allRights: 'Toate drepturile sunt rezervate',
+    termsAndServices: 'Termeni și condiții',
+    privacyPolicy: 'Politica de confidențialitate',
 }
