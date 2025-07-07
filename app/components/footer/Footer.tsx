@@ -1,8 +1,9 @@
 import { footer } from "@/app/metadata/footer";
-import SocialButtons from "./components/SocialButtons";
+import SocialButtons from "../SocialButtons";
 import QuickLinks from "./components/QuickLinks";
 export default function Footer() {
-	const title = footer.title.split(' ')
+	const title = footer.title.split(' ');
+	const year = new Date().getFullYear();
 
 	return (
 		<footer className="bg-charcoal border-t border-white/10 py-12">
@@ -59,7 +60,7 @@ export default function Footer() {
 				</div>
 				
 				<div className="border-t border-white/10 pt-8 text-center text-gray-400 text-sm">
-					<p>&copy; 2025 Drag Restaurant&Catering. {footer.allRights} | <a href="#" className="hover:text-gold/80 transition-colors duration-200">{footer.privacyPolicy}</a> | <a href="#" className="hover:text-gold/80 transition-colors duration-200">{footer.termsAndServices}</a></p>
+					<p>&copy;{year} Drag Restaurant&Catering. {footer.allRights} | <a href="#" className="hover:text-gold/80 transition-colors duration-200">{footer.privacyPolicy}</a> | <a href="#" className="hover:text-gold/80 transition-colors duration-200">{footer.termsAndServices}</a></p>
 				</div>
 			</div>
 		</footer>

@@ -87,8 +87,20 @@
   .border-gold {
     border-color: hsl(var(--gold));
   }
+
+  .border-gold\/20 {
+    border-color: hsl(var(--gold) / 0.2);
+  }
+
+  .hover\:border-gold:hover {
+    border-color: hsl(var(--gold));
+  }
   
   .text-charcoal {
+    color: hsl(var(--charcoal));
+  }
+
+  .hover\:text-charcoal:hover {
     color: hsl(var(--charcoal));
   }
   

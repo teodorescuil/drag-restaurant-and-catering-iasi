@@ -33,11 +33,10 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+      className={`fixed top-0 w-full z-50 transition-all duration-600 ${
         isScrolled
-          ? "bg-white shadow-md backdrop-blur-sm py-2"
-        //   : "bg-transparent py-6"
-          : "bg-white py-4"
+          ? "bg-white shadow-md backdrop-blur-sm py-4"
+          : "bg-transparent py-6"
       }`}
     >
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -46,7 +45,8 @@ export default function Header() {
             <Image 
               src={dragLogo} 
               alt="Drag Restaurant&Catering Logo" 
-              className="h-25 w-70 mt-[0px] mb-[0px]"
+              className="h-25 w-80 mt-[0px] mb-[0px]"
+              priority
             />
           </Link>
           
