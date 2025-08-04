@@ -2,7 +2,7 @@ import { metadata } from "@/app/constants/metadata";
 import SocialButtons from "../SocialButtons";
 import QuickLinks from "./components/QuickLinks";
 export default function Footer() {
-	const {title, footer: {subtitle, allRights, privacyPolicy, termsAndServices}, contact} = metadata;
+	const {title, footer: {subtitle, allRights }, contact} = metadata;
 	const titleArray = title.split(' ');
 	const year = new Date().getFullYear();
 

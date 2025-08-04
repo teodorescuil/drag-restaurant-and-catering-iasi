@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 // import Image from 'next/image';
 // import {getCurrentWeek} from '../../utils/getCurrentWeek';
 // import {days, foodWeeklyMenu} from '../../constants/weekly-menu';
