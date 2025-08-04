@@ -1,64 +1,27 @@
+'use client'
 import Image from 'next/image';
-export default function Events() {
-  const services = [
-    {
-      icon: "fas fa-heart",
-      title: "Nunți Premium",
-      description: "Transformăm ziua voastră specială într-o experiență culinară de neuitat. Servicii complete de catering pentru nunți elegante și memorabile, de la aperitiv până la tort.",
-      features: [
-        "Meniu personalizat pentru aperitiv și felul principal",
-        "Serviciu profesional cu chelner pentru 8-10 invitați",
-        "Cocktail de întâmpinare și canapele rafinate",
-        "Decorațiuni florale pentru mesele de servire",
-        "Serviciu de tort și cafea premium"
-      ],
-      capacity: "50-300 persoane",
-      priceRange: "180-320 lei/persoană",
-      image: "https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
-    },
-    {
-      icon: "fas fa-building",
-      title: "Evenimente Corporate",
-      description: "Catering profesional pentru conferințe, seminarii și lansări de produse. Servicii adaptate nevoilor specifice ale companiilor cu accent pe profesionalism.",
-      features: [
-        "Coffee break cu preparate dulci și sărate",
-        "Lunch business cu meniu în 2-3 feluri",
-        "Cocktail networking cu canapele rafinate", 
-        "Cină de gală pentru evenimente speciale",
-        "Serviciu discret și profesional"
-      ],
-      capacity: "20-200 persoane",
-      priceRange: "85-250 lei/persoană",
-      image: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
-    },
-    {
-      icon: "fas fa-birthday-cake",
-      title: "Petreceri Private",
-      description: "Servicii personalizate pentru aniversări, sărbători de familie și evenimente private. Creăm atmosfera perfectă pentru momentele voastre speciale.",
-      features: [
-        "Meniuri tematice pentru aniversări",
-        "Buffet festiv pentru sărbători",
-        "Decorare personalizată",
-        "Servicii pentru copii și adulți",
-        "Torturi și deserturi speciale"
-      ],
-      capacity: "15-150 persoane", 
-      priceRange: "120-280 lei/persoană",
-      image: "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
-    }
-  ];
+import Link from 'next/link';
+import { useRouter } from 'next/navigation';
+import {sectionTopTitle, sectionWrapper, sectionTitle, sectionSubtitle, sectionInfoContent} from '../../constants/styles';
+import {services} from '../../constants/metadata';
 
+export default function Events() {
+  const router = useRouter();
+
+  const goToEvents = () => {
+    router.push('/events');
+  };
   return (
     <section id="services" className="py-20 bg-cream">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+      <div className={sectionWrapper}>
+        <div className={sectionInfoContent}>
           <div className="inline-block bg-gold/10 px-6 py-2 rounded-full mb-6">
-            <span className="text-gold font-semibold text-sm uppercase tracking-wider">Servicii Evenimente</span>
+            <span className={sectionTopTitle}>Servicii Evenimente</span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-playfair font-bold text-charcoal mb-6">
+          <h2 className={sectionTitle}>
             Evenimente <span className="text-gold font-dancing">Memorabile</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className={sectionSubtitle}>
             De la întâlniri intime la celebrări grandioase, oferim servicii de catering excepționale 
             adaptate perfect nevoilor dumneavoastră
           </p>
@@ -66,7 +29,7 @@ export default function Events() {
         
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           {services.map((service, index) => (
-            <div key={index} className="bg-white rounded-2xl shadow-lg overflow-hidden group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+            <div onClick={goToEvents} key={index} className="cursor-pointer bg-white rounded-2xl shadow-lg overflow-hidden group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
               <div className="relative overflow-hidden">
                 <Image 
                   src={service.image} 
@@ -84,7 +47,7 @@ export default function Events() {
                   <i className={service.icon}></i>
                 </div>
                 <h3 className="text-2xl font-playfair font-semibold mb-4 text-center text-charcoal">{service.title}</h3>
-                <p className="text-gray-600 mb-6 leading-relaxed">{service.description}</p>
+                <p className="text-gray-600 mb-6 text-center leading-relaxed">{service.description}</p>
                 
                 <div className="mb-6">
                   <div className="flex items-center justify-between text-sm text-gray-500 mb-4">
@@ -108,11 +71,11 @@ export default function Events() {
                   ))}
                 </ul>
 
-                <div className="border-t border-gray-200 pt-6">
-                  <button className="w-full bg-gold/10 hover:bg-gold/90 hover:text-white text-gold font-semibold py-3 px-6 rounded-full transition-all duration-200">
+                <div className="flex justify-center border-t border-gray-200 pt-6">
+                  <Link href="/evenimente" className="text-gold transition-colors duration-200">
                     <i className="fas fa-info-circle mr-2"></i>
                     Solicită Detalii
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -120,7 +83,7 @@ export default function Events() {
         </div>
         
         {/* Statistics */}
-        <div className="bg-gradient-to-r from-gold/10 via-cream to-gold/10 rounded-2xl p-12 mb-16">
+        {/* <div className="bg-gradient-to-r from-gold/10 via-cream to-gold/10 rounded-2xl p-12 mb-16">
           <div className="grid md:grid-cols-4 gap-8 text-center">
             <div>
               <div className="text-4xl font-bold text-charcoal mb-2">500+</div>
@@ -139,7 +102,7 @@ export default function Events() {
               <div className="text-gray-600">Persoane Max/Eveniment</div>
             </div>
           </div>
-        </div>
+        </div> */}
         
         {/* Call to Action */}
         <div className="text-center">
@@ -147,20 +110,21 @@ export default function Events() {
             Gata să planifici evenimentul tău?
           </h3>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8 leading-relaxed">
-            Contactează-ne astăzi pentru o consultație personalizată și o ofertă detaliată. <br /> 
+            Contactează-ne astăzi pentru o consultație personalizată și o ofertă detaliată. 
             Echipa noastră este gata să transforme viziunea ta în realitate.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
               href="tel:0754824625" 
-              className="inline-flex items-center bg-gold text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-gold/90 transform hover:scale-105 transition-all duration-200 shadow-lg"
+              // bg-gold text-white px-8 py-3 rounded-full font-semibold hover:bg-gold/90 transition-colors duration-200
+              className="inline-flex items-center bg-gold text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-gold/90 transition-all duration-200 shadow-lg"
             >
               <i className="fas fa-phone mr-3"></i>
               Sună acum
             </a>
             <a 
               href="mailto:info@dragcatering.ro"
-              className="inline-flex items-center border-2 border-gold text-gold px-8 py-4 rounded-full text-lg font-semibold hover:bg-gold hover:text-white transition-all duration-200"
+              className="inline-flex items-center border-2 border-gold text-gold px-8 py-4 rounded-full text-lg font-semibold hover:bg-gold/90 hover:text-white transition-all duration-200"
             >
               <i className="fas fa-envelope mr-3"></i>
               Trimite email

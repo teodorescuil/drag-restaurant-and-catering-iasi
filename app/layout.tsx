@@ -9,14 +9,14 @@ const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfa
 const dancing = Dancing_Script({ subsets: ['latin'], variable: '--font-dancing' })
 
 export const metadata: Metadata = {
-  title: 'Drag Restaurant&Catering',
-  description: 'Drag Restaurant&Catering vă oferă o experiență unică, fie că doriți să vă delectați cu mâncăruri tradiționale românești sau să sărbătoriți evenimente speciale.',
+  title: 'Drag Catering',
+  description: 'Drag Catering vă oferă o experiență unică, fie că doriți să vă delectați cu mâncăruri tradiționale românești sau să sărbătoriți evenimente speciale.',
   keywords: 'catering, restaurant, romanesc, Iasi, mancare traditionala, evenimente',
   openGraph: {
-    title: 'Drag Restaurant&Catering - Românesc Autentic',
+    title: 'Drag Catering - Românesc Autentic',
     description: 'Restaurant și servicii de catering profesionale cu specific românesc în Iași',
     url: 'https://dragcatering.ro',
-    siteName: 'Drag Restaurant&Catering',
+    siteName: 'Drag Catering',
     images: [
       {
         url: '/icon.png',

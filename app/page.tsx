@@ -11,8 +11,8 @@ export default function Home() {
       <Hero />
       <DailyMenu />
       <FullMenuPreview />
-      <About />
       <Events />
+      <About />
       <Contact />
     </>
   );

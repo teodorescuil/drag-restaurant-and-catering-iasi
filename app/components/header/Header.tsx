@@ -2,12 +2,16 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import {pages} from '../../metadata/pages';
+import { usePathname } from 'next/navigation';
+
+import {pages} from '../../constants/pages';
 import dragLogo from '../../../public/drag-logo.png';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const pathname = usePathname();
+  const isHome = pathname === '' || pathname === '/';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -30,22 +34,60 @@ export default function Header() {
 //     }
 //     setIsMenuOpen(false);
 //   };
+  const getBackgroundStyle = () => {
+    if (isHome) {
+      if (isScrolled && !isMenuOpen) {
+        return 'bg-white/70 shadow-md backdrop-blur-sm'
+      }
+      if (isMenuOpen) {
+        return 'bg-white';
+      }
+      return 'bg-transparent';
+    } else {
+      if (isMenuOpen) {
+        return 'bg-white';
+      }
+      return 'shadow-md backdrop-blur-sm'
+      // return 'bg-charcoal';
+    }
+
+  }
+
+  const getStyleMobileButton = () => {
+     if (isHome && !isScrolled && !isMenuOpen) {
+      return 'text-white hover:text-gold/80'
+     }
+    if (isHome && isMenuOpen) {
+      return 'text-charcoal hover:text-gold/80'
+    }
+    return 'text-charcoal hover:text-gold/80'
+  }
+
+  const getTextColor = () => {
+    if (isScrolled || !isHome) {
+      return 'text-charcoal';
+    }
+    return 'text-white';
+  }
+
+  const getPages = () => {
+    if(isHome) {
+      return pages.slice(1);
+    } else {
+      return pages;
+    }
+  }
 
   return (
     <header
-      className={`fixed top-0 w-full z-50 transition-all duration-600 ${
-        isScrolled
-          ? "bg-white shadow-md backdrop-blur-sm py-4"
-          : "bg-transparent py-6"
-      }`}
-    >
-      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
-          <Link href="/" className="flex-shrink-0 flex items-center space-x-2 hover:opacity-80 transition-opacity duration-200 py-4">
+      className={`fixed top-0 w-full z-50 transition-all duration-300 ${getBackgroundStyle()}`}>
+      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+        <div className="flex justify-between items-center">
+          <Link href="/" className="flex-shrink-0 flex items-center space-x-2 hover:opacity-80 transition-opacity duration-200">
             <Image 
               src={dragLogo} 
-              alt="Drag Restaurant&Catering Logo" 
-              className="h-25 w-80 mt-[0px] mb-[0px]"
+              alt="Drag Catering Logo" 
+              className="h-20 w-auto mt-[0px] mb-[0px]"
               priority
             />
           </Link>
@@ -53,11 +95,11 @@ export default function Header() {
           {/* Desktop Navigation */}
           <div className="hidden xl:block">
             <div className="ml-6 flex items-center space-x-6 whitespace-nowrap">
-                {pages.slice(1).map(page => (
+                {getPages().map(page => (
                     <Link
                         key={page.section}
                         href={`/${page.section}`}
-                        className="font-medium transition-colors duration-200 text-charcoal hover:text-gold/80 whitespace-nowrap"
+                        className={`font-medium transition-colors duration-200 ${getTextColor()} hover:text-gold/80 whitespace-nowrap text-xl`}
                     >
                         {page.title}
                     </Link>
@@ -70,7 +112,7 @@ export default function Header() {
             <button 
               type="button" 
               onClick={() => setIsMenuOpen(prev => !prev)}
-              className="text-charcoal hover:text-gold/80 focus:outline-none focus:text-gold/80 transition-colors duration-200"
+              className={getStyleMobileButton()}
             >
               <i className={`fas ${isMenuOpen ? 'fa-times' : 'fa-bars'} text-xl`}></i>
             </button>
@@ -78,14 +120,14 @@ export default function Header() {
         </div>
         
         {/* Mobile Navigation */}
-        <div className={`xl:hidden ${isMenuOpen ? 'block' : 'hidden'}`}>
-          <div className="mt-4 px-2 pt-2 pb-3 space-y-2 sm:px-3 bg-white border-t border-gold">
-            {pages.slice(1).map(page => (
+        <div className={`xl:hidden ${isMenuOpen ? 'block' : 'hidden'} h-screen`}>
+          <div className="mt-4 px-2 pt-2 pb-3 space-y-2 sm:px-3 border-t border-gold ">
+            {pages.map(page => (
                 <Link
-                    key={page.section}
+                    key={page.title}
                     href={`/${page.section}`}
                     className="block w-full text-left px-3 py-2 text-charcoal hover:bg-gold/30 rounded-10 focus:text-gold/80 transition-colors duration-200"
-                    onClick={() => setIsMenuOpen(false)}
+                    onClick={() => setTimeout(() => {setIsMenuOpen(false)}, 1500)}
                 >
                     {page.title}
                 </Link>

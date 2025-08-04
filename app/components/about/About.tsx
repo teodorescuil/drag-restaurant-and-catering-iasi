@@ -1,21 +1,26 @@
 import Link from 'next/link';
+import {sectionTopTitle, sectionWrapper, sectionTitle, sectionSubtitle, sectionInfoContent} from '../../constants/styles';
+
 
 export default function About() {
   return (
     <section id="about" className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-playfair font-bold text-charcoal mb-6">
+      <div className={sectionWrapper}>
+        <div className={sectionInfoContent}>
+          <div className="inline-block bg-gold/10 px-6 py-2 rounded-full mb-6">
+            <span className={sectionTopTitle}>Povestea noastră</span>
+          </div>
+          <h2 className={sectionTitle}>
             Despre <span className="text-gold font-dancing">Drag Catering</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className={sectionSubtitle}>
             De peste 15 ani, creăm experiențe culinare de neuitat pentru evenimente speciale. 
             Fiecare farfurie pe care o servim este o poveste de pasiune, tradiție și inovație.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-16 items-center mb-20">
-          <div>
+          <div className="text-center md:text-left">
             <h3 className="text-3xl font-playfair font-bold text-charcoal mb-6">
               Povestea Noastră
             </h3>
@@ -67,7 +72,7 @@ export default function About() {
           <h3 className="text-3xl font-playfair font-bold text-charcoal mb-6">
             Viziunea Noastră
           </h3>
-          <p className="text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed mb-8">
+          <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed mb-8">
             Să fim prima alegere pentru evenimente memorabile în România, recunoscuți pentru 
             excelența culinară, serviciul impecabil și capacitatea de a transforma fiecare 
             masă într-o celebrare a gustului și eleganței.

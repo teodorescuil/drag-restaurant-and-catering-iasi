@@ -1,16 +1,19 @@
+import Link from 'next/link';
+import {sectionTopTitle, sectionWrapper, sectionTitle, sectionSubtitle, sectionInfoContent} from '../../constants/styles';
+
 export default function FullMenuPreview() {
   return (
-    <section id="full-menu" className="py-20 bg-gray-50 border-gold/20 border-b-1">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+    <section id="full-menu" className="py-20 bg-gray-50">
+      <div className={sectionWrapper}>
+        <div className={sectionInfoContent}>
           <div className="inline-block bg-gold/10 px-6 py-2 rounded-full mb-6">
-            <span className="text-gold font-semibold text-sm uppercase tracking-wider">Selecție Completă</span>
+            <span className={sectionTopTitle}>Selecție Completă</span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-playfair font-bold text-charcoal mb-4">
+          <h2 className={sectionTitle}>
             Descoperă <span className="text-gold font-dancing">Meniul</span> Nostru Complet
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            O selecție variată de preparate pentru toate gusturile și ocasiile speciale
+          <p className={sectionSubtitle}>
+            O selecție variată de preparate pentru toate gusturile și ocaziile speciale
           </p>
         </div>
         
@@ -26,20 +29,20 @@ export default function FullMenuPreview() {
               proaspete și tehnici culinare rafinate.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a 
-                href="/meniu-complet"
+              <Link
+                href="/meniu"
                 className="bg-gold text-white px-8 py-3 rounded-full font-semibold hover:bg-gold/90 transition-colors duration-200"
               >
                 <i className="fas fa-book-open mr-2"></i>
                 Vezi meniul complet
-              </a>
-              <a 
-                href="tel:0754824625"
-                className="border-2 border-gold text-gold px-8 py-3 rounded-full font-semibold hover:bg-gold hover:text-white transition-colors duration-200"
+              </Link>
+              <Link 
+                href="/contact"
+                className="border-2 border-gold text-gold px-8 py-3 rounded-full font-semibold hover:bg-gold/90 hover:text-white transition-colors duration-200"
               >
                 <i className="fas fa-phone mr-2"></i>
                 Contactează-ne
-              </a>
+              </Link>
             </div>
           </div>
         </div>
