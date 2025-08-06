@@ -9,7 +9,7 @@ export default function Events() {
   const router = useRouter();
 
   const goToEvents = () => {
-    router.push('/events');
+    router.push('/evenimente');
   };
   return (
     <section id="services" className="py-20 bg-cream">
