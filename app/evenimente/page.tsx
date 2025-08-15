@@ -5,7 +5,7 @@
 // import {metadata} from '../../constants/metadata';
 // import {sectionTopTitle, sectionWrapper, sectionTitle, sectionSubtitle} from '../../constants/styles';
 // import { useRouter } from 'next/navigation';
-import { eventsTypes } from "../constants/events";
+import { eventsTypes } from "../helpers/constants/events";
 export default function EventsDetailed() {
 
   return (

@@ -1,4 +1,4 @@
-import SocialButtons from "../SocialButtons";
+// import SocialButtons from "../SocialButtons";
 
 export default function Contact() {
   return (
@@ -84,7 +84,7 @@ export default function Contact() {
               <div className="mt-8 pt-8 border-t border-white/10">
                 <h4 className="font-semibold text-lg mb-4">Urmărește-ne</h4>
                 <div className="flex space-x-4">
-                  <SocialButtons />
+                  {/* <SocialButtons /> */}
                 </div>
               </div>
             </div>

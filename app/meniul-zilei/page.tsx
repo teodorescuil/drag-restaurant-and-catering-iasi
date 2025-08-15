@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 'use client';
 import { useState, useEffect } from 'react';
-import {foodWeeklyMenu, days} from '../constants/weekly-menu';
-import {getCurrentWeek} from '../utils/getCurrentWeek';
+import {foodWeeklyMenu, days} from '../helpers/constants/weekly-menu';
+import {getCurrentWeek} from '../helpers/utils/getCurrentWeek';
 
 type Course = {
   type: string;

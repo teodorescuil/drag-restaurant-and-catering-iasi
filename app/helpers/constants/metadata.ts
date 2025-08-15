@@ -1,4 +1,4 @@
-export const metadata = {
+export const generalInfoLabels = {
     title: 'Drag Catering',
     contact: {
         phone: '+40 754 824 625',
@@ -12,7 +12,7 @@ export const metadata = {
         businessHours: ['L-J 10:00 - 22:00', 'V-D 10:00 - 00:00'] 
     },
     hero: {
-        title: 'Farfurii Artizanale Create cu Drag și Pasiune',
+        title: 'Farfurii Speciale Create cu Drag și Pasiune',
         subtitle: 'Fiecare fel de mâncare este o capodoperă creată cu drag și devotament. De la aperitive frumos aranjate la feluri principale impresionante, punem suflet în fiecare preparat pentru a crea artă culinară care încântă atât ochiul, cât și papilele gustative.',
         buttons: ['Vezi meniul de azi', 'Vezi meniul complet'],
     },

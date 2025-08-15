@@ -2,14 +2,14 @@
 
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
-import {metadata} from '../../constants/metadata';
-import {primaryButtonWithScale, outlineButtonWithScale} from '../../constants/styles';
-import {scrollToSection} from '../../utils/utils';
+import {generalInfoLabels} from '../../helpers/constants/metadata';
+import {primaryButtonWithScale, outlineButtonWithScale} from '../../helpers/constants/styles';
+import {scrollToSection} from '../../helpers/utils/utils';
 
 export default function Hero() {
   const [isVisible, setIsVisible] = useState(false);
-  const {hero} = metadata;
-  const titleArray = hero.title.split(" ");
+  const {hero: {title, subtitle, buttons}} = generalInfoLabels;
+  const titleArray = title.split(" ");
 
   useEffect(() => {
     setIsVisible(true)
@@ -35,14 +35,14 @@ export default function Hero() {
             <br />{titleArray[2]} {titleArray[3]} <span className="text-gold">{titleArray[4]}</span> {titleArray[5]} {titleArray[6]}
             </h1>
             <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed drop-shadow-lg">
-              {hero.subtitle}
+              {subtitle}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <button onClick={() => scrollToSection('daily-menu')} className={primaryButtonWithScale}>
-                  <i className="fas fa-calendar-day mr-2"></i> {hero.buttons[0]}
+                  <i className="fas fa-calendar-day mr-2"></i> {buttons[0]}
               </button>
               <button onClick={() => scrollToSection('full-menu')} className={outlineButtonWithScale}>
-                  <i className="fas fa-utensils mr-2"></i> {hero.buttons[1]}
+                  <i className="fas fa-utensils mr-2"></i> {buttons[1]}
               </button>
             </div>
         </div>

@@ -1,0 +1,16 @@
+{
+  "name": "Drag Catering",
+  "short_name": "DragCatering",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "description": "Catering și restaurant în Iași cu preparate românești pentru nunți, botezuri, aniversări și mese festive.",
+  "icons": [
+    {
+      "src": "/icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

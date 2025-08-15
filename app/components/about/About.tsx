@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import {sectionTopTitle, sectionWrapper, sectionTitle, sectionSubtitle, sectionInfoContent} from '../../constants/styles';
+import {sectionTopTitle, sectionWrapper, sectionTitle, sectionSubtitle, sectionInfoContent} from '../../helpers/constants/styles';
 
 
 export default function About() {
