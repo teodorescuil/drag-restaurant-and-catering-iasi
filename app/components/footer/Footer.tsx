@@ -6,7 +6,6 @@ import { pages } from "@/app/helpers/constants/pages";
 export default function Footer() {
   const year = new Date().getFullYear();
 
-  // TODO: înlocuiește cu link-urile reale când le ai
   const mapsUrl = "https://maps.app.goo.gl/9CUhbpa2H8r6MjvP9";
 
   return (
@@ -90,8 +89,8 @@ export default function Footer() {
                     title="Deschide locația în Google Maps"
                   >
                     Bulevardul Poitiers 12
-					<br />
-					Iași 700671, România
+                    <br />
+                    Iași 700671, România
                   </a>
                 </span>
               </p>

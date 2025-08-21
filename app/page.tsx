@@ -1,7 +1,7 @@
 // app/page.tsx
 import Script from "next/script";
 // import Image from "next/image";
-import DailyMenu from "./components/daily-menu/DailyMenu";
+import DailyMenuServer from "./components/daily-menu/DailyMenuServer";
 import Hero from "./components/hero/Hero";
 import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
@@ -77,7 +77,7 @@ export default function Home() {
 
       {/* Conținutul homepage-ului */}
       <Hero />
-      <DailyMenu />
+      <DailyMenuServer />
       <FullMenuPreview />
       <Events />
       <About />

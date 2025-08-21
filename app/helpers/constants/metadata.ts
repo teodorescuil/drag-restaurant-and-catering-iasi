@@ -11,27 +11,14 @@ export const generalInfoLabels = {
         },
         businessHours: ['L-J 10:00 - 22:00', 'V-D 10:00 - 00:00'] 
     },
-    hero: {
-        title: 'Farfurii Speciale Create cu Drag și Pasiune',
-        subtitle: 'Fiecare fel de mâncare este o capodoperă creată cu drag și devotament. De la aperitive frumos aranjate la feluri principale impresionante, punem suflet în fiecare preparat pentru a crea artă culinară care încântă atât ochiul, cât și papilele gustative.',
-        buttons: ['Vezi meniul de azi', 'Vezi meniul complet'],
-    },
     weeklyMenu: {
         topTitle: 'Meniu Săptămânal',
         title: 'Selecții Zilnice Proaspete',
         subtitle: 'Meniul nostru se schimbă săptămânal cu ingrediente proaspete de sezon și specialitățile chef-ului',
         buttons: ['Comandă prin telefon', '+40 754 824 625'],
-        week: 'Săptămâna',
         menuText: 'Meniul de',
         today: 'Azi',
         price: 'Preț: 30 lei'
-    },
-    footer: {
-        subtitle: 'Meniuri proaspete zilnic și servicii excepționale pentru toate ocaziile tale speciale.',
-        quickLinks: 'Linkuri rapide',
-        allRights: 'Toate drepturile sunt rezervate',
-        termsAndServices: 'Termeni și condiții',
-        privacyPolicy: 'Politica de confidențialitate',
     },
 
 };

@@ -24,7 +24,7 @@ useEffect(() => {
     // const {currentDayName, weekString} = getCurrentWeek();
     // setCurrentDay(currentDayName);
     setCurrentWeek(weekString);
-    setWeekMenu(foodWeeklyMenu.find(foodWeek => foodWeek.week === weekString)?.courses || []);
+    setWeekMenu(foodWeeklyMenu.find(foodWeek => foodWeek.week === weekString)?.days || []);
 }, []);
 
 

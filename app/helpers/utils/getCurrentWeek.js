@@ -1,4 +1,3 @@
-'use client'
 export const getCurrentWeek = () => {
     const today = new Date();
     // const currentDate = (today.toLocaleDateString('ro-RO', options));

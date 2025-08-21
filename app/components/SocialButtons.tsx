@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 type SocialLinkProps = {
   href: string;
@@ -8,7 +9,7 @@ type SocialLinkProps = {
 
 function SocialLink({ href, label, iconPath }: SocialLinkProps) {
   return (
-    <a
+    <Link
       href={href}
       target="_blank"
       rel="noopener noreferrer"
@@ -29,7 +30,7 @@ function SocialLink({ href, label, iconPath }: SocialLinkProps) {
         className="w-4 h-4"
       />
       <span className="sr-only">{label}</span>
-    </a>
+    </Link>
   );
 }
 

@@ -3,7 +3,7 @@ import {sectionTopTitle, sectionWrapper, sectionTitle, sectionSubtitle, sectionI
 
 export default function FullMenuPreview() {
   return (
-    <section id="full-menu" className="py-20 bg-gray-50">
+    <section id="full-menu" className="py-20 bg-cream/70">
       <div className={sectionWrapper}>
         <div className={sectionInfoContent}>
           <div className="inline-block bg-gold/10 px-6 py-2 rounded-full mb-6">

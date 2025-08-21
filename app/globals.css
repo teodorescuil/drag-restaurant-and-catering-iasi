@@ -115,6 +115,10 @@
   .bg-cream\/50 {
     background-color: hsl(var(--cream) / 0.5);
   }
+
+  .bg-cream\/70 {
+    background-color: hsl(var(--cream) / 0.7);
+  }
   
   .hover\:bg-gold\/90:hover {
     background-color: hsl(var(--gold) / 0.9);

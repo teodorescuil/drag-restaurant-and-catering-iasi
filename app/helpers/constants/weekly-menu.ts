@@ -4,8 +4,8 @@ export const englishDays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Frida
 
 export const foodWeeklyMenu = [
     {
-        week: '11 august - 17 august',
-        courses: [
+        week: '18 august - 24 august',
+        days: [
              [
                  {
                     type: "Felul întâi",
@@ -16,7 +16,7 @@ export const foodWeeklyMenu = [
                     allergens: ["Gluten", "Lactoza"],
                     image: "https://images.unsplash.com/photo-1547592166-23ac45744acd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
                     },
-                    {
+                {
                     type: "Felul doi",
                     name: "Somon Teriyaki la Grătar",
                     description: "Somon proaspăt din Atlantic cu glazură teriyaki, orez iasomie și legume aburi",
@@ -24,7 +24,7 @@ export const foodWeeklyMenu = [
                     ingredients: "Somon norwegian, sos teriyaki (sos de soia, miere, ghimbir, usturoi), orez iasomie, broccoli, morcovi, fasole verde",
                     allergens: ["Pește", "Soia"],
                     image: "https://images.unsplash.com/photo-1467003909585-2f8a72700288?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
-                    },
+                },
             ], [
                 {
                     type: "Felul întâi",
