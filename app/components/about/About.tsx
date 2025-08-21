@@ -1,10 +1,11 @@
 import Link from 'next/link';
+import {UtensilsCrossed, Award, Heart, Users} from 'lucide-react';
 import {sectionTopTitle, sectionWrapper, sectionTitle, sectionSubtitle, sectionInfoContent} from '../../helpers/constants/styles';
 
 
 export default function About() {
   return (
-    <section id="about" className="py-20 bg-white">
+    <section id="about" className="py-20 bg-cream/50">
       <div className={sectionWrapper}>
         <div className={sectionInfoContent}>
           <div className="inline-block bg-gold/10 px-6 py-2 rounded-full mb-6">
@@ -14,8 +15,8 @@ export default function About() {
             Despre <span className="text-gold font-dancing">Drag Catering</span>
           </h2>
           <p className={sectionSubtitle}>
-            De peste 15 ani, creăm experiențe culinare de neuitat pentru evenimente speciale. 
-            Fiecare farfurie pe care o servim este o poveste de pasiune, tradiție și inovație.
+            Creăm experiențe culinare de neuitat pentru evenimente speciale. 
+            Fiecare farfurie pe care o servim este o poveste de pasiune, tradiție și inovație, spusă cu drag.
           </p>
         </div>
 
@@ -35,45 +36,44 @@ export default function About() {
               gândit și realizat cu atenție la detalii.
             </p>
             <p className="text-gray-600 leading-relaxed">
-              Misiunea noastră este să transformăm fiecare eveniment într-o experiență 
-              gastronomică memorabilă, indiferent dacă este vorba de o nuntă, un eveniment 
-              corporate sau o sărbătoare privată.
+              Drag Catering înseamnă restaurant și servicii complete de catering pentru nunți, cununii civile, recepții, conferințe și evenimente corporate. În restaurantul nostru organizăm petreceri private, evenimente corporate, seri tematice și experiențe culinare speciale. Misiunea noastră este să transformăm fiecare ocazie într-o experiență gastronomică memorabilă, indiferent dacă este privată sau de business.
             </p>
           </div>
           
           <div className="grid grid-cols-2 gap-6">
-            <div className="bg-cream p-6 rounded-lg text-center">
-              <i className="fas fa-utensils text-4xl text-gold mx-auto mb-4 block"></i>
-              <h4 className="text-xl font-semibold text-charcoal mb-2">Bucătari Experți</h4>
-              <p className="text-gray-600">Echipă cu peste 15 ani experiență</p>
-            </div>
-            
-            <div className="bg-cream p-6 rounded-lg text-center">
-              <i className="fas fa-award text-4xl text-gold mx-auto mb-4 block"></i>
-              <h4 className="text-xl font-semibold text-charcoal mb-2">Calitate Premium</h4>
-              <p className="text-gray-600">Ingrediente proaspete și de calitate</p>
-            </div>
-            
-            <div className="bg-cream p-6 rounded-lg text-center">
-              <i className="fas fa-heart text-4xl text-gold mx-auto mb-4 block"></i>
-              <h4 className="text-xl font-semibold text-charcoal mb-2">Pasiune</h4>
-              <p className="text-gray-600">Dragoste pentru arta culinară</p>
-            </div>
-            
-            <div className="bg-cream p-6 rounded-lg text-center">
-              <i className="fas fa-users text-4xl text-gold mx-auto mb-4 block"></i>
-              <h4 className="text-xl font-semibold text-charcoal mb-2">Serviciu Personal</h4>
-              <p className="text-gray-600">Atenție personalizată la detalii</p>
-            </div>
+          {/*TODO: add slideshow with images*/}
           </div>
         </div>
+
+        <ul className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6" aria-label="Valorile noastre">
+          <li className="bg-cream p-6 rounded-lg text-center">
+            <UtensilsCrossed className="w-10 h-10 text-gold mx-auto mb-4" aria-hidden="true"/>
+            <h4 className="text-xl font-semibold text-charcoal mb-2">Bucătari experți</h4>
+            <p className="text-gray-600">Peste 15 ani de experiență</p>
+          </li>
+          <li className="bg-cream p-6 rounded-lg text-center">
+            <Award className="w-10 h-10 text-gold mx-auto mb-4" aria-hidden="true"/>
+            <h4 className="text-xl font-semibold text-charcoal mb-2">Calitate premium</h4>
+            <p className="text-gray-600">Ingrediente proaspete și locale</p>
+          </li>
+          <li className="bg-cream p-6 rounded-lg text-center">
+            <Heart className="w-10 h-10 text-gold mx-auto mb-4" aria-hidden="true"/>
+            <h4 className="text-xl font-semibold text-charcoal mb-2">Pasiune</h4>
+            <p className="text-gray-600">Dragoste pentru arta culinară</p>
+          </li>
+          <li className="bg-cream p-6 rounded-lg text-center">
+            <Users className="w-10 h-10 text-gold mx-auto mb-4" aria-hidden="true"/>
+            <h4 className="text-xl font-semibold text-charcoal mb-2">Serviciu personalizat</h4>
+            <p className="text-gray-600">Atenție la detalii</p>
+          </li>
+        </ul>
 
         <div className="bg-gradient-to-r from-gold/10 via-cream to-gold/10 p-12 rounded-2xl text-center">
           <h3 className="text-3xl font-playfair font-bold text-charcoal mb-6">
             Viziunea Noastră
           </h3>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed mb-8">
-            Să fim prima alegere pentru evenimente memorabile în România, recunoscuți pentru 
+            Să fim prima alegere pentru evenimente memorabile în Iași, recunoscuți pentru 
             excelența culinară, serviciul impecabil și capacitatea de a transforma fiecare 
             masă într-o celebrare a gustului și eleganței.
           </p>
