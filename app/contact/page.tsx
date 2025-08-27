@@ -74,8 +74,8 @@ export default function ContactDetailed() {
 
           {/* Direct Contact - Full Width */}
           <section className="bg-white rounded-3xl p-8 mb-16" itemScope itemType="https://schema.org/Organization">
-            <h2 className="text-3xl font-playfair font-bold text-charcoal mb-8 text-center">Informații Contact Drag Catering</h2>
-            
+            <h2 className="text-3xl font-playfair font-bold text-charcoal mb-8 text-center">Informații Contact <span className="text-gold">Drag Catering</span></h2>
+
             <address className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 not-italic">
               <article className="text-center">
                 <div className="bg-gold/10 p-4 rounded-full w-16 h-16 mx-auto mb-2 flex items-center justify-center">
