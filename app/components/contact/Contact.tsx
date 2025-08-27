@@ -1,35 +1,43 @@
-// import SocialButtons from "../SocialButtons";
+import { Phone, Mail, MapPin, Clock, Navigation } from 'lucide-react';
+import SocialButtons from '../SocialButtons';
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-20 bg-charcoal text-white">
+    <section id="contact" className="py-20 bg-charcoal text-white" aria-labelledby="contact-heading">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-playfair font-bold mb-4">
-            <span className="text-gold">Contact</span>
-          </h2>
-          <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-            Gata să faci evenimentul tău memorabil? Ia legătura cu specialiștii noștri.
-          </p>
+          <h2 
+              id="contact-heading"
+              className="text-4xl md:text-5xl font-playfair font-bold mb-4"
+            >
+              Contact <span className="text-gold">Drag Catering</span> Iași
+            </h2>
+            <p className="text-lg text-gray-300 max-w-2xl mx-auto">
+              Gata să faci evenimentul tău memorabil? Contactează specialiștii noștri din Iași pentru evenimente de neuitat.
+            </p>
         </div>
         
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Contact Information */}
-          <div className="space-y-8">
+          <article className="space-y-8">
             <div className="bg-white/5 rounded-2xl p-8 backdrop-blur-sm">
-              <h3 className="text-2xl font-playfair font-semibold mb-6 text-gold">Ia Legătura cu Noi</h3>
-              
+              <h3 className="text-2xl font-playfair font-semibold mb-6 text-gold">
+                  Contactează Drag Catering
+                </h3>
               <div className="space-y-6">
                 {/* Phone */}
                 <div className="flex items-center space-x-4">
-                  <div className="bg-gold text-white w-12 h-12 rounded-full flex items-center justify-center">
-                    <i className="fas fa-phone"></i>
-                  </div>
+                  <div className="bg-gold text-white w-12 h-12 rounded-full flex items-center justify-center" aria-hidden="true">
+                      <Phone className="w-5 h-5" fill="currentColor"/>
+                    </div>
                   <div>
-                    <h4 className="font-semibold text-lg">Telefon</h4>
+                    <h4 className="font-semibold text-lg">Telefon Restaurant & Catering</h4>
                     <a 
-                      href="tel:0754824625" 
+                      href="tel:+40754824625" 
                       className="text-gold hover:text-gold/80 transition-colors duration-200 text-xl font-medium"
+                      itemProp="telephone"
+                      aria-label="Sună la Drag Catering Iași"
+                      title="Apelează pentru rezervări și comenzi catering"
                     >
                       +40 754 824 625
                     </a>
@@ -38,14 +46,17 @@ export default function Contact() {
                 
                 {/* Email */}
                 <div className="flex items-center space-x-4">
-                  <div className="bg-gold text-white w-12 h-12 rounded-full flex items-center justify-center">
-                    <i className="fas fa-envelope"></i>
+                  <div className="bg-gold text-white w-12 h-12 rounded-full flex items-center justify-center" aria-hidden="true">
+                      <Mail className="w-5 h-5" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-lg">Email</h4>
+                    <h4 className="font-semibold text-lg">Email Drag Catering Iași</h4>
                     <a 
-                      href="mailto:info@dragcatering.ro" 
+                      href="mailto:info@dragcatering.ro?subject=Solicitare%20Catering%20Iași" 
                       className="text-gold hover:text-gold/80 transition-colors duration-200"
+                      itemProp="email"
+                      aria-label="Trimite email pentru oferte catering"
+                      title="Scrie-ne pentru oferte personalizate de catering"
                     >
                       info@dragcatering.ro
                     </a>
@@ -54,72 +65,75 @@ export default function Contact() {
                 
                 {/* Address */}
                 <div className="flex items-center space-x-4">
-                  <div className="bg-gold text-white w-12 h-12 rounded-full flex items-center justify-center">
-                    <i className="fas fa-map-marker-alt"></i>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-lg">Locație</h4>
-                    <p className="text-gray-300">
-                      Bulevardul Poitiers 12<br />
-                      Iași 700671, România
-                    </p>
+                  <div className="bg-gold text-white w-12 h-12 rounded-full flex items-center justify-center" aria-hidden="true">
+                      <MapPin className="w-5 h-5" />
+                    </div>
+                    <div>
+                    <h4 className="font-semibold text-lg">Locație Restaurant Iași</h4>
+                    <address className="text-gray-300 not-italic">
+                      <span itemProp="streetAddress">Bulevardul Poitiers 12</span><br />
+                      <span itemProp="addressLocality">Iași</span> <span itemProp="postalCode">700671</span>, 
+                      <span itemProp="addressCountry"> România</span>
+                    </address>
                   </div>
                 </div>
                 
                 {/* Hours */}
                 <div className="flex items-center space-x-4">
-                  <div className="bg-gold text-white w-12 h-12 rounded-full flex items-center justify-center">
-                    <i className="fas fa-clock"></i>
+                  <div className="bg-gold text-white w-12 h-12 rounded-full flex items-center justify-center" aria-hidden="true">
+                      <Clock className="w-5 h-5" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-lg">Program de Lucru</h4>
-                    <div className="text-gray-300 text-sm">
-                      <p>Luni - Joi: 10:00 - 22:00</p>
-                      <p>Vineri - Duminică: 10:00 - 00:00</p>
+                    <h4 className="font-semibold text-lg">Program Restaurant</h4>
+                    <div className="text-gray-300 text-sm" itemProp="openingHours" content="Mo-Th 10:00-22:00, Fr-Su 10:00-00:00">
+                      <p><time>Luni - Joi: 10:00 - 22:00</time></p>
+                      <p><time>Vineri - Duminică: 10:00 - 00:00</time></p>
                     </div>
                   </div>
-                </div>
               </div>
               
               <div className="mt-8 pt-8 border-t border-white/10">
                 <h4 className="font-semibold text-lg mb-4">Urmărește-ne</h4>
                 <div className="flex space-x-4">
-                  {/* <SocialButtons /> */}
+                  <SocialButtons />
                 </div>
               </div>
             </div>
           </div>
+        </article>
           
           {/* Map Section */}
-          <div className="bg-white/5 rounded-2xl p-8 backdrop-blur-sm">
-            <h3 className="text-2xl font-playfair font-semibold mb-6 text-gold">Locația Noastră</h3>
-            <div className="rounded-xl h-80 overflow-hidden">
-              <iframe
-                src={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2713.8!2d27.59197485552699!3d47.13667728296564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDfCsDA4JzEyLjAiTiAyN8KwMzUnMzEuMSJF!5e0!3m2!1sen!2sro!4v1635789!5m2!1sen!2sro`}
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Locația Drag Catering"
-              />
-            </div>
-            <div className="mt-6">
-              <p className="text-gray-300 text-sm mb-4">
-                Servim catering în toată zona Iași și județele înconjurătoare. Se pot aplica taxe de livrare în funcție de distanță.
-              </p>
-              <a 
-                href={`https://www.google.com/maps/dir//47.13667728296564,27.59197485552699`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center text-gold hover:text-gold/80 transition-colors duration-200"
-              >
-                <i className="fas fa-directions mr-2"></i>
-                Obține Indicații
-              </a>
-            </div>
-          </div>
+            <aside className="bg-white/5 rounded-2xl p-8 backdrop-blur-sm">
+              <h3 className="text-2xl font-playfair font-semibold mb-6 text-gold">
+                Harta Locație Restaurant
+              </h3>
+              <div className="rounded-xl h-80 overflow-hidden">
+                <iframe
+                  src={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2713.8!2d27.59197485552699!3d47.13667728296564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDfCsDA4JzEyLjAiTiAyN8KwMzUnMzEuMSJF!5e0!3m2!1sen!2sro!4v1635789!5m2!1sen!2sro`}
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Harta Restaurant Drag Catering Iași - Bulevardul Poitiers 12"
+                  aria-label="Hartă interactivă cu locația restaurantului din Iași"
+                />
+              </div>
+              <div className="mt-6">
+                <a 
+                  href={`https://www.google.com/maps/dir//47.13667728296564,27.59197485552699`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-gold hover:text-gold/80 transition-colors duration-200"
+                  aria-label="Obține indicații către restaurant"
+                  title="Deschide Google Maps pentru a ajunge la restaurant"
+                >
+                  <Navigation className="w-4 h-4 mr-2" />
+                  Obține Indicații
+                </a>
+              </div>
+            </aside>
         </div>
       </div>
     </section>
