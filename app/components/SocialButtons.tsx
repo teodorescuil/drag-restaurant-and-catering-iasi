@@ -35,7 +35,7 @@ function SocialLink({ href, label, iconPath, theme = "dark" }: SocialLinkProps) 
   );
 }
 
-export default function SocialButtons({theme}: {theme: string}) {
+export default function SocialButtons({theme}: {theme?: string}) {
   return (
     <div className="flex gap-4 justify-center md:justify-start">
       <SocialLink
