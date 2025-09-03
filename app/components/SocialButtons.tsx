@@ -5,7 +5,7 @@ type SocialLinkProps = {
   href: string;
   label: string;
   iconPath: string; // ex: "/icons/facebook.svg"
-  theme: string;
+  theme?: string;
 };
 
 function SocialLink({ href, label, iconPath, theme = "dark" }: SocialLinkProps) {
