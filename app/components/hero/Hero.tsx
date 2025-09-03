@@ -25,7 +25,7 @@ export default function Hero() {
       {/* Background Image cu optimizări LCP: sizes + blurDataURL */}
       <div className="absolute inset-0" aria-hidden="true">
         <Image
-          src="/images/drag-food.jpg"
+          src="/images/drag-food-4.jpg"
           alt="Restaurant și catering în Iași — platouri cu preparate tradiționale de la Drag Catering"
           fill
           className="object-cover"
@@ -37,7 +37,7 @@ export default function Hero() {
       </div>
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-charcoal/50 to-black/70" aria-hidden="true" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-charcoal/50 to-black/50" aria-hidden="true" />
 
       {/* Conținut textual SEO-friendly */}
       <div
@@ -50,7 +50,7 @@ export default function Hero() {
         </h1>
         {/* H1 unic și descriptiv */}
         <p className="text-5xl md:text-7xl font-playfair font-bold mb-6 leading-tight drop-shadow-2xl">
-          Farfurii <span className="text-gold font-dancing drop-shadow-2xl">Speciale</span> Create cu Drag și Pasiune 
+          Farfurii cu <span className="text-gold font-dancing drop-shadow-2xl">Drag</span> și Pasiune 
         </p>
         
         {/* Subtitlu ca H2 pentru ierarhie semantică */}
@@ -62,7 +62,7 @@ export default function Hero() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <Link
             href="#daily-menu"
-            className="border-2 text-white px-8 py-4 rounded-full text-lg font-semibold min-w-2xs border-gold hover:border-gold bg-gold hover:bg-gold/90 transition-all duration-200 transform hover:scale-105"
+            className="primary"
             aria-label="Vezi meniul zilei"
           >
             <CalendarDays className="w-5 h-5 mr-2 inline-block" aria-hidden="true" />
@@ -70,7 +70,7 @@ export default function Hero() {
           </Link>
           <Link
             href="#full-menu"
-            className="border-2 text-white px-8 py-4 rounded-full text-lg font-semibold min-w-2xs border-white hover:border-gold hover:bg-gold/90 transition-all duration-200 transform hover:scale-105"
+            className="secondary-light"
             aria-label="Vezi meniul complet"
           >
             <Utensils className="w-5 h-5 mr-2 inline-block" aria-hidden="true" />

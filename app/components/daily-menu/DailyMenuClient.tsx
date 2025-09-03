@@ -54,15 +54,12 @@ export default function DailyMenu({currentDayName, currentWeek, foodForAllCurren
               <div className="mb-8">
                 <div className="text-center">
                     <div className="px-8 py-3">
-                        <span className="text-gold font-bold text-2xl" data-price="35">Pret: 35 lei</span>
+                        <span className="text-gold font-bold text-2xl" data-price="35">Preț: 35 lei</span>
                     </div>
                 </div>
                 <h3 className="text-3xl font-playfair font-semibold text-center text-charcoal mb-4">
                     Meniul de {selectedDay.toLowerCase() === currentDayName.toLowerCase() ? "Azi" : days[days.indexOf(selectedDay)]}
                 </h3>
-                {/* <div className="text-center">
-                    <p className="text-gray-600">Toate cele 3 feluri de mâncare sunt incluse</p>
-                </div> */}
               </div>
               {/*Food images*/}
               <MenuByDay menu={menuByDay} />
@@ -77,7 +74,7 @@ export default function DailyMenu({currentDayName, currentWeek, foodForAllCurren
         <div className="text-center mt-12">
           <a
             href="tel:+40754824625"
-            className="inline-flex items-center bg-gold text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-gold/90 transition-colors duration-200"
+            className="primary"
           >
             <Phone className="w-5 h-5 mr-3" fill="currentColor" aria-hidden="true" />
             +40 754 824 625

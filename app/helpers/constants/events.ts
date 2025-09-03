@@ -1,118 +1,375 @@
 export const eventsTypes = [
     {
       id: 1,
-      name: "Nunți Premium",
-      category: "Evenimente Private",
-      description: "Servicii complete de catering pentru nunți elegante și memorabile",
-      detailedDescription: "Transformăm ziua voastră specială într-o experiență culinară de neuitat. Oferim servicii complete de catering pentru nunți, de la aperitiv și cocktail de întâmpinare până la masa festivă și tort. Meniurile noastre sunt personalizate conform gusturilor și tradițiilor familiei, cu opțiuni pentru toate dietele speciale.",
+      name: "Petreceri Private",
+      slug: "petreceri-private",
+      description: "Nunți, botezuri, cununii civile, aniversări, majorate și orice title tip de petrecere – toate pot fi sărbătorite la Drag Catering.",
+      detailedDescription: "La restaurantul Drag Catering nu ai nevoie de rezervări complicate sau de meniuri stabilite din timp – este suficient un telefon pentru a verifica dacă avem disponibilitate. Poți alege direct din preparatele din meniu în ziua evenimentului sau, dacă îți dorești, putem personaliza selecția împreună. Atmosfera caldă, preparatele autentice și atenția la detalii transformă fiecare ocazie într-o sărbătoare de neuitat.",
       features: [
-        "Meniu personalizat pentru aperitiv, felul principal și desert",
-        "Serviciu profesional cu chelner pentru fiecare 8-10 invitați",
-        "Decorațiuni florale pentru mesele de servire",
-        "Cocktail de întâmpinare cu preparate reci",
-        "Serviciu de tort și cafea",
-        "Echipamente complete de servire și decorare"
+        "Meniuri personalizate pentru fiecare tip de petrecere",
+        "Serviciu profesional adaptat fiecărui tip de eveniment",
+        "Opțiuni pentru diete speciale și alergii",
+        "Meniuri pentru botez respectând tradițiile religioase",
+        "Serviciu la masă elegant cu chelneri profesioniști",
       ],
-      capacity: "50-300 persoane",
+      capacity: "50-100 persoane",
       duration: "6-8 ore",
-      priceRange: "180-320 lei/persoană",
+      priceRange: "180 lei/persoană",
       included: [
-        "Consultanță menu personalizat",
+        "Consultanță detaliată pentru planificarea meniului",
         "Degustare gratuită pentru 2 persoane",
-        "Echipă de bucătari și chelneri profesionali",
-        "Transport și setup complet",
-        "Curățenie finală"
+        "Echipă de bucătari și chelneri profesioniști",
+        "Totul pregătit pentru servire",
+        "Flexibilitate"
       ],
-      image: "../images/events/wedding-1.jpg",
       gallery: [
-       "../images/events/wedding-1.jpg"
+       {alt: "Aniversare la Drag Catering", title: "Aniversare la Drag Catering", src: "/images/events/private-party/private-party-1.jpg"},
+       {alt: "Nuntă la Drag Catering", title: "Nuntă la Drag Catering", src: "/images/events/private-party/private-party-2.jpg"},
+       {alt: "Nunta la Drag Catering", title: "Nuntă la Drag Catering", src: "/images/events/private-party/private-party-3.jpg"},
+       {alt: "Botez la Drag Catering", title: "Botez la Drag Catering", src: "/images/events/private-party/private-party-4.jpg"},
+       {alt: "Botez la Drag Catering", title: "Botez la Drag Catering", src: "/images/events/private-party/private-party-5.jpg"},
+       {alt: "Botez la Drag Catering", title: "Botez la Drag Catering", src: "/images/events/private-party/private-party-6.jpg"},
+       {alt: "Aniversare la Drag Catering", title: "Aniversare la Drag Catering", src: "/images/events/private-party/private-party-7.jpg"},
+       {alt: "Aniversare la Drag Catering", title: "Aniversare la Drag Catering", src: "/images/events/private-party/private-party-8.jpg"},
+       {alt: "Majorat la Drag Catering", title: "Majorat la Drag Catering", src: "/images/events/private-party/private-party-9.jpg"},
+       {alt: "Majorat la Drag Catering", title: "Majorat la Drag Catering", src: "/images/events/private-party/private-party-10.jpg"},
       ]
     },
     {
       id: 2,
       name: "Evenimente Corporate",
-      category: "Business",
-      description: "Catering profesional pentru conferințe, seminarii și lansări de produse",
-      detailedDescription: "Oferim servicii de catering specializate pentru evenimente corporate, adaptate nevoilor specifice ale companiilor. De la coffee break-uri energizante până la cine de gală pentru parteneri, asigurăm un serviciu impecabil care reflectă profesionalismul companiei dumneavoastră.",
+      slug: "evenimente-corporate",
+      description: "Spațiul ideal pentru conferințe, traininguri, team building-uri și cine festive – Drag Catering oferă soluții complete pentru companii.",
+      detailedDescription: "La Drag Catering, transformăm evenimentele corporate în experiențe care îmbină profesionalismul cu atmosfera relaxată și rafinată. Fie că organizați o conferință, un seminar, un team building sau o cină festivă, echipa noastră vă oferă suport complet – de la planificarea meniului până la detalii logistice și ambientale. Meniurile premium, serviciile impecabile și atenția la detalii garantează un cadru potrivit atât pentru întâlniri formale, cât și pentru momente de socializare între colegi.",
       features: [
-        "Coffee break cu preparate dulci și sărate",
-        "Lunch business cu meniu în 2-3 feluri",
-        "Cocktail networking cu canapele rafinate",
-        "Cină de gală pentru evenimente speciale",
-        "Serviciu discret și profesional",
-        "Opțiuni vegetariene și vegane"
+        "Meniuri personalizate în funcție de tipul evenimentului",
+        "Servicii profesionale pentru conferințe și întâlniri de afaceri",
+        "Pachete adaptate pentru team building și cine festive",
+        "Echipă dedicată pentru organizare și coordonare",
+        "Atmosferă elegantă, perfectă pentru networking și relații de business"
       ],
-      capacity: "20-200 persoane",
-      duration: "2-6 ore",
-      priceRange: "85-250 lei/persoană",
+      capacity: "30-200 persoane",
+      duration: "4-8 ore",
+      priceRange: "200 lei/persoană",
       included: [
-        "Planificare detaliată a meniului",
-        "Setup profesional în locația aleasă",
-        "Personal instruit pentru evenimente business",
-        "Facturare cu TVA pentru companii",
-        "Suport tehnic complete"
+        "Consultanță pentru planificarea completă a evenimentului",
+        "Meniu premium cu opțiuni variate",
+        "Serviciu profesionist de ospătari și bucătari",
+        "Posibilitate de amenajare a spațiului pentru conferințe sau cine festive",
+        "Asistență pe toată durata evenimentului"
       ],
-      image: "../images/events/corporate-1.jpg",
       gallery: [
-        
+       {alt: "Eveniment corporate la Drag Catering", title: "Eveniment corporate", src: "/images/events/corporate/corporate-0.png"},
+       {alt: "Eveniment corporate la Drag Catering", title: "Eveniment corporate", src: "/images/events/corporate/corporate-1.jpg"},
+       {alt: "Eveniment corporate la Drag Catering", title: "Eveniment corporate", src: "/images/events/corporate/corporate-2.jpg"},
+       {alt: "Eveniment corporate la Drag Catering", title: "Eveniment corporate", src: "/images/events/corporate/corporate-3.jpg"},
+       {alt: "Eveniment corporate la Drag Catering", title: "Eveniment corporate", src: "/images/events/corporate/corporate-4.jpg"},
       ]
     },
     {
       id: 3,
-      name: "Aniversări Private",
-      category: "Celebrări",
-      description: "Servicii personalizate pentru aniversări și sărbători de familie",
-      detailedDescription: "Fiecare aniversare merită o celebrare specială. Creăm experiențe culinare personalizate pentru aniversări, adaptate vârstei și preferințelor sărbătoritului. De la petreceri pentru copii cu meniu special până la aniversări elegante pentru adulți, asigurăm că fiecare moment este perfect.",
+      name: "All You Can Eat",
+      slug: "all-you-can-eat",
+      description: "Experiențe culinare nelimitate – bufet bogat și variat, unde te bucuri fără restricții de preparate proaspete și savuroase, pregătite în fața ta.",
+      detailedDescription: "Evenimentele de tip All You Can Eat de la Drag Catering sunt gândite pentru a oferi libertatea de a gusta și regusta dintr-o varietate impresionantă de preparate. Fiecare ediție are un meniu diversificat, cu preparate proaspete, pregătite continuu de bucătarii noștri în bucătăria deschisă. Atmosfera relaxată și festivă, combinată cu experiența culinară interactivă, transformă fiecare participare într-o adevărată sărbătoare a gustului.",
       features: [
-        "Meniu tematic adaptat vârstei și gusturilor",
-        "Tort personalizat inclus în pachet",
-        "Decorațiuni de masă festive",
-        "Activități culinare interactive pentru copii",
-        "Serviciu de muzică de fundal",
-        "Fotografii ale momentelor speciale"
+        "Bufet nelimitat cu preparate variate și proaspete",
+        "Bucătărie deschisă cu preparate gătite live",
+        "Meniu diversificat, actualizat la fiecare ediție",
+        "Atmosferă relaxată și prietenoasă",
+        "Evenimente tematice pentru toate gusturile"
       ],
-      capacity: "15-80 persoane",
+      capacity: "50-100 persoane",
       duration: "3-5 ore",
-      priceRange: "120-200 lei/persoană",
+      priceRange: "150 lei/persoană",
       included: [
-        "Consultanță pentru meniu personalizat",
-        "Tort aniversar din producție proprie",
-        "Setup complet și decorare",
-        "Personal dedicat pentru eveniment",
-        "Curățenie completă post-eveniment"
+        "Acces nelimitat la bufet pe durata evenimentului",
+        "Preparate pregătite pe loc de bucătari profesioniști",
+        "Servire continuă și reîmprospătarea permanentă a bufetului",
+        "Ambianță festivă și interacțiune cu bucătarii",
+        "Posibilitatea de a savura preparate variate într-o singură seară"
       ],
-      image: "../images/events/birthday-1.jpg",
       gallery: [
-        
+        {alt: "All you can eat la Drag Catering", title: "All you can eat", src: "/images/events/all-you-can-eat/all-you-can-eat-0.jpg"},
+        {alt: "All you can eat la Drag Catering", title: "All you can eat", src: "/images/events/all-you-can-eat/all-you-can-eat-1.jpg"},
+        {alt: "All you can eat la Drag Catering", title: "All you can eat", src: "/images/events/all-you-can-eat/all-you-can-eat-2.jpg"},
+        {alt: "All you can eat la Drag Catering", title: "All you can eat", src: "/images/events/all-you-can-eat/all-you-can-eat-3.jpg"},
+        {alt: "All you can eat la Drag Catering", title: "All you can eat", src: "/images/events/all-you-can-eat/all-you-can-eat-4.jpg"},
+        {alt: "All you can eat la Drag Catering", title: "All you can eat", src: "/images/events/all-you-can-eat/all-you-can-eat-5.jpg"},
+        {alt: "All you can eat la Drag Catering", title: "All you can eat", src: "/images/events/all-you-can-eat/all-you-can-eat-6.jpg"},
+        {alt: "All you can eat la Drag Catering", title: "All you can eat", src: "/images/events/all-you-can-eat/all-you-can-eat-7.jpg"},
+        {alt: "All you can eat la Drag Catering", title: "All you can eat", src: "/images/events/all-you-can-eat/all-you-can-eat-8.jpg"},
+        {alt: "All you can eat la Drag Catering", title: "All you can eat", src: "/images/events/all-you-can-eat/all-you-can-eat-9.jpg"},
+      ]
+    }, {
+      id: 4,
+      name: "Seri de Muzică Live",
+      slug: "muzica-live",
+      description: "Atmosferă vibrantă cu muzică live și meniu premium – o combinație perfectă pentru seri de neuitat la Drag Catering.",
+      detailedDescription: "Serile de muzică live de la Drag Catering aduc împreună gastronomia rafinată și spectacolul artistic. În timp ce te bucuri de preparate atent pregătite și servite într-un cadru elegant, artiștii noștri creează o atmosferă vibrantă care transformă fiecare seară într-o experiență memorabilă. Fie că vii să te relaxezi, să dansezi sau să petreci alături de prieteni, vei găsi la noi energia și gustul care dau viață momentelor speciale.",
+      features: [
+        "Muzică live cu artiști și trupe locale",
+        "Atmosferă energică și festivă",
+        "Meniu premium adaptat serilor tematice",
+        "Spațiu pentru dans și socializare",
+        "Evenimente cu stil diferit – de la jazz și pop la muzică tradițională"
+      ],
+      capacity: "50-150 persoane",
+      duration: "3-7 ore",
+      priceRange: "150 lei/persoană",
+      included: [
+        "Acces la spectacolul de muzică live",
+        "Meniu complet cu preparate premium",
+        "Servire atentă și personal dedicat",
+        "Ambianță festivă și decor adaptat",
+        "Posibilitatea de a interacționa cu artiștii"
+      ],
+      gallery: [
+        {alt: "Seara de muzică live la Drag Catering", title: "Seara de muzică live", src: "/images/events/live-music/live-music-0.jpg"},
+        {alt: "Seara de muzică live la Drag Catering", title: "Seara de muzică live", src: "/images/events/live-music/live-music-1.jpg"},
+        {alt: "Seara de muzică live la Drag Catering", title: "Seara de muzică live", src: "/images/events/live-music/live-music-3.jpg"},
+        {alt: "Seara de muzică live la Drag Catering", title: "Seara de muzică live", src: "/images/events/live-music/live-music-4.jpg"},
+        {alt: "Seara de muzică live la Drag Catering", title: "Seara de muzică live", src: "/images/events/live-music/live-music-5.jpg"},
+      ]
+    }, {
+      id: 5,
+      name: "Evenimente Culinare",
+      slug: "evenimente-culinare",
+      description: "Gust de Sărbătoare – Meniu premium pentru ocazii speciale: de la Florii, 1 Mai, Dragobete, 8 Martie, 1 Decembrie până la titlee zile speciale, meciuri sau momente importante.",
+      detailedDescription: "La Drag Catering, fiecare eveniment se transformă într-o sărbătoare a gustului și a bucuriei de a fi împreună. Îți oferim experiențe culinare pline de savoare, cu bufete generoase și variate, într-un cadru festiv care te face să te simți parte dintr-un moment special. Preparatele noastre sunt pregătite pe loc, în bucătăria deschisă, unde prospețimea și spectacolul culinar se îmbină perfect. Astfel, fiecare întâlnire devine mai mult decât o masă – devine o experiență memorabilă.",
+      features: [
+        "Meniu premium creat special pentru ocazii tematice",
+        "Atmosferă festivă cu decor adaptat evenimentului",
+        "Preparatele pregătite cu ingrediente proaspete și locale",
+        "Combinație de rețete tradiționale și reinterpretări moderne",
+        "Posibilitatea de a savura meniuri dedicate sărbătorilor românești",
+      ],
+      capacity: "20-200 persoane",
+      duration: "2-6 ore",
+      priceRange: "100 lei/persoană",
+      included: [
+        "Meniu complet cu mai multe feluri de mâncare",
+        "Preparate gătite pe loc de bucătari profesioniști",
+        "Servire atentă și personal dedicat pe durata evenimentului",
+        "Ambianță festivă și organizare adaptată tematicii",
+      ],
+      gallery: [
+        {alt: "Eveniment culinar la Drag Catering", title: "Eveniment culinar", src: "/images/events/culinary/culinary-1.jpg"},
+        {alt: "Eveniment culinar la Drag Catering", title: "Eveniment culinar", src: "/images/events/culinary/culinary-2.jpg"},
+        {alt: "Eveniment culinar la Drag Catering", title: "Eveniment culinar", src: "/images/events/culinary/culinary-3.jpg"},
+        {alt: "Eveniment culinar la Drag Catering", title: "Eveniment culinar", src: "/images/events/culinary/culinary-4.jpg"},
+        {alt: "Eveniment culinar la Drag Catering", title: "Eveniment culinar", src: "/images/events/culinary/culinary-5.jpg"},
+        {alt: "Eveniment culinar la Drag Catering", title: "Eveniment culinar", src: "/images/events/culinary/culinary-6.jpg"},
+        {alt: "Eveniment culinar la Drag Catering", title: "Eveniment culinar", src: "/images/events/culinary/culinary-7.jpg"},
+        {alt: "Eveniment culinar la Drag Catering", title: "Eveniment culinar", src: "/images/events/culinary/culinary-8.jpg"},
+        {alt: "Eveniment culinar la Drag Catering", title: "Eveniment culinar", src: "/images/events/culinary/culinary-9.jpg"},
+        {alt: "Eveniment culinar la Drag Catering", title: "Eveniment culinar", src: "/images/events/culinary/culinary-10.jpg"},
+
       ]
     },
+  ];
+
+export const services = [
     {
-      id: 4,
-      name: "Botezuri Tradiționale",
-      category: "Evenimente Religioase",
-      description: "Catering respectuos pentru botezuri cu meniu tradițional românesc",
-      detailedDescription: "Respectăm tradițiile românești în organizarea botezurilor, oferind meniuri autentice care onorează momentul special. Preparatele noastre tradiționale sunt realizate după rețete de familie, cu ingrediente naturale și prezentare elegantă, potrivită pentru această sărbătoare importantă.",
+      id: 1,
+      name: "Delicii Culinare cu Livrare Acasă",
+      slug: 'livrare-acasa',
+      icon: "🏠",
+      description: "Bucură-te de preparatele Drag Catering la tine acasă – de la meniul zilei la selecții speciale din meniul restaurantului.",
       features: [
-        "Meniu tradițional românesc autentic",
-        "Preparate potrivite pentru toate vârstele",
-        "Serviciu respectuos al tradițiilor",
-        "Mese frumos decorate pentru sărbătoare",
-        "Opțiuni pentru post și diete speciale",
-        "Coordinare cu organizatorii religioși"
+        "Meniul zilei sau preparate din meniul restaurantului",
+        "Preparate proaspete și atent pregătite",
+        "Livrare în condiții optime",
+        "Opțiuni vegetariene și adaptări pentru diete speciale",
+        "Livrare în ziua dorită sau cu programare în avans",
+        "Ambalaje ecologice prietenoase cu mediul",
       ],
-      capacity: "30-120 persoane",
-      duration: "4-6 ore",
-      priceRange: "140-220 lei/persoană",
-      included: [
-        "Meniu tradițional personalizat",
-        "Serviciu profesional discret",
-        "Decorațiuni potrivite pentru botez",
-        "Coordinare cu nașii și familia",
-        "Respectarea tradițiilor locale"
+      details: [
+        {
+            type: "Preț",
+            description: "25 lei / *Gratuit pentru comenzi de minim 200 lei"
+        }, {
+            type: "Comandă minimă",
+            description: "100 lei"
+        }, {
+            type: "Zonă livrare",
+            description: "Iași / *Pentru comenzi de minim 250 lei livrăm și în împrejurimi"
+        }, {
+            type: "Metodă de plată",
+            description: "Cash la livrare, card la livrare, tichete de masă"
+        },
       ],
-      image: "../images/events/baptism-1.jpg",
-      gallery: [
-       
-      ]
+    },
+    {
+      id: 2,
+      name: "Petreceri și Ocazii Speciale",
+      slug: "catering-ocazii-speciale",
+      icon: "🎉",
+      description: "De la cele mai intime reuniuni până la cele mai importante celebrări, Drag Catering aduce savoare, eleganță și atenție la detalii pentru fiecare moment – fie că vorbim de aniversări, nunți, botezuri, cununii civile, petreceri corporate sau reuniuni de familie.",
+      features: [
+        "Meniuri personalizate pentru fiecare tip de ocazie",
+        "Serviciu flexibil la domiciliul clientului sau locația dorită",
+        "Cocktail de întâmpinare",
+        "Serviciu complet cu pahare și veselă",
+        "Șampanie pentru toast-uri speciale",
+        "Chelneri dedicați pentru mese festive și evenimente mari",
+        "Serviciu cu chelneri pentru evenimente mai mari",
+        "Coordinare cu fotografii și alți furnizori",
+        "Flexibilitate în comunicare și organizare",
+        "Asistență pe toată durata evenimentului"
+      ],
+      details: [
+        {
+            type: "Preț",
+            description: "Începând de la 100lei/persoană"
+        }, {
+            type: "Durată",
+            description: "6 - 8 ore"
+        }, {
+            type: "Locație",
+            description: "Restaurant Drag Catering sau locația dorită de client"
+        }, {
+            type: "Metodă de plată",
+            description: "Cash, card sau transfer bancar"
+        },
+      ],
+    },
+    {
+      id: 3,
+      name: "Recepții & Conferințe",
+      slug: "receptii-si-conferinte",
+      icon: "🏢",
+      description: "Servicii de catering premium pentru conferințe, recepții și evenimente corporate, cu meniuri rafinate și organizare impecabilă – totul adaptat nevoilor evenimentului dumneavoastră.",
+      features: [
+        "Coffee break cu gustări și băuturi calde/reci",
+        "Meniuri business lunch",
+        "Finger food elegant, ideal pentru networking și recepții",
+        "Serviciu discret, rapid și profesionist",
+        "Montaj și setup eficient, fără a perturba desfășurarea evenimentului",
+        "Echipament complet inclus: pahare, veselă, tacâmuri, șervețele",
+        "Opțiuni adaptate pentru diete speciale și restricții alimentare",
+        "Consultanță personalizată pentru alegerea meniului"
+      ],
+      details: [
+        {
+            type: "Preț",
+            description: "Începând de la 100lei/persoană"
+        }, {
+            type: "Durată",
+            description: "4 - 8 ore"
+        }, {
+            type: "Locație",
+            description: "Restaurant Drag Catering, la sediul companiei sau locația aleasă de dvs"
+        }, {
+            type: "Metodă de plată",
+            description: "Cash, card sau transfer bancar"
+        },
+      ],
     }
   ];
+
+
+  
+export const eventsAndServices = [
+  {
+    title: "Petreceri Private",
+    description: "Nunți, botezuri, cununii civile, aniversări, majorate și orice tip de petrecere – toate pot fi sărbătorite la Drag Catering.",
+    features: [
+      "Meniuri personalizate pentru fiecare tip de petrecere",
+      "Serviciu profesional adaptat fiecărui tip de eveniment",
+      "Opțiuni pentru diete speciale și alergii"
+    ],
+    capacity: "50-140 persoane",
+    priceRange: "de la 180 lei/persoană",
+    image: "/images/events/private-party/private-party-1.jpg",
+    href: "/evenimente#petreceri-private"
+  },
+  {
+    title: "Evenimente Corporate",
+    description: "Spațiul ideal pentru conferințe, traininguri, team building-uri și cine festive – Drag Catering oferă soluții complete pentru companii.",
+    features: [
+      "Meniuri personalizate în funcție de tipul evenimentului",
+      "Servicii profesionale pentru conferințe și întâlniri de afaceri",
+      "Pachete adaptate pentru team building și cine festive"
+    ],
+    capacity: "50-140 persoane",
+    priceRange: "de la 100 lei/persoană",
+    image: "/images/events/corporate/corporate-0.png",
+    href: "/evenimente#evenimente-corporate"
+  },
+  {
+    title: "All You Can Eat",
+    description: "Experiențe culinare nelimitate – bufet bogat și variat, unde te bucuri fără restricții de preparate proaspete și savuroase, pregătite în fața ta.",
+    features: [
+      "Bufet nelimitat cu preparate variate și proaspete",
+      "Bucătărie deschisă cu preparate gătite live",
+      "Meniu diversificat, actualizat la fiecare ediție"
+    ],
+    capacity: "până la 140 persoane",
+    priceRange: "de la 150 lei/persoană",
+    image: "/images/events/all-you-can-eat/all-you-can-eat-0.jpg",
+    href: "/evenimente#all-you-can-eat"
+  },
+  {
+    title: "Seri de Muzică Live",
+    description: "Atmosferă vibrantă cu muzică live și meniu premium – o combinație perfectă pentru seri de neuitat la Drag Catering.",
+    features: [
+      "Muzică live cu artiști și trupe locale",
+      "Atmosferă energică și festivă",
+      "Meniu premium adaptat serilor tematice"
+    ],
+    capacity: "până la 140 persoane",
+    priceRange: "Conform meniului",
+    image: "/images/events/live-music/live-music-0.jpg",
+    href: "/evenimente#muzica-live"
+  },
+  {
+    title: "Evenimente Culinare",
+    description: "Gust de Sărbătoare – Meniu premium pentru ocazii speciale: de la Florii, 1 Mai, Dragobete, 8 Martie, 1 Decembrie până la alte zile speciale, meciuri sau momente importante.",
+    features: [
+      "Meniu premium creat special pentru ocazii tematice",
+      "Atmosferă festivă cu decor adaptat evenimentului",
+      "Preparatele pregătite cu ingrediente proaspete și locale"
+    ],
+    capacity: "până la 140 persoane",
+    priceRange: "Conform meniului",
+    image: "/images/events/culinary/culinary-1.jpg",
+    href: "/evenimente#evenimente-culinare"
+  },
+  {
+    title: "Delicii Culinare cu Livrare Acasă",
+    description: "Bucură-te de preparatele Drag Catering la tine acasă – de la meniul zilei la selecții speciale din meniul restaurantului.",
+    features: [
+      "Meniul zilei sau preparate din meniul restaurantului",
+      "Preparate proaspete și atent pregătite",
+      "Livrare în condiții optime"
+    ],
+    priceRange: "25 lei / Gratuit pentru comenzi de minim 200 lei",
+    image: "/images/delivery.jpg",
+    href: "/servicii#livrare-acasa"
+  },
+  {
+    title: "Petreceri și Ocazii Speciale",
+    description: "De la cele mai intime reuniuni până la cele mai importante celebrări, Drag Catering aduce savoare, eleganță și atenție la detalii pentru fiecare moment.",
+    features: [
+      "Meniuri personalizate pentru fiecare tip de ocazie",
+      "Serviciu flexibil la domiciliul clientului sau locația dorită",
+      "Cocktail de întâmpinare"
+    ],
+    priceRange: "începând de la 100lei/persoană",
+    image: "/images/catering-party.jpg",
+    href: "/servicii#catering-ocazii-speciale",
+  },
+  {
+    title: "Recepții & Conferințe",
+    description: "Servicii de catering premium pentru conferințe, recepții și evenimente corporate, cu meniuri rafinate și organizare impecabilă.",
+    features: [
+      "Coffee break cu gustări și băuturi calde/reci",
+      "Meniuri business lunch",
+      "Finger food elegant, ideal pentru networking și recepții"
+    ],
+    priceRange: "începând de la 100lei/persoană",
+    image: "/images/reception.jpg",
+    href: "/servicii#receptii-si-conferinte",
+  }
+]

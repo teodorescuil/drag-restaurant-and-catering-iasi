@@ -68,6 +68,14 @@ export default function SlideShow({ images, lcpIndex = 0 }: Props) {
             className="object-cover transition-all duration-500 cursor-pointer"
             onClick={() => openFullscreen(currentSlide)}
           />
+          {/* Visible label for main image */}
+          {(mainImg.title) && (
+            <div className="absolute top-4 left-4 bg-gold text-white px-4 py-1 rounded-xl max-w-[80%]">
+              <span className="text-base font-semibold">
+                {mainImg.title}
+              </span>
+            </div>
+          )}
           {mainImg.title && <figcaption className="sr-only">{mainImg.title}</figcaption>}
 
           <button
@@ -109,7 +117,7 @@ export default function SlideShow({ images, lcpIndex = 0 }: Props) {
               type="button"
               key={`${img.src}-${index}`}
               onClick={() => setCurrentSlide(index)}
-              aria-label={`Afișează miniatura ${index + 1}: ${img.title || img.alt}`}
+              aria-label={`Afișează miniatura ${index + 1}: ${img.title}`}
               className={`aspect-[4/3] rounded-lg overflow-hidden transition-all duration-200 ${
                 index === currentSlide ? 'ring-2 ring-gold ring-offset-2 opacity-100' : 'opacity-60 hover:opacity-80'
               }`}
@@ -160,6 +168,17 @@ export default function SlideShow({ images, lcpIndex = 0 }: Props) {
                   className="object-contain rounded-lg"
                   priority
                 />
+                {/* Visible label for fullscreen image */}
+                {(images[fullscreenIndex].title) && (
+                  <div className="absolute bottom-4 left-4 bg-black/70 text-white px-6 py-3 rounded-lg max-w-[80%]">
+                    <span className="text-lg font-semibold">
+                      {images[fullscreenIndex].title}
+                    </span>
+                    <span className="ml-4 text-sm opacity-80">
+                      {fullscreenIndex + 1} din {images.length}
+                    </span>
+                  </div>
+                )}
               </div>
 
               {images.length > 1 && (
@@ -183,10 +202,10 @@ export default function SlideShow({ images, lcpIndex = 0 }: Props) {
                 </>
               )}
 
-              {(images[fullscreenIndex].title || images[fullscreenIndex].alt) && (
+              {(images[fullscreenIndex].title) && (
                 <div className="absolute bottom-6 left-6 bg-black/70 text-white px-6 py-3 rounded-lg">
                   <h3 className="text-xl font-semibold">
-                    {images[fullscreenIndex].title || images[fullscreenIndex].alt}
+                    {images[fullscreenIndex].title}
                   </h3>
                   <p className="text-sm opacity-90">
                     {fullscreenIndex + 1} din {images.length}

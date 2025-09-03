@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import { Phone, Mail, MapPin, Clock, Car, Bus, User, Wifi, ParkingCircle, Navigation, Route } from 'lucide-react';
+import SocialButtons from '../components/SocialButtons';
 
 export const metadata: Metadata = {
   title: 'Contact Drag Catering - Catering și Restaurant Premium în Iași | Rezervări Evenimente',
@@ -73,7 +74,7 @@ export default function ContactDetailed() {
           </header>
 
           {/* Direct Contact - Full Width */}
-          <section className="bg-white rounded-3xl p-8 mb-16" itemScope itemType="https://schema.org/Organization">
+          <section className="bg-white rounded-3xl p-8" itemScope itemType="https://schema.org/Organization">
             <h2 className="text-3xl font-playfair font-bold text-charcoal mb-8 text-center">Informații Contact <span className="text-gold">Drag Catering</span></h2>
 
             <address className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 not-italic">
@@ -119,6 +120,51 @@ export default function ContactDetailed() {
                 </time>
               </article>
             </address>
+          </section>
+
+          {/* Process Section */}
+          <section className="bg-gradient-to-r from-gold/10 to-gold/5 rounded-3xl p-12">
+            <div className="text-center mb-12">
+              <h3 className="text-3xl font-playfair font-bold text-charcoal mb-4">
+                Procesul Nostru de Organizare
+              </h3>
+              <p className="text-gray-600 max-w-2xl mx-auto">
+                Organizăm fiecare eveniment cu atenție la detalii și profesionalism desăvârșit
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+              <div className="text-center">
+                <div className="bg-gold text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">1</div>
+                <h4 className="font-bold text-charcoal mb-2">Consultanță Inițială</h4>
+                <p className="text-gray-600 text-sm">Discutăm nevoile și viziunea dumneavoastră pentru eveniment</p>
+              </div>
+              <div className="text-center">
+                <div className="bg-gold text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">2</div>
+                <h4 className="font-bold text-charcoal mb-2">Planificare Detaliată</h4>
+                <p className="text-gray-600 text-sm">Creăm meniul personalizat și planul complet al evenimentului</p>
+              </div>
+              <div className="text-center">
+                <div className="bg-gold text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">3</div>
+                <h4 className="font-bold text-charcoal mb-2">Pregătire & Setup</h4>
+                <p className="text-gray-600 text-sm">Preparăm totul cu grijă și amenajăm spațiul pentru eveniment</p>
+              </div>
+              <div className="text-center">
+                <div className="bg-gold text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">4</div>
+                <h4 className="font-bold text-charcoal mb-2">Serviciu Impecabil</h4>
+                <p className="text-gray-600 text-sm">Asigurăm serviciu profesional pe toată durata evenimentului</p>
+              </div>
+            </div>
+          </section>
+
+                  {/* Social Media Section */}
+          <section className="bg-white rounded-3xl p-8">
+            <h2 className="text-3xl font-playfair font-bold text-charcoal mb-8 text-center">
+              Urmărește-ne pe <span className="text-gold">Social Media</span>
+            </h2>
+            <div className="flex justify-center">
+              <SocialButtons theme="light" />
+            </div>
           </section>
 
           {/* Map Section */}

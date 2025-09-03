@@ -69,7 +69,7 @@ export default function FullMenuPreview() {
                   <li key={cat.slug}>
                     <Link
                       href={`/meniu#${cat.slug}`}
-                      className="inline-block border border-gold/40 text-charcoal hover:text-gold hover:border-gold px-4 py-2 rounded-full text-sm transition-colors duration-200"
+                      className="tertiary !border-0"
                     >
                       {cat.label}
                     </Link>
@@ -78,11 +78,11 @@ export default function FullMenuPreview() {
               </ul>
             </nav>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="items-center">
               <Link
                 href="/meniu"
                 aria-label="Vezi meniul complet al restaurantului"
-                className="inline-flex items-center bg-gold text-white px-8 py-3 rounded-full font-semibold hover:bg-gold/90 transition-colors duration-200"
+                className="primary"
               >
                 <BookOpen className="w-5 h-5 mr-3" aria-hidden="true"/>
                 Vezi meniul complet

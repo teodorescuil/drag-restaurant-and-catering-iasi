@@ -2,7 +2,7 @@ import Link from 'next/link';
 import {UtensilsCrossed, Award, Heart, Users} from 'lucide-react';
 import {sectionTopTitle, sectionWrapper, sectionTitle, sectionSubtitle, sectionInfoContent} from '../../helpers/constants/styles';
 import SlideShow from '../slideshow/Slideshow';
-import {restaurant} from '../../helpers/constants/images-src';
+import {ourStory} from '../../helpers/constants/images-src';
 
 export default function About() {
   return (
@@ -41,7 +41,7 @@ export default function About() {
             </p>
           </div>
           
-          <SlideShow images={restaurant} />
+          <SlideShow images={ourStory} />
         </article>
 
         <ul className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6" aria-label="Valorile noastre">
@@ -70,7 +70,7 @@ export default function About() {
         <article className="bg-gradient-to-r from-gold/10 via-cream to-gold/10 p-12 rounded-2xl text-center">
           <Link 
             href="/despre-noi"
-            className="inline-block bg-gold text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-gold/90 transform hover:scale-105 transition-all duration-200 shadow-lg"
+            className="primary"
           >
             Află mai multe despre noi
           </Link>

@@ -83,6 +83,10 @@
   .bg-gold {
     background-color: hsl(var(--gold));
   }
+
+   .bg-gold\/60 {
+    background-color: hsl(var(--gold) / 0.6);
+  }
   
   .border-gold {
     border-color: hsl(var(--gold));
@@ -171,6 +175,119 @@
 
 .daily-menu-card {
   cursor: pointer;
+}
+
+/* BUTTONS */
+.primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(var(--gold));
+  border-width: 2px;
+  border-style: solid;
+  border-color: hsl(var(--gold));
+  color: #fff;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  min-width: 250px;
+}
+
+.primary:hover {
+  background-color: hsl(var(--gold) / 0.9);
+}
+
+.secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-width: 2px;
+  border-style: solid;
+  border-color: hsl(var(--gold));
+  color: hsl(var(--gold));
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition-property: background-color, color;
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  min-width: 250px;
+}
+
+.secondary:hover {
+  background-color: hsl(var(--gold));
+  background-color: hsl(var(--gold) / 0.9);
+  color: #fff;
+}
+
+.secondary-light {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #fff;
+  color: #fff;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition-property: background-color, border-color, color;
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  min-width: 250px;
+}
+
+.secondary-light:hover {
+  background-color: hsl(var(--gold) / 0.9);
+  border-color: hsl(var(--gold));
+}
+
+.tertiary {
+  display: inline-block;
+  background-color: #f3f4f6; /* Tailwind's bg-gray-100 */
+  border: 1px solid transparent;
+  color: hsl(var(--charcoal));
+  padding: 0.5rem 1rem; /* py-2 px-4 */
+  border-radius: 0.5rem; /* rounded-lg */
+  font-size: 0.875rem; /* text-sm */
+  transition-property: color, border-color;
+  transition-duration: 200ms;
+}
+
+.tertiary:hover {
+  color: hsl(var(--gold) / 0.8);
+  border-color: hsl(var(--gold));
+}
+
+.labelButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: hsl(var(--gold));
+  padding: 4px 8px 4px 8px;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition-property: background-color, color;
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.labelButton:hover {
+  background-color: hsl(var(--gold));
+  background-color: hsl(var(--gold) / 0.9);
+  color: #fff;
 }
 
 /* :root {

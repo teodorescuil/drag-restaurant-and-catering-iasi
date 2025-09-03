@@ -4,7 +4,7 @@ export const englishDays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Frida
 
 export const foodWeeklyMenu = [
     {
-        week: '18 august - 24 august',
+        week: '1 septembrie - 7 septembrie',
         days: [
              [
                  {

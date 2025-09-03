@@ -4,6 +4,7 @@ export const pagesRo = {
     fullMenu: 'Meniu',
     aboutUs: 'Despre noi',
     events: 'Evenimente',
+    services: 'Servicii',
     contact: 'Contact'
 }
 
@@ -20,6 +21,9 @@ export const pagesR = [
     }, {
         section: 'evenimente', 
         title: pagesRo.events,
+    }, {
+        section: 'servicii', 
+        title: pagesRo.services,
     }, {
         section: 'despre-noi', 
         title: pagesRo.aboutUs,

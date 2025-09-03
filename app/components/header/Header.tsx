@@ -78,7 +78,7 @@ export default function Header() {
               src="/drag-logo.png"
               alt="Drag Catering – Restaurant și servicii de catering în Iași"
               className={`
-                ${isScrolled ? 'h-10 sm:h-14 md:h-15' : 'h-14 sm:h-16 md:h-20'}
+                ${isScrolled ? 'h-14' : 'h-14 sm:h-16'}
                 w-auto mt-0 mb-0 
                 transition-[height] duration-500 ease-in-out motion-reduce:transition-none
               `}

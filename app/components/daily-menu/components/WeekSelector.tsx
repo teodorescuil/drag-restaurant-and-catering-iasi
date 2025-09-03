@@ -13,8 +13,8 @@ export default function WeekSelector({setSelectedDay, selectedDay, currentWeek}:
     const getButtonStyle = (index: number) => (
         `px-6 py-3 rounded-full font-medium transition-all duration-500 ${
             selectedDay.toLowerCase() === days[index].toLowerCase()
-            ? 'bg-gold text-white shadow-lg'
-            : 'bg-gray-100 text-gray-700 hover:bg-gold/20 hover:text-gold/80'
+            ? 'bg-gray-100 text-gold shadow-lg border-2 border-gold'
+            : 'bg-gray-100 text-gray-700 border-2 border-gray-100 hover:bg-gold/20 hover:text-gold/80'
         }`
     );
     return (

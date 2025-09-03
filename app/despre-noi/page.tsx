@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Leaf, Handshake, Heart, Shield, Star, Mail, Phone } from 'lucide-react';
-import {story, team} from '../helpers/constants/images-src';
+import {passion, excellence} from '../helpers/constants/images-src';
 import SlideShow from '../components/slideshow/Slideshow';
 
 export const metadata: Metadata = {
@@ -110,7 +110,7 @@ export default function AboutDetailed() {
           </header>
 
         {/* Our Story */}
-        <article className="bg-gray-50 rounded-3xl p-12 md:p-16 mb-15" itemScope itemType="https://schema.org/Article">
+        <article className="bg-cream/50 rounded-3xl p-12 md:p-16 mb-15" itemScope itemType="https://schema.org/Article">
           <div className="max-w-6xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-12 items-center mb-12">
               <div className="space-y-4 text-gray-700 leading-relaxed text-justify">
@@ -126,14 +126,14 @@ export default function AboutDetailed() {
                 <p className="text-lg">
                   De-a lungul anilor, am avut privilegiul să fim partenerii culinari pentru 
                   mii de evenimente speciale - de la nunți elegante în palatele istorice 
-                  până la conferințe corporative moderne.
+                  până la conferințe corporate moderne.
                 </p>
               </div>
-              <SlideShow images={story} />
+              <SlideShow images={passion} />
             </div>
             
             <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <SlideShow images={team} />
+              <SlideShow images={excellence} />
 
               <div className="space-y-4 text-gray-700 leading-relaxed text-justify">
                 <h3 className="text-2xl font-playfair font-semibold text-charcoal mb-8">
@@ -154,7 +154,7 @@ export default function AboutDetailed() {
           </div>
         </article>
 
-                {/* Our Values */}
+        {/* Our Values */}
         <section className="mb-15">
           <h2 className="text-4xl font-playfair font-bold text-center text-charcoal mb-8">
             Valorile Care Ne Definesc
@@ -228,7 +228,7 @@ export default function AboutDetailed() {
                 prin serviciile de catering.
               </p>
               <p className="text-gray-700 leading-relaxed">
-                De la cine intime în restaurantul nostru la nunți elegante, de la conferințe corporative 
+                De la cine intime în restaurantul nostru la nunți elegante, de la conferințe corporate 
                 la petreceri private, aducem aceeași pasiune și atenție la detalii în fiecare preparat servit.
               </p>
             </article>
@@ -273,14 +273,14 @@ export default function AboutDetailed() {
         <nav className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <Link 
             href="/contact" 
-            className="inline-flex items-center justify-center border-2 border-gold bg-gold text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-gold/90 transition-colors duration-200 w-60"
+            className="primary"
           >
             <Mail className="mr-3 w-5 h-5" />
             Contactează-ne
           </Link>
           <a 
             href="tel:0754824625" 
-            className="inline-flex items-center justify-center border-2 border-gold text-gold px-8 py-4 rounded-full text-lg font-semibold hover:bg-gold hover:text-white transition-colors duration-200 w-60"
+            className="secondary"
           >
             <Phone className="mr-3 w-5 h-5" />
             Sună Acum
