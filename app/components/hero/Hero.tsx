@@ -25,7 +25,7 @@ export default function Hero() {
       {/* Background Image cu optimizări LCP: sizes + blurDataURL */}
       <div className="absolute inset-0" aria-hidden="true">
         <Image
-          src="/images/drag-food-4.jpg"
+          src="/images/cover.png"
           alt="Restaurant și catering în Iași — platouri cu preparate tradiționale de la Drag Catering"
           fill
           className="object-cover"
