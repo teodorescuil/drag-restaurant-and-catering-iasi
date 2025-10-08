@@ -35,9 +35,9 @@ export default function Event({ index, event, isMobile }: EventProps) {
       aria-controls={`event-panel-${event.name}`}
     >
       {isOpen ? (
-        <ChevronDown className="w-5 h-5 shrink-0" aria-hidden="true" />
+        <ChevronDown className="w-5 h-5 shrink-0" aria-hidden="true" color="#d3a56e"/>
       ) : (
-        <ChevronRight className="w-5 h-5 shrink-0" aria-hidden="true" />
+        <ChevronRight className="w-5 h-5 shrink-0" aria-hidden="true" color="#d3a56e"/>
       )}
 
       {/* Show the title ONLY when closed */}
@@ -51,7 +51,7 @@ export default function Event({ index, event, isMobile }: EventProps) {
 
    // The full card content (without the big title on mobile-open)
   const CardContent = () => (
-    <div key={event.id} id={event.slug} className={`scroll-mt-30 grid lg:grid-cols-2 gap-2 items-start ${index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''}`}>
+    <div key={event.id} id={event.slug} className={`p-4 scroll-mt-30 grid lg:grid-cols-2 gap-2 items-start ${index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''}`}>
       {/* Images */}
       <SlideShow images={event.gallery} />
 
@@ -124,7 +124,7 @@ export default function Event({ index, event, isMobile }: EventProps) {
           <MobileToggle />
           {/* Panel content (shown only when open) */}
           {isOpen && (
-            <div id={`event-panel-${event.name}`} className="border-t border-gray-100 p-4">
+            <div id={`event-panel-${event.name}`} className="border-t border-gray-100">
               <CardContent />
             </div>
           )}

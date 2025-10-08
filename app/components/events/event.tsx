@@ -31,9 +31,9 @@ export default function Event({ event, isMobile }: EventProps) {
       aria-controls={`event-panel-${event.title}`}
     >
       {isOpen ? (
-        <ChevronDown className="w-5 h-5 shrink-0" aria-hidden="true" />
+        <ChevronDown className="w-5 h-5 shrink-0" aria-hidden="true" color="#d3a56e"/>
       ) : (
-        <ChevronRight className="w-5 h-5 shrink-0" aria-hidden="true" />
+        <ChevronRight className="w-5 h-5 shrink-0" aria-hidden="true" color="#d3a56e"/>
       )}
 
       {/* Show the title ONLY when closed */}
@@ -49,13 +49,18 @@ export default function Event({ event, isMobile }: EventProps) {
   const CardContent = () => (
     <>
       <div className="relative overflow-hidden">
-        <Image
-          src={event.image}
-          alt={event.title}
-          className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-          width={256}
-          height={256}
-        />
+        <div className="relative aspect-[16/10]">
+          <Image
+            src={event.image}
+            alt={event.title}
+            fill
+            sizes="(max-width: 1024px) 100vw, 600px" // ajustează după layout
+            className="object-cover transition-transform duration-300 group-hover:scale-105"
+            quality={85}
+            priority={!!isMobile && isOpen} // când e deschis pe mobil, încarcă repede varianta bună
+          />
+        </div>
+
         <div className="absolute top-4 right-4 bg-gold text-white px-3 py-1 rounded-full text-sm font-semibold">
           {event.priceRange}
         </div>
