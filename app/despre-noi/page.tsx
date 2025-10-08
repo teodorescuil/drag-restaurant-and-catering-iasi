@@ -100,10 +100,10 @@ export default function AboutDetailed() {
             <div className="inline-block px-6 py-2 rounded-full mb-6">
               <span className="text-gold font-semibold text-sm uppercase tracking-wider">Povestea Noastră</span>
             </div>
-            <h1 className="text-5xl md:text-6xl font-playfair font-bold text-charcoal mb-6" itemProp="name">
+            <h1 className="text-4xl md:text-5xl md:text-6xl font-playfair font-bold text-charcoal mb-6" itemProp="name">
               Povestea <span className="text-gold font-dancing">Drag Catering</span> Iași
             </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto px-5 leading-relaxed" itemProp="description">
+            <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto px-5 leading-relaxed" itemProp="description">
               Cu peste 15 ani de experiență în arta culinară, Drag Catering din Iași aduce autenticitatea gusturilor românești și rafinamentul bucătăriei internaționale 
               atât în restaurantul nostru, cât și direct la masa dumneavoastră prin serviciile de catering premium.
             </p>
@@ -114,16 +114,16 @@ export default function AboutDetailed() {
           <div className="max-w-6xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-12 items-center mb-12">
               <div className="space-y-4 text-gray-700 leading-relaxed text-justify">
-                <h3 className="text-2xl font-playfair font-semibold text-charcoal mb-8">
+                <h3 className="text-xl md:text-2xl font-playfair font-semibold text-charcoal mb-8">
                   Pasiune și Tradiție la Fiecare Pas
                 </h3>
-                <p className="text-lg">
+                <p className="text:md md:text-lg">
                   Drag Catering s-a născut din pasiunea pentru bucătăria tradițională românească 
                   și dorința de a oferi experiențe culinare autentice. Începuturile noastre 
                   modeste s-au transformat treptat într-o poveste de succes, bazată pe dedicarea 
                   față de calitate și satisfacția clienților.
                 </p>
-                <p className="text-lg">
+                <p className="text:md md:text-lg">
                   De-a lungul anilor, am avut privilegiul să fim partenerii culinari pentru 
                   mii de evenimente speciale - de la nunți elegante în palatele istorice 
                   până la conferințe corporate moderne.
@@ -136,15 +136,15 @@ export default function AboutDetailed() {
               <SlideShow images={excellence} />
 
               <div className="space-y-4 text-gray-700 leading-relaxed text-justify">
-                <h3 className="text-2xl font-playfair font-semibold text-charcoal mb-8">
+                <h3 className="text-xl md:text-2xl font-playfair font-semibold text-charcoal mb-8">
                   Excelența în Fiecare Detaliu
                 </h3>
-                <p className="text-lg text-gray-700 leading-relaxed">
+                <p className="text:md md:text-lg text-gray-700 leading-relaxed">
                   Astăzi, echipa noastră de bucătari experimentați combină tehnicile culinare 
                   tradiționale cu inovațiile moderne, creând meniuri care satisfac cele mai 
                   rafinate gusturi.
                 </p>
-                <p className="text-lg text-gray-700 leading-relaxed">
+                <p className="text:md md:text-lg text-gray-700 leading-relaxed">
                   Rămânem fideli originilor noastre, oferind întotdeauna preparate proaspete, 
                   savuroase și prezentate cu grijă pentru detalii. Fiecare farfurie spune 
                   o poveste de dedicare și măiestrie culinară.
@@ -156,7 +156,7 @@ export default function AboutDetailed() {
 
         {/* Our Values */}
         <section className="mb-15">
-          <h2 className="text-4xl font-playfair font-bold text-center text-charcoal mb-8">
+          <h2 className="text-3xl md:text-4xl font-playfair font-bold text-center text-charcoal mb-8">
             Valorile Care Ne Definesc
           </h2>
 
@@ -165,7 +165,7 @@ export default function AboutDetailed() {
               <div className="rounded-full flex items-center justify-center mx-auto mb-6">
                 <Leaf className="w-8 h-8 text-gold" />
               </div>
-              <h3 className="text-xl font-playfair font-semibold text-charcoal mb-4" itemProp="name">Ingrediente Proaspete</h3>
+              <h3 className="text-lg md:text-xl font-playfair font-semibold text-charcoal mb-4" itemProp="name">Ingrediente Proaspete</h3>
               <p className="text-gray-600 leading-relaxed" itemProp="description">
                 Colaborăm exclusiv cu furnizori locali de încredere pentru a garanta 
                 prospețimea și calitatea superioară a tuturor ingredientelor.
@@ -176,7 +176,7 @@ export default function AboutDetailed() {
               <div className="rounded-full flex items-center justify-center mx-auto mb-6">
                 <Handshake className="w-8 h-8 text-gold" />
               </div>
-              <h3 className="text-xl font-playfair font-semibold text-charcoal mb-4" itemProp="name">Respect și Integritate</h3>
+              <h3 className="text-lg md:text-xl font-playfair font-semibold text-charcoal mb-4" itemProp="name">Respect și Integritate</h3>
               <p className="text-gray-600 leading-relaxed" itemProp="description">
                 Construim relații bazate pe încredere și corectitudine, atât cu clienții noștri, cât și cu partenerii și echipa noastră.
               </p>
@@ -186,7 +186,7 @@ export default function AboutDetailed() {
               <div className="rounded-full flex items-center justify-center mx-auto mb-6">
                 <Heart className="w-8 h-8 text-gold" />
               </div>
-              <h3 className="text-xl font-playfair font-semibold text-charcoal mb-4" itemProp="name">Pasiune pentru Ospitalitate</h3>
+              <h3 className="text-lg md:text-xl font-playfair font-semibold text-charcoal mb-4" itemProp="name">Pasiune pentru Ospitalitate</h3>
               <p className="text-gray-600 leading-relaxed" itemProp="description">
                 Oferim mai mult decât mâncare: creăm atmosferă, grijă și bucurie, pentru ca fiecare moment să fie memorabil.
               </p>
@@ -196,7 +196,7 @@ export default function AboutDetailed() {
               <div className="rounded-full flex items-center justify-center mx-auto mb-6">
                 <Shield className="w-8 h-8 text-gold" />
               </div>
-              <h3 className="text-xl font-playfair font-semibold text-charcoal mb-4" itemProp="name">Calm și Siguranță</h3>
+              <h3 className="text-lg md:text-xl font-playfair font-semibold text-charcoal mb-4" itemProp="name">Calm și Siguranță</h3>
               <p className="text-gray-600 leading-relaxed" itemProp="description">
                 Asigurăm o experiență fără griji, prin organizare impecabilă, punctualitate și respectarea celor mai înalte standarde de siguranță alimentară.
               </p>
@@ -220,7 +220,7 @@ export default function AboutDetailed() {
               <div className="text-gold mb-6">
                 <Heart className="w-8 h-8" fill="currentColor" />
               </div>
-              <h2 className="text-3xl font-playfair font-bold text-charcoal mb-6">Misiunea Noastră</h2>
+              <h2 className="text-2xl md:text-3xl font-playfair font-bold text-charcoal mb-6">Misiunea Noastră</h2>
               <p className="text-gray-700 leading-relaxed mb-6" itemProp="description">
                 Credem că fiecare masă este o oportunitate de a crea amintiri de neuitat. 
                 Misiunea noastră este să transformăm fiecare experiență culinară într-o poveste 
@@ -248,7 +248,7 @@ export default function AboutDetailed() {
               <div className="text-gold mb-6">
                 <Star className="w-8 h-8" fill="currentColor"/>
               </div>
-              <h2 className="text-3xl font-playfair font-bold text-charcoal mb-6">Viziunea Noastră</h2>
+              <h2 className="text-2xl md:text-3xl font-playfair font-bold text-charcoal mb-6">Viziunea Noastră</h2>
               <p className="text-gray-700 leading-relaxed mb-6" itemProp="description">
                 Să devenim compania de catering din Iași recunoscută pentru excelența culinară, serviciul impecabil și modul în care transformăm fiecare eveniment într-o experiență memorabilă. Dorim să fim prima alegere a celor care caută rafinament și ospitalitate.
               </p>
@@ -263,10 +263,10 @@ export default function AboutDetailed() {
 
       {/* Call to Action */}
       <footer className="text-center p-8 rounded-2xl">
-        <h3 className="text-3xl font-playfair font-bold text-charcoal mb-6">
+        <h3 className="text-2xl md:text-3xl font-playfair font-bold text-charcoal mb-6">
           Să Creem Împreună Amintiri de Neuitat
         </h3>
-        <p className="text-lg text-gray-700 max-w-2xl mx-auto mb-8 leading-relaxed">
+        <p className="text-md md:text-lg text-gray-700 max-w-2xl mx-auto mb-8 leading-relaxed">
           Contactați-ne astăzi pentru a discuta despre evenimentul dumneavoastră. 
           Echipa noastră este pregătită să transforme viziunea culinară în realitate.
         </p>

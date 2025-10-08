@@ -8,10 +8,10 @@ export default function EventsDetailed() {
           <div className="inline-block bg-gold/10 px-6 py-2 rounded-full mb-6">
             <span className="text-gold font-semibold text-sm uppercase tracking-wider">Servicii catering</span>
           </div>
-          <h1 className="text-5xl md:text-6xl font-playfair font-bold text-charcoal mb-6">
+          <h1 className="text-4xl md:text-5xl md:text-6xl font-playfair font-bold text-charcoal mb-6">
             Catering <span className="text-gold font-dancing">Premium</span>
           </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+          <p className="tex-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-8">
             Aducem experiența culinară premium direct la tine acasă sau la evenimentul tău. Servicii complete de catering cu echipament profesional, de la livrarea la domiciliu până la evenimente corporate de anvergură.
           </p>
         </div>
@@ -30,17 +30,17 @@ export default function EventsDetailed() {
                       <div className="text-2xl">{service.icon}</div>
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-2xl lg:text-3xl font-playfair font-bold text-charcoal mb-1">
+                      <h3 className="text-xl md:text-2xl lg:text-3xl font-playfair font-bold text-charcoal mb-1">
                         {service.name}
                       </h3>
                       <div className="w-16 h-0.5 bg-gold/60 mb-1"></div>
-                      <p className="text-lg text-gray-600 leading-relaxed">{service.description}</p>
+                      <p className="text:md md:text-lg text-gray-600 leading-relaxed">{service.description}</p>
                     </div>
                   </div>
 
                   {/* Lista de caracteristici cu hover effects */}
                   <div className="mb-8">
-                    <div className="grid md:grid-cols-2 gap-4">
+                    <div className="grid md:grid-cols-2 gap-2 md:gap-4">
                       {service.features.map((feature, idx) => (
                         <div key={idx} className="flex items-start group">
                           <div className="w-2 h-2 bg-gold/60 rounded-full mt-2 mr-3 flex-shrink-0 group-hover:scale-110 transition-transform duration-200"></div>
@@ -73,7 +73,7 @@ export default function EventsDetailed() {
 
         {/* Contact Section */}
         <div className="mt-16 text-center">
-          <h3 className="text-3xl font-playfair font-bold text-charcoal mb-6">
+          <h3 className="text-2xl md:text-3xl font-playfair font-bold text-charcoal mb-6">
             Să Planificăm Următorul Dumneavoastră Eveniment
           </h3>
           <p className="text-gray-600 mb-8 max-w-2xl mx-auto">

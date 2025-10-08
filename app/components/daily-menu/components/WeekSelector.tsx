@@ -6,6 +6,7 @@ import { CalendarDays } from "lucide-react";
 type Props = {
   setSelectedDay: (day: string) => void;
   selectedDay: string;
+  currentDayAsDate: string;
   currentWeek: string;
 };
 

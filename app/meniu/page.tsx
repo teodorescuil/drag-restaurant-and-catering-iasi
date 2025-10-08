@@ -268,7 +268,7 @@ export default function FullMenu() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           {/* Header Section optimizat pentru SEO */}
-          <header className="text-center mb-16">
+          <header className="text-center">
             <div className="inline-block bg-gold/10 px-6 py-2 rounded-full mb-6">
               <span className="text-gold font-semibold text-sm uppercase tracking-wider">Meniu Complet</span>
             </div>
@@ -280,7 +280,7 @@ export default function FullMenu() {
             </h1>
             <p 
               itemProp="description"
-              className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-8"
+              className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-8"
             >
               De la mese în familie la evenimente speciale – preparate autentice, gătite cu drag
             </p>
@@ -296,12 +296,12 @@ export default function FullMenu() {
             className="bg-white rounded-3xl p-6 md:p-8 shadow-xl mb-16"
             aria-labelledby="pdf-section-title"
           >
-            <h2 
+            {/* <h2 
               id="pdf-section-title" 
               className="text-2xl font-playfair font-bold text-charcoal mb-6 text-center"
             >
               Vizualizare Meniu PDF
-            </h2>
+            </h2> */}
             
             <div className="pdf w-full max-w-6xl mx-auto">
               <iframe
@@ -387,10 +387,10 @@ export default function FullMenu() {
 
           {/* Call to Action Section */}
           <section className="text-center p-8 bg-gradient-to-r from-gold/10 to-cream/30 rounded-3xl">
-            <h2 className="text-3xl font-playfair font-bold text-charcoal mb-4">
+            <h2 className="text-2xl md:text-3xl font-playfair font-bold text-charcoal mb-4">
               Alege-ți Preparatele Preferate
             </h2>
-            <p className="text-lg text-gray-700 mb-6 max-w-2xl mx-auto">
+            <p className="text:md md:text-lg text-gray-700 mb-6 max-w-2xl mx-auto">
               Pentru rezervări la restaurant sau servicii de catering, 
               contactează-ne direct sau vizitează restaurantul nostru.
             </p>

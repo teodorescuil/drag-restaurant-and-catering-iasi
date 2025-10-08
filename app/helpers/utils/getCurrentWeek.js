@@ -2,6 +2,11 @@ export const getCurrentWeek = () => {
     const today = new Date();
     // const currentDate = (today.toLocaleDateString('ro-RO', options));
     const currentDayName = today.toLocaleDateString('ro-RO', { weekday: 'long' });
+    const currentDayAsDate = today.toLocaleDateString("ro-RO", {
+        day: "2-digit",
+        month: "2-digit",
+        year: "numeric",
+    });
     
     // Calculate current week
     const startOfWeek = new Date(today);
@@ -11,5 +16,5 @@ export const getCurrentWeek = () => {
     
     const weekString = `${startOfWeek.toLocaleDateString('ro-RO', { month: 'long', day: 'numeric' })} - ${endOfWeek.toLocaleDateString('ro-RO', { month: 'long', day: 'numeric' })}`;
 
-    return {currentDayName, weekString};
+    return {currentDayName, currentDayAsDate, weekString};
 }

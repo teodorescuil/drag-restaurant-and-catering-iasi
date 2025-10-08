@@ -1,7 +1,10 @@
-import {Phone} from 'lucide-react';
-import SlideShow from "../components/slideshow/Slideshow";
+'use client';
 import { eventsTypes } from "../helpers/constants/events";
+import Events from "../components/events/events-detailed";
+import useIsMobile from "../helpers/hooks/useIsMobile";
+
 export default function EventsDetailed() {
+  const isMobile = useIsMobile();
   return (
     <section className="mt-20 py-20 bg-gradient-to-br from-cream via-white to-cream">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -18,77 +21,15 @@ export default function EventsDetailed() {
         </div>
 
         {/* Event Types */}
-        <div className="space-y-20">
+        <div className="space-y-4 md:space-y-20">
           {eventsTypes.map((event, index) => (
-            <div key={event.id} id={event.slug} className={`scroll-mt-30 grid lg:grid-cols-2 gap-12 items-start ${index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''}`}>
-              {/* Images */}
-              <SlideShow images={event.gallery} />
-
-              {/* Content */}
-              <div className={`space-y-6 ${index % 2 === 1 ? 'lg:col-start-1 lg:row-start-1' : ''}`}>
-                <h2 className="text-4xl font-playfair font-bold text-charcoal">{event.name}</h2>
-                <p className="text-lg text-gray-700 mb-2">{event.description}</p>
-                <div className="bg-cream/70 rounded-xl p-4">
-                  <p className="text-gray-600 leading-relaxed text-md text-justify">{event.detailedDescription}</p>
-                </div>
-
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div className="">
-                    <h4 className="font-bold text-charcoal mb-3">Servicii Incluse:</h4>
-                    <ul className="space-y-2">
-                      {event.features.map((feature, featureIndex) => (
-                        <li key={featureIndex} className="text-gray-600 text-sm flex items-start">
-                          <i className="fas fa-check text-gold mr-2 mt-0.5 text-xs"></i>
-                          {feature}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  <div className="">
-                    <h4 className="font-bold text-charcoal mb-3">Pachetul Include:</h4>
-                    <ul className="grid gap-4">
-                      {event.included.map((item, itemIndex) => (
-                        <li key={itemIndex} className="text-gray-700 text-sm flex items-start">
-                          <i className="fas fa-star text-gold mr-2 mt-0.5 text-xs"></i>
-                          {item}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-
-                {/* <div className="space-y-3">
-                  <div className="flex justify-between items-center">
-                    <span className="text-gray-600">Capacitate:</span>
-                    <span className="font-semibold text-charcoal">{event.capacity}</span>
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <span className="text-gray-600">Durată:</span>
-                    <span className="font-semibold text-charcoal">{event.duration}</span>
-                  </div>
-                  <div className="flex justify-between items-center pt-2 border-t border-gold/20">
-                    <span className="text-lg font-bold text-charcoal">Preț:</span>
-                    <span className="text-xl font-bold text-gold">începând de la {event.priceRange}</span>
-                  </div>
-                </div> */}
-                <nav className="flex flex-row justify-start">
-                  <a 
-                    href="tel:0754824625" 
-                    className="secondary"
-                  >
-                    <Phone className="mr-3 w-5 h-5" fill="white" />
-                    Sună Acum
-                  </a>
-                </nav>
-              </div>
-            </div>
+            <Events key={index} index={index} event={event} isMobile={isMobile} />
           ))}
         </div>
 
         {/* Contact Section */}
         <div className="mt-16 text-center">
-          <h3 className="text-3xl font-playfair font-bold text-charcoal mb-6">
+          <h3 className="text-2xl md:text-3xl font-playfair font-bold text-charcoal mb-6">
             Următorul eveniment vă așteaptă la <span className="text-gold">Drag Catering</span>
           </h3>
           <p className="text-gray-600 mb-8 max-w-2xl mx-auto">

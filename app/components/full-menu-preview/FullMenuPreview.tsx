@@ -47,20 +47,20 @@ export default function FullMenuPreview() {
         </div>
 
         <div className="text-center bg-white rounded-2xl p-12 shadow-lg">
-          <div className="max-w-2xl mx-auto">
+          <div className="max-w-3xl mx-auto">
 
             {/* Icon decorativ → aria-hidden pentru a nu polua cititoarele de ecran */}
 
-            <i className="fas fa-utensils text-6xl text-gold mb-6" aria-hidden="true"></i>
+            {/* <i className="fas fa-utensils text-6xl text-gold mb-6" aria-hidden="true"></i> */}
 
-            <h3 className="text-2xl font-playfair font-semibold text-charcoal mb-4">
+            {/* <h3 className="text-xl md:text-2xl font-playfair font-semibold text-charcoal mb-4">
               Explorează meniul
-            </h3>
+            </h3> */}
 
-            <p className="text-gray-600 mb-8">
+            {/* <p className="text-sm md:text-md text-gray-600 mb-8">
               Descoperă selecția noastră completă, organizată pe categorii.<br/>
               Preparatele sunt gătite zilnic din ingrediente proaspete.
-            </p>
+            </p> */}
 
             {/* Legături adânci către secțiuni – utile pentru SEO & UX */}
             <nav aria-label="Categorii meniu" className="mb-8">

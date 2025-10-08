@@ -8,8 +8,8 @@ export const outlineButtonWithScale = outlineButton.concat(" transition-all dura
 
 /*---------TEXTS------------*/
 export const sectionTopTitle = "text-gold font-semibold text-sm uppercase tracking-wider";
-export const sectionTitle = "text-4xl md:text-5xl font-playfair font-bold text-charcoal mb-4";
-export const sectionSubtitle = "text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed";
+export const sectionTitle = "text-3xl md:text-5xl font-playfair font-bold text-charcoal mb-4";
+export const sectionSubtitle = "text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed";
 /*---------TEXTS------------*/
 
 export const sectionWrapper = "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8";

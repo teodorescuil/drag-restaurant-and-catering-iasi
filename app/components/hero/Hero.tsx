@@ -49,12 +49,12 @@ export default function Hero() {
           {seoTitle} 
         </h1>
         {/* H1 unic și descriptiv */}
-        <p className="text-5xl md:text-7xl font-playfair font-bold mb-6 leading-tight drop-shadow-2xl">
+        <p className="text-4xl md:text-7xl font-playfair font-bold mb-6 leading-tight drop-shadow-2xl">
           Farfurii cu <span className="text-gold font-dancing drop-shadow-2xl">Drag</span> și Pasiune 
         </p>
         
         {/* Subtitlu ca H2 pentru ierarhie semantică */}
-        <h2 className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed drop-shadow-lg">
+        <h2 className="text-lg md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed drop-shadow-lg">
           Fiecare fel de mâncare este o capodoperă creată cu drag și devotament. De la aperitive frumos aranjate la feluri principale impresionante, punem suflet în fiecare preparat pentru a crea artă culinară care încântă atât ochiul, cât și papilele gustative.
         </h2>
 

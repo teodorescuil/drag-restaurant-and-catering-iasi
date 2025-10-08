@@ -65,17 +65,17 @@ export default function ContactDetailed() {
             <div className="inline-block bg-gold/10 px-6 py-2 rounded-full mb-6">
               <span className="text-gold font-semibold text-sm uppercase tracking-wider">Contactează-ne</span>
             </div>
-            <h1 className="text-5xl md:text-6xl font-playfair font-bold text-charcoal mb-6">
+            <h1 className="text-4xl md:text-5xl font-playfair font-bold text-charcoal mb-6">
               Contact <span className="text-gold font-dancing">Drag Catering</span> Iași
             </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+            <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-8">
               Suntem aici să transformăm visele tale culinare în realitate. Contactează echipa Drag Catering din Iași pentru o consultanță personalizată și o ofertă adaptată nevoilor tale pentru evenimente și restaurant.
             </p>
           </header>
 
           {/* Direct Contact - Full Width */}
-          <section className="bg-white rounded-3xl p-8" itemScope itemType="https://schema.org/Organization">
-            <h2 className="text-3xl font-playfair font-bold text-charcoal mb-8 text-center">Informații Contact <span className="text-gold">Drag Catering</span></h2>
+          <section className="bg-white rounded-3xl px-8" itemScope itemType="https://schema.org/Organization">
+            <h2 className="text-2xl md:text-3xl font-playfair font-bold text-charcoal mb-8 text-center">Informații Contact <span className="text-gold">Drag Catering</span></h2>
 
             <address className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 not-italic">
               <article className="text-center">
@@ -125,7 +125,7 @@ export default function ContactDetailed() {
           {/* Process Section */}
           <section className="bg-gradient-to-r from-gold/10 to-gold/5 rounded-3xl p-12">
             <div className="text-center mb-12">
-              <h3 className="text-3xl font-playfair font-bold text-charcoal mb-4">
+              <h3 className="text-2xl md:text-3xl font-playfair font-bold text-charcoal mb-4">
                 Procesul Nostru de Organizare
               </h3>
               <p className="text-gray-600 max-w-2xl mx-auto">
@@ -159,7 +159,7 @@ export default function ContactDetailed() {
 
                   {/* Social Media Section */}
           <section className="bg-white rounded-3xl p-8">
-            <h2 className="text-3xl font-playfair font-bold text-charcoal mb-8 text-center">
+            <h2 className="text-2xl md:text-3xl font-playfair font-bold text-charcoal mb-8 text-center">
               Urmărește-ne pe <span className="text-gold">Social Media</span>
             </h2>
             <div className="flex justify-center">
@@ -169,7 +169,7 @@ export default function ContactDetailed() {
 
           {/* Map Section */}
           <section className="bg-white rounded-3xl p-8">
-            <h2 className="text-3xl font-playfair font-bold text-charcoal mb-8 text-center">Locația <span className="text-gold">Drag Catering</span> în Iași</h2>
+            <h2 className="text-2xl md:text-3xl font-playfair font-bold text-charcoal mb-8 text-center">Locația <span className="text-gold">Drag Catering</span> în Iași</h2>
             <div className="grid lg:grid-cols-3 gap-8 items-center">
               {/* Google Maps Embed */}
               <figure className="lg:col-span-2">

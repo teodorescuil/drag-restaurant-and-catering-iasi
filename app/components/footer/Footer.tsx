@@ -33,14 +33,15 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Linkuri rapide */}
+          <div className="grid grid-cols-2 gap-8">
+            {/* Linkuri rapide */}
           <nav aria-label="Linkuri rapide">
             <h3 className="font-semibold text-white mb-4">Linkuri rapide</h3>
             <ul className="space-y-2 text-gray-300">
               {pages.map((page) => (
                 <li key={page.section}>
                   <Link
-				  	prefetch={false}
+				  	        prefetch={false}
                     href={`/${page.section}`}
                     className="hover:text-gold/80 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold/60 rounded-sm"
                   >
@@ -107,6 +108,7 @@ export default function Footer() {
                 </div>
               </div>
             </address>
+          </div>
           </div>
         </div>
 

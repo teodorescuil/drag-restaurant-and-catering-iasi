@@ -3,8 +3,8 @@ import { useState, useEffect } from 'react';
 import { Phone } from "lucide-react"
 import {sectionTopTitle, sectionWrapper, sectionTitle, sectionSubtitle} from '../../helpers/constants/styles';
 import {days} from '../../helpers/constants/weekly-menu';
-import WeekSelector from './components/WeekSelector';
 import MenuByDay from './components/MenuByDay'
+import useIsMobile from '@/app/helpers/hooks/useIsMobile';
 
 type Course = {
   type: string;
@@ -18,17 +18,17 @@ type Course = {
 
 type Props = {
   currentDayName: string;
-  currentWeek: string;
   foodForAllCurrentWeek: Course[][];
+  currentDayAsDate: string;
 };
 
-export default function DailyMenu({currentDayName, currentWeek, foodForAllCurrentWeek}: Props) {
-  const [selectedDay, setSelectedDay] = useState(currentDayName);
+export default function DailyMenu({currentDayName, currentDayAsDate, foodForAllCurrentWeek}: Props) {
   const [menuByDay, setMenuByDay] =  useState<Course[]>([]);
+  const isMobile = useIsMobile();
 
   useEffect(() => {
-      setMenuByDay(foodForAllCurrentWeek?.[days.map(day => day.toLowerCase()).indexOf(selectedDay.toLowerCase())]);
-  }, [selectedDay, foodForAllCurrentWeek]);
+      setMenuByDay(foodForAllCurrentWeek?.[days.map(day => day.toLowerCase()).indexOf(currentDayName.toLowerCase())]);
+  }, [currentDayName, foodForAllCurrentWeek]);
 
   return (
     <section id="daily-menu" className="py-20">
@@ -45,27 +45,23 @@ export default function DailyMenu({currentDayName, currentWeek, foodForAllCurren
               </p>
           </div>
 
-        {/* Week and day Selector */}
-        <WeekSelector setSelectedDay={setSelectedDay} selectedDay={selectedDay} currentWeek={currentWeek} />
-        
-        <div className="px-5 py-5 flex flex-col justify-center items-center bg-cream/70">
+        <div className="mt-8 px-5 py-5 flex flex-col justify-center items-center bg-cream/70">
           {menuByDay?.length ? (
               <>
               <div className="mb-8">
-                <div className="text-center">
-                    <div className="px-8 py-3">
-                        <span className="text-gold font-bold text-2xl" data-price="35">Preț: 35 lei</span>
-                    </div>
+                <div className="px-8 py-3 text-center">
+                    <span className="text-gold font-bold text-2xl" data-price="35">Preț: 35 lei</span>
                 </div>
-                <h3 className="text-3xl font-playfair font-semibold text-center text-charcoal mb-4">
-                    Meniul de {selectedDay.toLowerCase() === currentDayName.toLowerCase() ? "Azi" : days[days.indexOf(selectedDay)]}
+                <h3 className="text-3xl font-playfair font-semibold text-center text-charcoal">
+                    Meniul de Azi
                 </h3>
+                <h4 className="text-center text-gray-500">{currentDayAsDate}</h4>
               </div>
               {/*Food images*/}
-              <MenuByDay menu={menuByDay} />
+              <MenuByDay menu={menuByDay} isMobile={isMobile} />
             </>
           ) : (
-            <p className="text-gray-600">Nu există meniu pentru această zi.</p>
+            <p className="text-gray-600">Te așteptăm luni cu noi selecții proaspete!</p>
           )}
         </div>
         

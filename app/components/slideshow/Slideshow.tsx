@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import { ChevronLeft, ChevronRight, X } from 'lucide-react';
 
-type GalleryImage = {
+export type GalleryImage = {
   alt: string;
   title?: string;
   src: string;
