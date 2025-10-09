@@ -33,7 +33,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 gap-8">
+          <div className="grid grid-cols-2 gap-8 md:col-span-2">
             {/* Linkuri rapide */}
           <nav aria-label="Linkuri rapide">
             <h3 className="font-semibold text-white mb-4">Linkuri rapide</h3>
