@@ -42,33 +42,36 @@ function MenuCard({
   const panelId = `menu-panel-${idx}`;
 
   // Only used on mobile (compact row with arrow + type + name)
-  const MobileHeader = () => (
-    <button
-      type="button"
-      onClick={() => setIsOpen((s) => !s)}
-      className="flex items-center w-4xl px-4 py-3 text-left gap-3"
-      aria-expanded={isOpen}
-      aria-controls={panelId}
-    >
-      {isOpen ? (
-        <ChevronDown className="w-5 h-5 shrink-0" aria-hidden="true" />
-      ) : (
-        <ChevronRight className="w-5 h-5 shrink-0" aria-hidden="true" />
-      )}
+ const MobileHeader = () => (
+  <button
+    type="button"
+    onClick={() => setIsOpen((s) => !s)}
+    className="flex w-full items-start px-4 py-3 text-left gap-3"
+    aria-expanded={isOpen}
+    aria-controls={panelId}
+  >
+    {isOpen ? (
+      <ChevronDown className="w-5 h-5 shrink-0" aria-hidden="true" />
+    ) : (
+      <ChevronRight className="w-5 h-5 shrink-0" aria-hidden="true" />
+    )}
 
-      {/* Show type + name ONLY when closed */}
-      {!isOpen && (
-        <span className="flex items-center gap-2 w-">
-          <span className="text-gold text-sm font-medium whitespace-nowrap">
-            {course.type}
-          </span>
-          <span className="text-base font-semibold text-charcoal">
-            {course.name}
-          </span>
+    {/* Show type + name ONLY when closed */}
+    {!isOpen && (
+      <span className="flex flex-col w-full min-w-0">
+        <span className="text-gold text-sm font-medium">
+          {course.type}
         </span>
-      )}
-    </button>
-  );
+
+        <span className="text-base font-semibold text-charcoal whitespace-normal break-words">
+          {course.name}
+        </span>
+      </span>
+    )}
+  </button>
+);
+
+
 
   // Card body content (shared between desktop & mobile-open)
   const CardBody = ({ withInnerLink }: { withInnerLink: boolean }) => (

@@ -61,9 +61,9 @@ export default function Event({ event, isMobile }: EventProps) {
           />
         </div>
 
-        <div className="absolute top-4 right-4 bg-gold text-white px-3 py-1 rounded-full text-sm font-semibold">
+        {/* <div className="absolute top-4 right-4 bg-gold text-white px-3 py-1 rounded-full text-sm font-semibold">
           {event.priceRange}
-        </div>
+        </div> */}
       </div>
 
       <div className="px-8 pt-8">
@@ -84,7 +84,7 @@ export default function Event({ event, isMobile }: EventProps) {
       <div className="mt-auto flex justify-center border-t border-gray-200 mx-2 p-8">
         <Link href={event.href} className="labelButton">
           <Info className="w-5 h-5 mr-3" aria-hidden="true" />
-          Solicită Detalii
+          Vezi detalii
         </Link>
       </div>
     </>

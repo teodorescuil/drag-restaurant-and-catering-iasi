@@ -12,7 +12,7 @@ export default function Home() {
   const webPageJsonLd = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Drag Catering – Catering și restaurant în Iași",
+    "name": "Drag Restaurant & Catering – Catering și restaurant în Iași",
     "url": "https://www.dragcatering.ro/",
     "description": "Catering și restaurant în Iași cu preparate românești pentru nunți, botezuri, aniversări și mese festive.",
     "inLanguage": "ro-RO",
@@ -24,7 +24,7 @@ export default function Home() {
     },
     "publisher": {
       "@type": "Organization",
-      "name": "Drag Catering",
+      "name": "Drag Restaurant & Catering",
       "url": "https://www.dragcatering.ro",
       "logo": {
         "@type": "ImageObject",

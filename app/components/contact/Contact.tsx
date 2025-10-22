@@ -10,7 +10,7 @@ export default function Contact() {
               id="contact-heading"
               className="text-4xl md:text-5xl font-playfair font-bold mb-4"
             >
-              Contact <span className="text-gold">Drag Catering</span> Iași
+              Contact <span className="text-gold">Drag Restaurant & Catering</span> Iași
             </h2>
             <p className="text-lg text-gray-300 max-w-2xl mx-auto">
               Gata să faci evenimentul tău memorabil? Contactează specialiștii noștri din Iași pentru evenimente de neuitat.
@@ -22,7 +22,7 @@ export default function Contact() {
           <article className="space-y-8">
             <div className="bg-white/5 rounded-2xl p-8 backdrop-blur-sm">
               <h3 className="text-2xl font-playfair font-semibold mb-6 text-gold">
-                  Contactează Drag Catering
+                  Contactează Drag Restaurant & Catering
                 </h3>
               <div className="space-y-6">
                 {/* Phone */}
@@ -33,13 +33,13 @@ export default function Contact() {
                   <div>
                     <h4 className="font-semibold text-lg">Telefon Restaurant & Catering</h4>
                     <a 
-                      href="tel:+40754824625" 
+                      href="tel:+40741664241" 
                       className="text-gold hover:text-gold/80 transition-colors duration-200 text-xl font-medium"
                       itemProp="telephone"
-                      aria-label="Sună la Drag Catering Iași"
+                      aria-label="Sună la Drag Restaurant & Catering Iași"
                       title="Apelează pentru rezervări și comenzi catering"
                     >
-                      +40 754 824 625
+                      +40 741 664 241
                     </a>
                   </div>
                 </div>
@@ -50,15 +50,15 @@ export default function Contact() {
                       <Mail className="w-5 h-5" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-lg">Email Drag Catering Iași</h4>
+                    <h4 className="font-semibold text-lg">Email Drag Restaurant & Catering Iași</h4>
                     <a 
-                      href="mailto:info@dragcatering.ro?subject=Solicitare%20Catering%20Iași" 
+                      href="mailto:dragcatering@gmail.com?subject=Solicitare%20Catering%20Iași" 
                       className="text-gold hover:text-gold/80 transition-colors duration-200"
                       itemProp="email"
                       aria-label="Trimite email pentru oferte catering"
                       title="Scrie-ne pentru oferte personalizate de catering"
                     >
-                      info@dragcatering.ro
+                      dragcatering@gmail.com
                     </a>
                   </div>
                 </div>
@@ -85,9 +85,9 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-lg">Program Restaurant</h4>
-                    <div className="text-gray-300 text-sm" itemProp="openingHours" content="Mo-Th 10:00-22:00, Fr-Su 10:00-00:00">
-                      <p><time>Luni - Joi: 10:00 - 22:00</time></p>
-                      <p><time>Vineri - Duminică: 10:00 - 00:00</time></p>
+                    <div className="text-gray-300 text-sm" itemProp="openingHours" content="Mo-Th 10:00-21:00, Fr-Su 10:00-22:00">
+                      <p><time>Luni - Joi: 10:00 - 21:00</time></p>
+                      <p><time>Vineri - Duminică: 10:00 - 22:00</time></p>
                     </div>
                   </div>
               </div>
@@ -116,7 +116,7 @@ export default function Contact() {
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Harta Restaurant Drag Catering Iași - Bulevardul Poitiers 12"
+                  title="Harta Restaurant Drag Restaurant & Catering Iași - Bulevardul Poitiers 12"
                   aria-label="Hartă interactivă cu locația restaurantului din Iași"
                 />
               </div>

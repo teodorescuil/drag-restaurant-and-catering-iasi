@@ -109,35 +109,38 @@ function CourseDropdown({
 
   // Closed header (mobile) – pill with arrow + type + name
   const MobileHeader = () => (
-    <button
-      type="button"
-      onClick={() => setOpen((s) => !s)}
-      className={`relative w-full bg-white rounded-full px-6 py-3 text-left ${isMobile && !open && 'shadow-lg'}`}
-      aria-expanded={open}
-      aria-controls={panelId}
-    >
-      {/* Arrow out of flow so text has full width */}
-      <span className="absolute left-3 top-1/2 -translate-y-1/2 inline-flex items-center justify-center w-7 h-7 rounded-full bg-neutral-100 shadow-sm">
-        {open ? (
-          <ChevronDown className="w-4 h-4" aria-hidden="true" />
-        ) : (
-          <ChevronRight className="w-4 h-4" aria-hidden="true" />
-        )}
-      </span>
+  <button
+    type="button"
+    onClick={() => setOpen((s) => !s)}
+    className={`relative w-full bg-white rounded-full px-6 py-3 text-left items-start ${isMobile && !open && 'shadow-lg'}`}
+    aria-expanded={open}
+    aria-controls={panelId}
+  >
+    {/* Arrow out of flow so text has full width */}
+    <span className="absolute left-3 top-1/2 -translate-y-1/2 inline-flex items-center justify-center w-7 h-7 rounded-full bg-neutral-100 shadow-sm">
+      {open ? (
+        <ChevronDown className="w-4 h-4" aria-hidden="true" />
+      ) : (
+        <ChevronRight className="w-4 h-4" aria-hidden="true" />
+      )}
+    </span>
 
-      {/* Show type + name ONLY when closed */}
-      {!open && (
-        <span className="block pl-10 min-w-0">
-          <span className="text-gold text-sm font-medium align-middle">
+    {/* Show type + name ONLY when closed */}
+    {!open && (
+      <span className="block pl-10 min-w-0">
+        <span className="flex flex-col min-w-0">
+          <span className="text-gold text-sm font-medium">
             {course.type}
           </span>
-          <span className="ml-2 align-middle text-base font-medium text-charcoal truncate">
+          <span className="mt-0.5 text-base font-medium text-charcoal whitespace-normal break-words">
             {course.name}
           </span>
         </span>
-      )}
-    </button>
-  );
+      </span>
+    )}
+  </button>
+);
+
 
   // The full card content
   const Card = () => (

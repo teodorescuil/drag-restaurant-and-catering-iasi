@@ -51,7 +51,7 @@ export default function Event({ index, event, isMobile }: EventProps) {
 
    // The full card content (without the big title on mobile-open)
   const CardContent = () => (
-    <div key={event.id} id={event.slug} className={`p-4 scroll-mt-30 grid lg:grid-cols-2 gap-2 items-start ${index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''}`}>
+    <div key={event.id} id={event.slug} className={`p-4 scroll-mt-30 grid lg:grid-cols-2 gap-6 items-start ${index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''}`}>
       {/* Images */}
       <SlideShow images={event.gallery} />
 

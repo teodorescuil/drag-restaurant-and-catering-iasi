@@ -4,12 +4,12 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Termeni și condiții",
   description:
-    "Termenii și condițiile de utilizare a site-ului Drag Catering și de furnizare a serviciilor de catering și restaurant în Iași.",
+    "Termenii și condițiile de utilizare a site-ului Drag Restaurant & Catering și de furnizare a serviciilor de catering și restaurant în Iași.",
   alternates: { canonical: "/termeni-si-conditii" },
   openGraph: {
-    title: "Termeni și condiții | Drag Catering",
+    title: "Termeni și condiții | Drag Restaurant & Catering",
     description:
-      "Termenii și condițiile pentru utilizarea site-ului și comandarea serviciilor Drag Catering din Iași.",
+      "Termenii și condițiile pentru utilizarea site-ului și comandarea serviciilor Drag Restaurant & Catering din Iași.",
     url: "https://www.dragcatering.ro/termeni-si-conditii",
     type: "article",
   },
@@ -25,7 +25,7 @@ export default function TermsPage() {
     url: "https://www.dragcatering.ro/termeni-si-conditii",
     inLanguage: "ro-RO",
     description:
-      "Termenii și condițiile pentru utilizarea site-ului și comandarea serviciilor Drag Catering.",
+      "Termenii și condițiile pentru utilizarea site-ului și comandarea serviciilor Drag Restaurant & Catering.",
   };
 
   const breadcrumbJsonLd = {
@@ -54,18 +54,18 @@ export default function TermsPage() {
             Prezenta pagină stabilește termenii și condițiile de utilizare a site-ului{" "}
             <strong>www.dragcatering.ro</strong> și a serviciilor oferite de
             <br />
-            <strong>Drag Catering SRL</strong> (denumită în continuare „Furnizorul”). Prin accesarea sau utilizarea
+            <strong>Drag Restaurant & Catering SRL</strong> (denumită în continuare „Furnizorul”). Prin accesarea sau utilizarea
             acestui site, respectiv prin plasarea unei comenzi, acceptați acești termeni.
             <br />Vă rugăm să îi citiți cu atenție.
           </p>
 
           <h2 className="mt-4 font-medium text-lg underline">1. Datele companiei</h2>
           <p>
-            <strong>Drag Catering SRL</strong> <br />
+            <strong>Drag Restaurant & Catering SRL</strong> <br />
             Sediu social: <em>Bulevardul Poitiers 12, Iași 700671, România</em> <br />
             CUI: <em>TODO: CUI</em> &nbsp;|&nbsp; Nr. Reg. Com.: <em>TODO</em> <br />
-            Telefon: <a href="tel:+40754824625">+40 754 824 625</a> &nbsp;|&nbsp; E-mail:{" "}
-            <a href="mailto:info@dragcatering.ro">info@dragcatering.ro</a>
+            Telefon: <a href="tel:+40741664241">+40 741 664 241</a> &nbsp;|&nbsp; E-mail:{" "}
+            <a href="mailto:dragcatering@gmail.com">dragcatering@gmail.com</a>
           </p>
 
           <h2 className="mt-4 font-medium text-lg underline">2. Definiții</h2>
@@ -158,7 +158,7 @@ export default function TermsPage() {
 
           <h2 className="mt-4 font-medium text-lg underline">11. Drepturi de proprietate intelectuală</h2>
           <p>
-            Conținutul Site-ului (texte, imagini, logo-uri, elemente de design) aparține Drag Catering SRL și/sau partenerilor
+            Conținutul Site-ului (texte, imagini, logo-uri, elemente de design) aparține Drag Restaurant & Catering SRL și/sau partenerilor
             și este protejat de legislația privind drepturile de autor. Este interzisă copierea, distribuirea sau utilizarea
             acestuia fără acordul prealabil scris al deținătorilor drepturilor.
           </p>
@@ -178,8 +178,8 @@ export default function TermsPage() {
           <h2 className="mt-4 font-medium text-lg underline">14. Contact</h2>
           <p>
             Pentru întrebări sau sesizări privind Termenii și condițiile: <br />
-            <strong>Drag Catering SRL</strong> – <a href="mailto:info@dragcatering.ro">info@dragcatering.ro</a> ·{" "}
-            <a href="tel:+40754824625">+40 754 824 625</a>
+            <strong>Drag Restaurant & Catering SRL</strong> – <a href="mailto:dragcatering@gmail.com">dragcatering@gmail.com</a> ·{" "}
+            <a href="tel:+40741664241">+40 741 664 241</a>
           </p>
         </div>
       </section>

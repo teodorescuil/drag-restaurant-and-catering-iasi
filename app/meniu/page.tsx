@@ -4,10 +4,10 @@ import Link from 'next/link';
 import {Phone} from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Meniu Complet Drag Catering - Restaurant și Catering Iași | Preparate Tradiționale Românești',
-  description: 'Descoperă meniul complet Drag Catering din Iași cu preparate tradiționale românești și internaționale. Servicii de restaurant și catering premium pentru evenimente speciale.',
+  title: 'Meniu Complet Drag Restaurant & Catering - Restaurant și Catering Iași | Preparate Tradiționale Românești',
+  description: 'Descoperă meniul complet Drag Restaurant & Catering din Iași cu preparate tradiționale românești și internaționale. Servicii de restaurant și catering premium pentru evenimente speciale.',
   keywords: [
-    'meniu drag catering iași',
+    'meniu Drag Restaurant & Catering iași',
     'restaurant iași meniu',
     'catering meniu complet',
     'preparate tradiționale iași', 
@@ -20,25 +20,25 @@ export const metadata: Metadata = {
   ].join(', '),
   
   openGraph: {
-    title: 'Meniu Complet Drag Catering - Preparate Premium Iași',
+    title: 'Meniu Complet Drag Restaurant & Catering - Preparate Premium Iași',
     description: 'Explorează varietatea de preparate autentice din meniul nostru complet. Bucătărie tradițională românească și internațională în Iași.',
     type: 'website',
     locale: 'ro_RO',
     url: 'https://www.dragcatering.ro/meniu',
-    siteName: 'Drag Catering',
+    siteName: 'Drag Restaurant & Catering',
     images: [
       {
         url: '/og-images/meniu-drag-catering.jpg',
         width: 1200,
         height: 630,
-        alt: 'Meniu Complet Drag Catering - Restaurant și Catering Iași',
+        alt: 'Meniu Complet Drag Restaurant & Catering - Restaurant și Catering Iași',
       },
     ],
   },
   
   twitter: {
     card: 'summary_large_image',
-    title: 'Meniu Complet Drag Catering - Preparate Premium Iași',
+    title: 'Meniu Complet Drag Restaurant & Catering - Preparate Premium Iași',
     description: 'Explorează varietatea de preparate autentice din meniul nostru complet. Bucătărie tradițională românească și internațională.',
     images: ['/og-images/meniu-drag-catering.jpg'],
   },
@@ -72,13 +72,13 @@ export default function FullMenu() {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Menu",
-    "name": "Meniu Complet Drag Catering",
+    "name": "Meniu Complet Drag Restaurant & Catering",
     "description": "Meniul complet al restaurantului și serviciilor de catering Drag din Iași, cu preparate tradiționale românești și internaționale",
     "inLanguage": "ro-RO",
     "url": "https://www.dragcatering.ro/meniu",
     "provider": {
       "@type": "Restaurant",
-      "name": "Drag Catering",
+      "name": "Drag Restaurant & Catering",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Strada Exemplu 123",
@@ -87,7 +87,7 @@ export default function FullMenu() {
         "postalCode": "700000",
         "addressCountry": "RO"
       },
-      "telephone": "+40754824625",
+      "telephone": "+40741664241",
       "url": "https://www.dragcatering.ro",
       "servesCuisine": ["Romanian", "Traditional", "International", "Italian"],
       "priceRange": "$$",
@@ -148,110 +148,110 @@ export default function FullMenu() {
   };
 
   // Array cu toate categoriile de produse pentru grid
-  const categories = [
-    {
-      icon: "🍲",
-      title: "Ciorbe",
-      bg: "from-orange-50 to-orange-100 border-orange-200",
-      description: "Ciorbă de pui, burtă, văcuță, legume, fasole, perișoare, rădăuțeană"
-    },
-    {
-      icon: "🥟",
-      title: "Aperitive",
-      bg: "from-green-50 to-green-100 border-green-200",
-      description: "Cremă de brânză, pate de pui, salată de vinete, hummus"
-    },
-    {
-      icon: "🥗",
-      title: "Salate",
-      bg: "from-emerald-50 to-emerald-100 border-emerald-200",
-      description: "Salată grecească, cu ton, asortată, de varză, de sfeclă cu hrean"
-    },
-    {
-      icon: "🍝",
-      title: "Paste",
-      bg: "from-yellow-50 to-yellow-100 border-yellow-200",
-      description: "Spaghetti Carbonara și alte specialități"
-    },
-    {
-      icon: "🍖",
-      title: "Platouri Calde",
-      bg: "from-red-50 to-red-100 border-red-200",
-      description: "Platoul Gurmandului, Platou Pui, Platou Drag"
-    },
-    {
-      icon: "🐟",
-      title: "Preparate din Pește",
-      bg: "from-blue-50 to-blue-100 border-blue-200",
-      description: "Hamsii, Somon la grătar, Păstrăv"
-    },
-    {
-      icon: "🍗",
-      title: "Preparate din Pui",
-      bg: "from-amber-50 to-amber-100 border-amber-200",
-      description: "Piept de pui, pulpe la grătar, pui copt lent, șnițel, crispy, coaste, kebab"
-    },
-    {
-      icon: "🥩",
-      title: "Carne de Porc, Vită și Miel",
-      bg: "from-rose-50 to-rose-100 border-rose-200",
-      description: "Ceafă de porc, cârnați, aripioare, antricot de vită, fălcuțe de vițel, pastramă de miel, tochitură moldovenească"
-    },
-    {
-      icon: "🌱",
-      title: "Preparate Vegane",
-      bg: "from-lime-50 to-lime-100 border-lime-200",
-      description: "Nuggets vegani, burger vegan, salată grecească cu brânză vegană"
-    },
-    {
-      icon: "🍔",
-      title: "Burgeri",
-      bg: "from-purple-50 to-purple-100 border-purple-200",
-      description: "Gourmand Burger, Classic Burger, Cheeseburger"
-    },
-    {
-      icon: "🍕",
-      title: "Pizza",
-      bg: "from-indigo-50 to-indigo-100 border-indigo-200",
-      description: "Diavola, Italia, Salami, Margherita, Quattro Formaggi, Quattro Stagioni, Vegetariana, Tonno, Gourmand, Orientală, Rustica, Pollo, Drag, Mortadella, Carnivore, Hawaii, Prosciutto e Funghi, Carbonara, Funghi"
-    },
-    {
-      icon: "🍟",
-      title: "Garnituri",
-      bg: "from-stone-50 to-stone-100 border-stone-200",
-      description: "Piure, cartofi pai, cartofi rustici, barabule coapte, legume la grătar"
-    },
-    {
-      icon: "🥫",
-      title: "Sosuri și Extra",
-      bg: "from-orange-50 to-orange-100 border-orange-200",
-      description: "Sosuri diverse (verdețuri, iaurt, rozé, ketchup etc.), pâinea casei, murături, focaccia"
-    },
-    {
-      icon: "🍰",
-      title: "Deserturi",
-      bg: "from-pink-50 to-pink-100 border-pink-200",
-      description: "Clătite cu ciocolată, clătite cu dulceață, papanași, lava cake, înghețată asortată"
-    },
-    {
-      icon: "🥤",
-      title: "Răcoritoare & Cafea",
-      bg: "from-cyan-50 to-cyan-100 border-cyan-200",
-      description: "Apă, sucuri, limonadă, ceaiuri, cafea, ciocolată caldă"
-    },
-    {
-      icon: "🍺",
-      title: "Băuturi Alcoolice",
-      bg: "from-teal-50 to-teal-100 border-teal-200",
-      description: "Bere (draft, brună, blondă, fără alcool, radler), cocktailuri, whisky, rom, gin, rachiu, lichior"
-    },
-    {
-      icon: "🍷",
-      title: "Crame de Vinuri",
-      bg: "from-violet-50 to-violet-100 border-violet-200",
-      description: "Vinuri albe, roșii, roze, spumante, vinul casei"
-    }
-  ];
+  // const categories = [
+  //   {
+  //     icon: "🍲",
+  //     title: "Ciorbe",
+  //     bg: "from-orange-50 to-orange-100 border-orange-200",
+  //     description: "Ciorbă de pui, burtă, văcuță, legume, fasole, perișoare, rădăuțeană"
+  //   },
+  //   {
+  //     icon: "🥟",
+  //     title: "Aperitive",
+  //     bg: "from-green-50 to-green-100 border-green-200",
+  //     description: "Cremă de brânză, pate de pui, salată de vinete, hummus"
+  //   },
+  //   {
+  //     icon: "🥗",
+  //     title: "Salate",
+  //     bg: "from-emerald-50 to-emerald-100 border-emerald-200",
+  //     description: "Salată grecească, cu ton, asortată, de varză, de sfeclă cu hrean"
+  //   },
+  //   {
+  //     icon: "🍝",
+  //     title: "Paste",
+  //     bg: "from-yellow-50 to-yellow-100 border-yellow-200",
+  //     description: "Spaghetti Carbonara și alte specialități"
+  //   },
+  //   {
+  //     icon: "🍖",
+  //     title: "Platouri Calde",
+  //     bg: "from-red-50 to-red-100 border-red-200",
+  //     description: "Platoul Gurmandului, Platou Pui, Platou Drag"
+  //   },
+  //   {
+  //     icon: "🐟",
+  //     title: "Preparate din Pește",
+  //     bg: "from-blue-50 to-blue-100 border-blue-200",
+  //     description: "Hamsii, Somon la grătar, Păstrăv"
+  //   },
+  //   {
+  //     icon: "🍗",
+  //     title: "Preparate din Pui",
+  //     bg: "from-amber-50 to-amber-100 border-amber-200",
+  //     description: "Piept de pui, pulpe la grătar, pui copt lent, șnițel, crispy, coaste, kebab"
+  //   },
+  //   {
+  //     icon: "🥩",
+  //     title: "Carne de Porc, Vită și Miel",
+  //     bg: "from-rose-50 to-rose-100 border-rose-200",
+  //     description: "Ceafă de porc, cârnați, aripioare, antricot de vită, fălcuțe de vițel, pastramă de miel, tochitură moldovenească"
+  //   },
+  //   {
+  //     icon: "🌱",
+  //     title: "Preparate Vegane",
+  //     bg: "from-lime-50 to-lime-100 border-lime-200",
+  //     description: "Nuggets vegani, burger vegan, salată grecească cu brânză vegană"
+  //   },
+  //   {
+  //     icon: "🍔",
+  //     title: "Burgeri",
+  //     bg: "from-purple-50 to-purple-100 border-purple-200",
+  //     description: "Gourmand Burger, Classic Burger, Cheeseburger"
+  //   },
+  //   {
+  //     icon: "🍕",
+  //     title: "Pizza",
+  //     bg: "from-indigo-50 to-indigo-100 border-indigo-200",
+  //     description: "Diavola, Italia, Salami, Margherita, Quattro Formaggi, Quattro Stagioni, Vegetariana, Tonno, Gourmand, Orientală, Rustica, Pollo, Drag, Mortadella, Carnivore, Hawaii, Prosciutto e Funghi, Carbonara, Funghi"
+  //   },
+  //   {
+  //     icon: "🍟",
+  //     title: "Garnituri",
+  //     bg: "from-stone-50 to-stone-100 border-stone-200",
+  //     description: "Piure, cartofi pai, cartofi rustici, barabule coapte, legume la grătar"
+  //   },
+  //   {
+  //     icon: "🥫",
+  //     title: "Sosuri și Extra",
+  //     bg: "from-orange-50 to-orange-100 border-orange-200",
+  //     description: "Sosuri diverse (verdețuri, iaurt, rozé, ketchup etc.), pâinea casei, murături, focaccia"
+  //   },
+  //   {
+  //     icon: "🍰",
+  //     title: "Deserturi",
+  //     bg: "from-pink-50 to-pink-100 border-pink-200",
+  //     description: "Clătite cu ciocolată, clătite cu dulceață, papanași, lava cake, înghețată asortată"
+  //   },
+  //   {
+  //     icon: "🥤",
+  //     title: "Răcoritoare & Cafea",
+  //     bg: "from-cyan-50 to-cyan-100 border-cyan-200",
+  //     description: "Apă, sucuri, limonadă, ceaiuri, cafea, ciocolată caldă"
+  //   },
+  //   {
+  //     icon: "🍺",
+  //     title: "Băuturi Alcoolice",
+  //     bg: "from-teal-50 to-teal-100 border-teal-200",
+  //     description: "Bere (draft, brună, blondă, fără alcool, radler), cocktailuri, whisky, rom, gin, rachiu, lichior"
+  //   },
+  //   {
+  //     icon: "🍷",
+  //     title: "Crame de Vinuri",
+  //     bg: "from-violet-50 to-violet-100 border-violet-200",
+  //     description: "Vinuri albe, roșii, roze, spumante, vinul casei"
+  //   }
+  // ];
 
   return (
     <>
@@ -287,7 +287,7 @@ export default function FullMenu() {
             
             {/* Keywords naturale pentru context - ascunse vizual dar indexabile */}
             <div className="sr-only" itemProp="keywords">
-              restaurant iași, catering iași, preparate tradiționale, bucătărie românească, meniu restaurant, servicii catering evenimente, drag catering meniu prețuri
+              restaurant iași, catering iași, preparate tradiționale, bucătărie românească, meniu restaurant, servicii catering evenimente, Drag Restaurant & Catering meniu prețuri
             </div>
           </header>
 
@@ -307,8 +307,8 @@ export default function FullMenu() {
               <iframe
                 src="/pdfs/meniu-drag-catering.pdf#toolbar=0"
                 className="w-full h-[calc(100vh-200px)] rounded-xl shadow-lg border-2 border-gray-100"
-                title="Meniu Complet Drag Catering - Preparate și Prețuri Restaurant Iași"
-                aria-label="Meniul complet al restaurantului Drag Catering din Iași cu toate preparatele și prețurile"
+                title="Meniu Complet Drag Restaurant & Catering - Preparate și Prețuri Restaurant Iași"
+                aria-label="Meniul complet al restaurantului Drag Restaurant & Catering din Iași cu toate preparatele și prețurile"
                 loading="lazy"
               />
             </div>
@@ -316,18 +316,18 @@ export default function FullMenu() {
 
           {/* Content Section pentru SEO */}
           <section className="bg-white rounded-3xl p-8 shadow-lg mb-16">
-            <div className="prose max-w-6xl mx-auto flex flex-col justify-center items-center">
-              <h2 className="text-3xl font-playfair font-bold text-charcoal mb-6 text-center">
+            {/* <div className="prose max-w-6xl mx-auto flex flex-col justify-center items-center"> */}
+              {/* <h2 className="text-3xl font-playfair font-bold text-charcoal mb-6 text-center">
                 Categoriile din Meniul Nostru
               </h2>
               <p className="text-gray-700 mb-8 text-lg max-w-3xl leading-relaxed text-center">
-                Meniul complet <span className="text-gold">Drag Catering</span> include o selecție bogată de preparate tradiționale românești
+                Meniul complet <span className="text-gold">Drag Restaurant & Catering</span> include o selecție bogată de preparate tradiționale românești
                 și specialități internaționale, toate pregătite cu ingrediente proaspete și
                 rețete autentice în restaurantul nostru din Iași.
-              </p>
+              </p> */}
               
               {/* Grid cu categorii de preparate */}
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+              {/* <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
                 {categories.map(cat => (
                   <div
                     key={cat.title}
@@ -341,10 +341,10 @@ export default function FullMenu() {
                     </p>
                   </div>
                 ))}
-              </div>
+              </div> */}
 
               {/* Servicii Section */}
-              <div className="mt-12 grid md:grid-cols-2 gap-8">
+              <div className=" grid md:grid-cols-2 gap-8">
                 <div className="bg-gradient-to-r from-gold/10 to-cream/30 p-8 rounded-3xl">
                   <h3 className="text-2xl font-playfair font-bold text-charcoal mb-4 flex items-center">
                     🏪 Servicii Disponibile
@@ -371,18 +371,17 @@ export default function FullMenu() {
 
                 <div className="bg-gradient-to-r from-cream/30 to-gold/10 p-8 rounded-3xl">
                   <h3 className="text-2xl font-playfair font-bold text-charcoal mb-4">
-                    De ce să alegi Drag Catering?
+                    De ce să alegi Drag Restaurant & Catering?
                   </h3>
                   <p className="text-gray-700 leading-relaxed text-justify">
-                    Cu o experiență de peste 15 ani în industria HoReCa din Iași,
-                    echipa noastră de bucătari profesioniști pregătește fiecare preparat cu atenție la detalii,
+                    Echipa noastră de bucătari profesioniști pregătește fiecare preparat cu atenție la detalii,
                     folosind doar ingrediente locale și de calitate superioară.
                     Fie că organizezi o nuntă în Iași, un botez, o zi de naștere,
                     o petrecere corporate sau orice alt eveniment, meniul nostru oferă opțiuni pentru toate gusturile.
                   </p>
                 </div>
               </div>
-            </div>
+            {/* </div> */}
           </section>
 
           {/* Call to Action Section */}
@@ -398,7 +397,7 @@ export default function FullMenu() {
               <Link 
                 href="/contact" 
                 className="primary"
-                aria-label="Contactează Drag Catering pentru rezervări"
+                aria-label="Contactează Drag Restaurant & Catering pentru rezervări"
               >
                 Contactează-ne
               </Link>
@@ -408,7 +407,7 @@ export default function FullMenu() {
                 aria-label="Sună la numărul 0754824625 pentru rezervări"
               >
                 <Phone className="w-5 h-5 mr-3" fill="currentColor" aria-hidden="true" />
-                +40 754 824 625
+                +40 741 664 241
               </a>
             </div>
           </section>

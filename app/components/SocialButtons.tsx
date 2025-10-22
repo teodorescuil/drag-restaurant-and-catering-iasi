@@ -40,13 +40,13 @@ export default function SocialButtons({theme}: {theme?: string}) {
     <div className="flex gap-4 justify-center md:justify-start">
       <SocialLink
         href="https://www.facebook.com/dragcatering"
-        label="Deschide pagina oficială Drag Catering pe Facebook"
+        label="Deschide pagina oficială Drag Restaurant & Catering pe Facebook"
         iconPath="/icons/facebook.svg"
         theme={theme}
       />
       <SocialLink
-        href="https://www.instagram.com/dragcatering/"
-        label="Deschide pagina oficială Drag Catering pe Instagram"
+        href="https://www.instagram.com/dragrestaurant_/"
+        label="Deschide pagina oficială Drag Restaurant & Catering pe Instagram"
         iconPath="/icons/instagram.svg"
         theme={theme}
       />

@@ -18,9 +18,9 @@ export default function Footer() {
               <Link
                 href="/"
                 className="inline-block hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold/60 rounded-sm"
-                aria-label="Pagina principală Drag Catering"
+                aria-label="Pagina principală Drag Restaurant & Catering"
               >
-                <span className="text-gold">Drag</span> Catering
+                <span className="text-gold">Drag</span> Restaurant & Catering
               </Link>
             </h2>
 
@@ -59,22 +59,22 @@ export default function Footer() {
               <p className="flex items-center justify-center md:justify-start">
                 <Phone className="text-gold mr-2 w-4 h-4" aria-hidden="true" />
                 <a
-                  href="tel:+40754824625"
-                  aria-label="Sună Drag Catering la +40 754 824 625"
+                  href="tel:+40741664241"
+                  aria-label="Sună Drag Restaurant & Catering la +40 741 664 241"
                   className="hover:text-gold/80 transition-colors duration-200"
                 >
-                  +40 754 824 625
+                  +40 741 664 241
                 </a>
               </p>
 
               <p className="flex items-center justify-center md:justify-start">
                 <Mail className="text-gold mr-2 w-4 h-4" aria-hidden="true" />
                 <a
-                  href="mailto:info@dragcatering.ro"
-                  aria-label="Trimite email către Drag Catering"
+                  href="mailto:dragcatering@gmail.com"
+                  aria-label="Trimite email către Drag Restaurant & Catering"
                   className="hover:text-gold/80 transition-colors duration-200"
                 >
-                  info@dragcatering.ro
+                  dragcatering@gmail.com
                 </a>
               </p>
 
@@ -86,7 +86,7 @@ export default function Footer() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:text-gold/80 transition-colors duration-200"
-                    aria-label="Vezi locația Drag Catering pe Google Maps"
+                    aria-label="Vezi locația Drag Restaurant & Catering pe Google Maps"
                     title="Deschide locația în Google Maps"
                   >
                     Bulevardul Poitiers 12
@@ -100,10 +100,10 @@ export default function Footer() {
                 <Clock className="text-gold mr-2 w-4 h-4 mt-1" aria-hidden="true" />
                 <div>
                   <div>
-                    L–J <time dateTime="10:00">10:00</time> – <time dateTime="22:00">22:00</time>
+                    L–J <time dateTime="10:00">10:00</time> – <time dateTime="21:00">21:00</time>
                   </div>
                   <div>
-                    V–D <time dateTime="10:00">10:00</time> – <time dateTime="23:59">00:00</time>
+                    V–D <time dateTime="10:00">10:00</time> – <time dateTime="22:00">22:00</time>
                   </div>
                 </div>
               </div>
@@ -113,10 +113,10 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-white/10 pt-8 text-center text-gray-400 text-sm">
-          <p>&copy; {year} Drag Catering. Toate drepturile sunt rezervate.</p>
-		  <Link href="/politica-confidentialitate" className="hover:text-gold/80">Politica de confidențialitate</Link>
+          <p>&copy; {year} Drag Restaurant & Catering. Toate drepturile sunt rezervate.</p>
+		  {/* <Link href="/politica-confidentialitate" className="hover:text-gold/80">Politica de confidențialitate</Link>
 		   {" "}|{" "}
-		  <Link href="/termeni-si-conditii" className="hover:text-gold/80">Termeni și condiții</Link>
+		  <Link href="/termeni-si-conditii" className="hover:text-gold/80">Termeni și condiții</Link> */}
         </div>
       </div>
     </footer>

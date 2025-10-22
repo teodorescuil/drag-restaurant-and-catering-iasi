@@ -76,7 +76,7 @@ export default function Header() {
           >
             <Image
               src="/drag-logo.png"
-              alt="Drag Catering – Restaurant și servicii de catering în Iași"
+              alt="Drag Restaurant & Catering – Restaurant și servicii de catering în Iași"
               className={`
                 ${isScrolled ? 'h-14' : 'h-14 sm:h-16'}
                 w-auto mt-0 mb-0 
@@ -149,9 +149,9 @@ export default function Header() {
             ))}
 
             <a
-              href="tel:+40754824625"
+              href="tel:+40741664241"
               className="block mx-3 mt-4 bg-gold text-white px-6 py-3 rounded-full font-medium text-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gold"
-              aria-label="Hai să discutăm - Drag Catering"
+              aria-label="Hai să discutăm - Drag Restaurant & Catering"
             >
               <Phone className="w-4 h-4 inline-block mr-2" fill="currentColor" aria-hidden="true" />
               Hai să discutăm

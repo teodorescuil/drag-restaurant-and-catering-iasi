@@ -4,12 +4,12 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Politica de confidențialitate",
   description:
-    "Politica de confidențialitate Drag Catering - află cum colectăm, folosim și protejăm datele tale personale atunci când utilizezi site-ul și serviciile noastre.",
+    "Politica de confidențialitate Drag Restaurant & Catering - află cum colectăm, folosim și protejăm datele tale personale atunci când utilizezi site-ul și serviciile noastre.",
   alternates: { canonical: "/politica-confidentialitate" },
   openGraph: {
-    title: "Politica de confidențialitate | Drag Catering",
+    title: "Politica de confidențialitate | Drag Restaurant & Catering",
     description:
-      "Află cum colectăm, folosim și protejăm datele tale personale atunci când utilizezi site-ul și serviciile Drag Catering.",
+      "Află cum colectăm, folosim și protejăm datele tale personale atunci când utilizezi site-ul și serviciile Drag Restaurant & Catering.",
     url: "https://www.dragcatering.ro/politica-confidentialitate",
     type: "article",
   },
@@ -25,7 +25,7 @@ export default function PrivacyPolicyPage() {
     url: "https://www.dragcatering.ro/politica-confidentialitate",
     inLanguage: "ro-RO",
     description:
-      "Politica de confidențialitate a site-ului Drag Catering - cum colectăm, folosim și protejăm datele personale ale utilizatorilor.",
+      "Politica de confidențialitate a site-ului Drag Restaurant & Catering - cum colectăm, folosim și protejăm datele personale ale utilizatorilor.",
   };
 
   const breadcrumbJsonLd = {
@@ -51,16 +51,16 @@ export default function PrivacyPolicyPage() {
 
         <div className="prose prose-neutral max-w-none">
           <p>
-            Această politică de confidențialitate explică modul în care <strong>Drag Catering SRL</strong> colectează, folosește și protejează datele
+            Această politică de confidențialitate explică modul în care <strong>Drag Restaurant & Catering SRL</strong> colectează, folosește și protejează datele
             personale ale utilizatorilor atunci când vizitează site-ul <strong>www.dragcatering.ro</strong> sau folosesc serviciile noastre.
           </p>
 
           <h2 className="mt-4 font-medium text-lg underline">1. Datele de contact ale operatorului</h2>
           <p>
-            Operator: <strong>Drag Catering SRL</strong> <br />
+            Operator: <strong>Drag Restaurant & Catering SRL</strong> <br />
             Adresă: Bulevardul Poitiers 12, Iași 700671, România <br />
-            E-mail: <a href="mailto:info@dragcatering.ro">info@dragcatering.ro</a> <br />
-            Telefon: <a href="tel:+40754824625">+40 754 824 625</a>
+            E-mail: <a href="mailto:dragcatering@gmail.com">dragcatering@gmail.com</a> <br />
+            Telefon: <a href="tel:+40741664241">+40 741 664 241</a>
           </p>
 
           <h2 className="mt-4 font-medium text-lg underline">2. Tipuri de date personale colectate</h2>
@@ -131,8 +131,8 @@ export default function PrivacyPolicyPage() {
           <h2 className="mt-4 font-medium text-lg underline">12. Contact</h2>
           <p>
             Pentru întrebări legate de Politica de confidențialitate, ne poți contacta la{" "}
-            <a href="mailto:info@dragcatering.ro">info@dragcatering.ro</a> sau{" "}
-            <a href="tel:+40754824625">+40 754 824 625</a>.
+            <a href="mailto:dragcatering@gmail.com">dragcatering@gmail.com</a> sau{" "}
+            <a href="tel:+40741664241">+40 741 664 241</a>.
           </p>
         </div>
       </section>

@@ -10,7 +10,7 @@ export default function Hero() {
   const [isVisible, setIsVisible] = useState(false);
 
   // Titlu SEO clar, cu keywords principale (folosit în H1)
-  const seoTitle = 'Drag Catering – catering și restaurant în Iași pentru nunți, botezuri și orice eveniment';
+  const seoTitle = 'Drag Restaurant & Catering – catering și restaurant în Iași pentru nunți, botezuri și orice eveniment';
 
   useEffect(() => {
     setIsVisible(true);
@@ -20,13 +20,13 @@ export default function Hero() {
     <section
       id="home"
       className="relative h-screen flex items-center justify-center overflow-hidden"
-      aria-label="Prezentare Drag Catering"
+      aria-label="Prezentare Drag Restaurant & Catering"
     >
       {/* Background Image cu optimizări LCP: sizes + blurDataURL */}
       <div className="absolute inset-0" aria-hidden="true">
         <Image
-          src="/images/cover.png"
-          alt="Restaurant și catering în Iași — platouri cu preparate tradiționale de la Drag Catering"
+          src="/images/hero-bg.jpg"
+          alt="Restaurant și catering în Iași — platouri cu preparate tradiționale de la Drag Restaurant & Catering"
           fill
           className="object-cover"
           priority
@@ -37,7 +37,7 @@ export default function Hero() {
       </div>
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-charcoal/50 to-black/50" aria-hidden="true" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-charcoal/50 to-black/50" aria-hidden="true" />
 
       {/* Conținut textual SEO-friendly */}
       <div
@@ -50,7 +50,7 @@ export default function Hero() {
         </h1>
         {/* H1 unic și descriptiv */}
         <p className="text-4xl md:text-7xl font-playfair font-bold mb-6 leading-tight drop-shadow-2xl">
-          Farfurii cu <span className="text-gold font-dancing drop-shadow-2xl">Drag</span> și Pasiune 
+          Preparate cu <span className="text-gold font-dancing drop-shadow-2xl">Drag</span> și Pasiune 
         </p>
         
         {/* Subtitlu ca H2 pentru ierarhie semantică */}

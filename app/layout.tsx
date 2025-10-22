@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import Script from "next/script";
 import { Inter, Playfair_Display, Dancing_Script } from "next/font/google";
+// @ts-expect-error: side-effect import of global CSS without type declarations
 import "./globals.css";
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
@@ -11,7 +12,7 @@ const dancing = Dancing_Script({ subsets: ["latin"], variable: "--font-dancing",
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.dragcatering.ro"),
-  title: { default: "Drag Catering", template: "%s | Drag Catering" },
+  title: { default: "Drag Restaurant & Catering", template: "%s | Drag Restaurant & Catering" },
   description:
     "Catering și restaurant în Iași cu preparate românești pentru nunți, botezuri, aniversări și mese festive, livrate cu gust și pasiune.",
   alternates: {
@@ -36,8 +37,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.dragcatering.ro",
-    siteName: "Drag Catering",
-    title: "Drag Catering – gust autentic românesc în Iași",
+    siteName: "Drag Restaurant & Catering",
+    title: "Drag Restaurant & Catering – gust autentic românesc în Iași",
     description:
       "Catering și restaurant în Iași cu preparate românești pentru nunți, botezuri, aniversări și mese festive, livrate cu gust și pasiune.",
     images: [
@@ -45,7 +46,7 @@ export const metadata: Metadata = {
         url: "https://www.dragcatering.ro/og-default.jpg",
         width: 1200,
         height: 630,
-        alt: "Platou cu preparate tradiționale Drag Catering",
+        alt: "Platou cu preparate tradiționale Drag Restaurant & Catering",
       },
     ],
     locale: "ro_RO",
@@ -69,12 +70,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   const businessJsonLd = {
   "@context": "https://schema.org",
   "@type": "Restaurant",
-  "name": "Drag Catering",
+  "name": "Drag Restaurant & Catering",
   "url": "https://www.dragcatering.ro",
   "logo": "https://www.dragcatering.ro/icon.png",
   "image": "https://www.dragcatering.ro/og-default.jpg",
   "description": "Catering și restaurant în Iași cu preparate românești pentru nunți, botezuri, aniversări și mese festive.",
-  "telephone": "+40 754 824 625",
+  "telephone": "+40 741 664 241",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Bulevardul Poitiers 12",
@@ -88,13 +89,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       "@type": "OpeningHoursSpecification",
       "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
       "opens": "10:00",
-      "closes": "22:00"
+      "closes": "21:00"
     },
     {
       "@type": "OpeningHoursSpecification",
       "dayOfWeek": ["Friday", "Saturday", "Sunday"],
       "opens": "10:00",
-      "closes": "24:00"
+      "closes": "22:00"
     }
   ],
   "sameAs": [

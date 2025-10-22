@@ -69,11 +69,11 @@ export default function DailyMenu({currentDayName, currentDayAsDate, foodForAllC
         {/* Selected Day's Menu */}
         <div className="text-center mt-12">
           <a
-            href="tel:+40754824625"
+            href="tel:+40741664241"
             className="primary"
           >
             <Phone className="w-5 h-5 mr-3" fill="currentColor" aria-hidden="true" />
-            +40 754 824 625
+            +40 741 664 241
           </a>
         </div>
       </div>

@@ -1,14 +1,14 @@
 import { Metadata } from 'next';
 import { Phone, Mail, MapPin, Clock, Car, Bus, User, Wifi, ParkingCircle, Navigation, Route } from 'lucide-react';
-import SocialButtons from '../components/SocialButtons';
+// import SocialButtons from '../components/SocialButtons';
 
 export const metadata: Metadata = {
-  title: 'Contact Drag Catering - Catering și Restaurant Premium în Iași | Rezervări Evenimente',
-  description: 'Contactează Drag Catering pentru servicii de catering premium în Iași. Telefon: +40 754 824 625. Consultanță gratuită pentru evenimente, nunți și servicii de restaurant.',
-  keywords: 'contact drag catering, catering iași, restaurant iași, rezervări evenimente, catering nuntă iași, drag catering contact',
+  title: 'Contact Drag Restaurant & Catering - Catering și Restaurant Premium în Iași | Rezervări Evenimente',
+  description: 'Contactează Drag Restaurant & Catering pentru servicii de catering premium în Iași. Telefon: +40 741 664 241. Consultanță gratuită pentru evenimente, nunți și servicii de restaurant.',
+  keywords: 'contact Drag Restaurant & Catering, catering iași, restaurant iași, rezervări evenimente, catering nuntă iași, Drag Restaurant & Catering contact',
   openGraph: {
-    title: 'Contact Drag Catering - Catering Evenimente Premium Iași',
-    description: 'Transformăm visurile tale culinare în realitate. Contactează Drag Catering pentru servicii premium și consultanță personalizată în Iași.',
+    title: 'Contact Drag Restaurant & Catering - Catering Evenimente Premium Iași',
+    description: 'Transformăm visurile tale culinare în realitate. Contactează Drag Restaurant & Catering pentru servicii premium și consultanță personalizată în Iași.',
     type: 'website',
     locale: 'ro_RO',
   },
@@ -21,8 +21,8 @@ export default function ContactDetailed() {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Restaurant",
-    "name": "Drag Catering",
-    "alternateName": "Drag Catering & Restaurant",
+    "name": "Drag Restaurant & Catering",
+    "alternateName": "Drag Restaurant & Catering",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Bulevardul Poitiers 12",
@@ -30,11 +30,11 @@ export default function ContactDetailed() {
       "postalCode": "700671",
       "addressCountry": "RO"
     },
-    "telephone": "+40754824625",
+    "telephone": "+40741664241",
     "email": "contact@dragcatering.ro",
     "openingHours": [
-      "Mo-Th 10:00-22:00",
-      "Fr-Su 10:00-00:00"
+      "Mo-Th 10:00-21:00",
+      "Fr-Su 10:00-22:00"
     ],
     "servesCuisine": ["Romanian", "International"],
     "priceRange": "$$",
@@ -66,16 +66,16 @@ export default function ContactDetailed() {
               <span className="text-gold font-semibold text-sm uppercase tracking-wider">Contactează-ne</span>
             </div>
             <h1 className="text-4xl md:text-5xl font-playfair font-bold text-charcoal mb-6">
-              Contact <span className="text-gold font-dancing">Drag Catering</span> Iași
+              Contact <span className="text-gold font-dancing">Drag Restaurant & Catering</span> Iași
             </h1>
             <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-              Suntem aici să transformăm visele tale culinare în realitate. Contactează echipa Drag Catering din Iași pentru o consultanță personalizată și o ofertă adaptată nevoilor tale pentru evenimente și restaurant.
+              Contactează echipa Drag Restaurant & Catering din Iași pentru o consultanță personalizată și o ofertă adaptată nevoilor tale pentru evenimente și restaurant.
             </p>
           </header>
 
           {/* Direct Contact - Full Width */}
           <section className="bg-white rounded-3xl px-8" itemScope itemType="https://schema.org/Organization">
-            <h2 className="text-2xl md:text-3xl font-playfair font-bold text-charcoal mb-8 text-center">Informații Contact <span className="text-gold">Drag Catering</span></h2>
+            <h2 className="text-2xl md:text-3xl font-playfair font-bold text-charcoal mb-8 text-center">Informații Contact <span className="text-gold">Drag Restaurant & Catering</span></h2>
 
             <address className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 not-italic">
               <article className="text-center">
@@ -84,7 +84,7 @@ export default function ContactDetailed() {
                 </div>
                 <h3 className="font-semibold text-charcoal mb-1">Telefon Rezervări</h3>
                 <a href="tel:0754824625" className="text-gold font-semibold text-lg hover:underline" itemProp="telephone">
-                  +40 754 824 625
+                  +40 741 664 241
                 </a>
               </article>
 
@@ -115,15 +115,15 @@ export default function ContactDetailed() {
                 </div>
                 <h3 className="font-semibold text-charcoal mb-1">Program Restaurant</h3>
                 <time className="text-gray-600 text-sm block" itemProp="openingHours">
-                  <p>Luni - Joi: 10:00 - 22:00</p>
-                  <p>Vineri - Duminică: 10:00 - 00:00</p>
+                  <p>Luni - Joi: 10:00 - 21:00</p>
+                  <p>Vineri - Duminică: 10:00 - 22:00</p>
                 </time>
               </article>
             </address>
           </section>
 
           {/* Process Section */}
-          <section className="bg-gradient-to-r from-gold/10 to-gold/5 rounded-3xl p-12">
+          {/* <section className="bg-gradient-to-r from-gold/10 to-gold/5 rounded-3xl p-12">
             <div className="text-center mb-12">
               <h3 className="text-2xl md:text-3xl font-playfair font-bold text-charcoal mb-4">
                 Procesul Nostru de Organizare
@@ -155,21 +155,21 @@ export default function ContactDetailed() {
                 <p className="text-gray-600 text-sm">Asigurăm serviciu profesional pe toată durata evenimentului</p>
               </div>
             </div>
-          </section>
+          </section> */}
 
                   {/* Social Media Section */}
-          <section className="bg-white rounded-3xl p-8">
+          {/* <section className="bg-white rounded-3xl p-8">
             <h2 className="text-2xl md:text-3xl font-playfair font-bold text-charcoal mb-8 text-center">
               Urmărește-ne pe <span className="text-gold">Social Media</span>
             </h2>
             <div className="flex justify-center">
               <SocialButtons theme="light" />
             </div>
-          </section>
+          </section> */}
 
           {/* Map Section */}
           <section className="bg-white rounded-3xl p-8">
-            <h2 className="text-2xl md:text-3xl font-playfair font-bold text-charcoal mb-8 text-center">Locația <span className="text-gold">Drag Catering</span> în Iași</h2>
+            <h2 className="text-2xl md:text-3xl font-playfair font-bold text-charcoal mb-8 text-center">Locația <span className="text-gold">Drag Restaurant & Catering</span> în Iași</h2>
             <div className="grid lg:grid-cols-3 gap-8 items-center">
               {/* Google Maps Embed */}
               <figure className="lg:col-span-2">
@@ -183,16 +183,16 @@ export default function ContactDetailed() {
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
                     className="rounded-2xl"
-                    title="Harta locație Drag Catering Iași - Bulevardul Poitiers 12"
+                    title="Harta locație Drag Restaurant & Catering Iași - Bulevardul Poitiers 12"
                   ></iframe>
                 </div>
-                <figcaption className="sr-only">Harta interactivă cu locația Drag Catering pe Bulevardul Poitiers 12, Iași</figcaption>
+                <figcaption className="sr-only">Harta interactivă cu locația Drag Restaurant & Catering pe Bulevardul Poitiers 12, Iași</figcaption>
               </figure>
 
               {/* Directions Info */}
               <aside className="space-y-6 grid sm:grid-cols-2 lg:grid-cols-1">
                 <article>
-                  <h3 className="font-bold text-charcoal mb-3">Cum Ajungi la Drag Catering</h3>
+                  <h3 className="font-bold text-charcoal mb-3">Cum Ajungi la Drag Restaurant & Catering</h3>
                   <dl className="space-y-4 text-gray-600">
                     <div className="flex items-start space-x-3">
                       <Car className="text-gold mt-1 w-[25px] h-[25px]" />
@@ -221,7 +221,7 @@ export default function ContactDetailed() {
                 </article>
 
                 <aside className="bg-gold/10 rounded-xl">
-                  <h4 className="font-bold text-charcoal mb-2">Facilități Drag Catering</h4>
+                  <h4 className="font-bold text-charcoal mb-2">Facilități Drag Restaurant & Catering</h4>
                   <ul className="text-sm text-gray-600 space-y-1">
                     <li className="flex items-center gap-2"><User className="w-4 h-4 text-gold" /> Acces pentru persoane cu dizabilități</li>
                     <li className="flex items-center gap-2"><Wifi className="w-4 h-4 text-gold" /> WiFi gratuit pentru clienți</li>

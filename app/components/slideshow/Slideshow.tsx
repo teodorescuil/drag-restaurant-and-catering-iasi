@@ -69,13 +69,13 @@ export default function SlideShow({ images, lcpIndex = 0 }: Props) {
             onClick={() => openFullscreen(currentSlide)}
           />
           {/* Visible label for main image */}
-          {(mainImg.title) && (
+          {/* {(mainImg.title) && (
             <div className="absolute top-4 left-4 bg-gold text-white px-4 py-1 rounded-xl max-w-[80%]">
               <span className="text-base font-semibold">
                 {mainImg.title}
               </span>
             </div>
-          )}
+          )} */}
           {mainImg.title && <figcaption className="sr-only">{mainImg.title}</figcaption>}
 
           <button
