@@ -50,7 +50,7 @@ export default function SlideShow({ images, lcpIndex = 0 }: Props) {
     window.addEventListener('keydown', onKey);
     dialogRef.current?.focus();
     return () => window.removeEventListener('keydown', onKey);
-  }, [isFullscreen]);
+  }, [isFullscreen, nextFs, prevFs]);
 
   const mainImg = images[currentSlide];
 
