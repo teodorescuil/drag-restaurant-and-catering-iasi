@@ -2,6 +2,7 @@ export const pagesRo = {
     home: 'Acasă',
     dailyMenu: 'Meniul zilei',
     fullMenu: 'Meniu',
+    plates: 'Platouri',
     aboutUs: 'Despre noi',
     events: 'Evenimente',
     services: 'Servicii',
@@ -18,6 +19,9 @@ export const pagesR = [
     }, {
         section: 'meniu', 
         title: pagesRo.fullMenu,
+    }, {
+        section: 'platouri', 
+        title: pagesRo.plates,
     }, {
         section: 'evenimente', 
         title: pagesRo.events,

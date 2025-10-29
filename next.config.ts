@@ -79,6 +79,12 @@ const nextConfig = {
       },
     ],
   },
+  // webpack: (config, { isServer }) => {
+  //   if (isServer) {
+  //     config.externals.push("pdfjs-dist");
+  //   }
+  //   return config;
+  // },
 }
 
 module.exports = nextConfig

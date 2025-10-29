@@ -19,7 +19,7 @@ export default function Events() {
             Evenimente și Servicii <span className="text-gold font-dancing">Memorabile</span>
           </h2>
           <p className={sectionSubtitle}>
-            De la întâlniri intime la celebrări grandioase, oferim servicii excepționale adaptate perfect evenimentelor dumneavoastră
+            De la întâlniri intime la celebrări grandioase, oferim servicii excepționale adaptate perfect evenimentelor dumneavoastră.
           </p>
         </div>
         
@@ -31,10 +31,10 @@ export default function Events() {
                 
         {/* Call to Action */}
         <div className="text-center">
-          <h3 className="text-xl font-playfair font-bold text-charcoal mb-6">
+          <h3 className="text-2xl md:text-3xl font-playfair font-bold text-charcoal mb-6">
             Gata să Planifici Evenimentul Tău?
           </h3>
-          <p className="text-md text-gray-600 max-w-3xl mx-auto mb-8 leading-relaxed">
+          <p className="text-md md:text-lg text-gray-600 max-w-3xl mx-auto mb-8 leading-relaxed">
             Contactează-ne astăzi pentru o consultație personalizată și o ofertă detaliată. 
             Echipa noastră este gata să transforme viziunea ta în realitate.
           </p>

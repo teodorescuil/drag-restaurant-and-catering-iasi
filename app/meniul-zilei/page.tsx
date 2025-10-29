@@ -5,6 +5,7 @@ import { foodWeeklyMenu, days } from '../helpers/constants/weekly-menu';
 import { getCurrentWeek } from '../helpers/utils/getCurrentWeek';
 import { Phone, ChevronRight, ChevronDown } from 'lucide-react';
 import useIsMobile from '../helpers/hooks/useIsMobile';
+import DailyMenuPlaceholder from '../components/daily-menu-placeholder/DailyMenuPlaceholder';
 
 type Course = {
   type: string;
@@ -58,29 +59,36 @@ export default function WeeklyMenuDetailed() {
         {/* Daily Menu with dropdowns */}
         <div className="space-y-8">
           <div className={`bg-white rounded-3xl p-8 lg:p-12 ${!isMobile && 'shadow-xl border border-gray-100'}`}>
-            <div className="text-center mb-12">
-              <div className="text-4xl font-bold text-gold mb-4">35 LEI</div>
-              <h2 className="text-2xl md:text-4xl font-playfair font-bold text-charcoal">
-                Meniul de Azi
-              </h2>
-              <h3 className="text-gray-600">{currentDayAsDate}</h3>
-            </div>
-
-            <div className="grid lg:grid-cols-3 gap-8">
-              {foodByCurrentDay.map((course, i) => (
-                <CourseDropdown key={i} course={course} index={i} isMobile={isMobile} />
-              ))}
-            </div>
+            {foodByCurrentDay?.length ? (
+              <>
+                <div className="text-center mb-12">
+                  <div className="text-4xl font-bold text-gold mb-4">35 LEI</div>
+                  <h2 className="text-2xl md:text-4xl font-playfair font-bold text-charcoal">
+                    Meniul de Azi
+                  </h2>
+                  <h3 className="text-gray-600">{currentDayAsDate}</h3>
+                </div>
+                <div className="grid lg:grid-cols-3 gap-8">
+                  {foodByCurrentDay.map((course, i) => (
+                    <CourseDropdown key={i} course={course} index={i} isMobile={isMobile} />
+                  ))}
+                </div>
+              </>
+            ) : (
+              <div className="text-center">
+                <DailyMenuPlaceholder />
+              </div>
+            )}
           </div>
         </div>
 
         {/* Call to Action */}
         <div className="text-center mt-28">
           <h3 className="text-2xl md:text-3xl font-playfair font-bold text-charcoal mb-6">
-            Rezervă Acum Experiența Culinară Completă
+            Prospețime și Gust Autentic
           </h3>
           <p className="text-md md:text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-            Toate preparatele sunt realizate cu ingrediente premium și tehnici culinare autentice. 
+            Toate preparatele sunt realizate preponderent cu produse locale de sezon de la producători locali.
             Meniul se actualizează săptămânal pentru a asigura prospețimea ingredientelor de sezon.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

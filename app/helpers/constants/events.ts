@@ -23,7 +23,7 @@ export const eventsTypes = [
         "Posibilitatea de a interacționa cu artiștii"
       ],
       gallery: [
-        {alt: "Seara de muzică live la Drag Restaurant & Catering", title: "Seara de muzică live", src: "/images/events/live-music/live-music-0.jpg"},
+        {alt: "Seara de muzică live la Drag Restaurant & Catering", title: "Seara de muzică live", src: "/images/events/live-music/live-music-0.png"},
         {alt: "Seara de muzică live la Drag Restaurant & Catering", title: "Seara de muzică live", src: "/images/events/live-music/live-music-1.jpg"},
         {alt: "Seara de muzică live la Drag Restaurant & Catering", title: "Seara de muzică live", src: "/images/events/live-music/live-music-3.jpg"},
         {alt: "Seara de muzică live la Drag Restaurant & Catering", title: "Seara de muzică live", src: "/images/events/live-music/live-music-4.jpg"},
@@ -72,7 +72,7 @@ export const eventsTypes = [
       description: "Spațiu elegant și liniștit pentru organizarea pomenilor, cu meniuri tradiționale și servicii complete, oferite cu respect și discreție.",
       detailedDescription: "La Drag Restaurant & Catering oferim un cadru potrivit pentru organizarea pomenilor și parastaselor, într-o atmosferă liniștită și respectuoasă. Echipa noastră se ocupă cu atenție de fiecare detaliu, de la pregătirea meniurilor tradiționale până la servirea ireproșabilă, pentru ca familia și invitații să se poată concentra asupra momentului de reculegere. Serviciile noastre includ consultanță, organizare completă și suport dedicat pentru desfășurarea evenimentului într-un mod calm și demn.",
       features: [
-        "Meniuri tradiționale personalizate pentru pomeniri",
+        "Meniuri personalizate",
         "Ambianță calmă și respectuoasă, ideală pentru reuniuni de familie",
         "Servicii complete de organizare și servire",
         "Echipă dedicată care asigură discreție și profesionalism",
@@ -82,17 +82,12 @@ export const eventsTypes = [
       duration: "2-4 ore",
       priceRange: "de la 100 lei/persoană",
       included: [
-        "Meniu tradițional complet, cu opțiuni personalizabile",
+        "Meniu complet, cu opțiuni personalizabile",
         "Serviciu profesionist de ospătari și bucătari",
         "Asistență dedicată pe toată durata evenimentului",
-        "Posibilitatea organizării pomenilor atât la prânz, cât și seara"
       ],
       gallery: [
-        { alt: "Eveniment funerar la Drag Restaurant & Catering", title: "Eveniment funerar", src: "/images/events/funerary/funerary-0.jpg" },
-        { alt: "Eveniment funerar la Drag Restaurant & Catering", title: "Eveniment funerar", src: "/images/events/funerary/funerary-1.jpg" },
-        { alt: "Eveniment funerar la Drag Restaurant & Catering", title: "Eveniment funerar", src: "/images/events/funerary/funerary-2.jpg" },
-        { alt: "Eveniment funerar la Drag Restaurant & Catering", title: "Eveniment funerar", src: "/images/events/funerary/funerary-3.jpg" },
-        { alt: "Eveniment funerar la Drag Restaurant & Catering", title: "Eveniment funerar", src: "/images/events/funerary/funerary-4.jpg" }
+        { alt: "Eveniment funerar la Drag Restaurant & Catering", title: "Eveniment funerar", src: "/images/events/funerary/funerary.jpg" },
       ]
     },
     {
@@ -150,7 +145,7 @@ export const eventsTypes = [
         "Posibilitatea de a savura preparate variate într-o singură seară"
       ],
       gallery: [
-        {alt: "All you can eat la Drag Restaurant & Catering", title: "All you can eat", src: "/images/events/all-you-can-eat/all-you-can-eat-0.jpg"},
+        {alt: "All you can eat la Drag Restaurant & Catering", title: "All you can eat", src: "/images/events/all-you-can-eat/all-you-can-eat-0.png"},
         {alt: "All you can eat la Drag Restaurant & Catering", title: "All you can eat", src: "/images/events/all-you-can-eat/all-you-can-eat-1.jpg"},
         {alt: "All you can eat la Drag Restaurant & Catering", title: "All you can eat", src: "/images/events/all-you-can-eat/all-you-can-eat-2.jpg"},
         {alt: "All you can eat la Drag Restaurant & Catering", title: "All you can eat", src: "/images/events/all-you-can-eat/all-you-can-eat-3.jpg"},
@@ -184,16 +179,16 @@ export const eventsTypes = [
         "Ambianță festivă și organizare adaptată tematicii",
       ],
       gallery: [
-        {alt: "Eveniment culinar la Drag Restaurant & Catering", title: "Eveniment culinar", src: "/images/events/culinary/culinary-1.jpg"},
-        {alt: "Eveniment culinar la Drag Restaurant & Catering", title: "Eveniment culinar", src: "/images/events/culinary/culinary-2.jpg"},
-        {alt: "Eveniment culinar la Drag Restaurant & Catering", title: "Eveniment culinar", src: "/images/events/culinary/culinary-3.jpg"},
-        {alt: "Eveniment culinar la Drag Restaurant & Catering", title: "Eveniment culinar", src: "/images/events/culinary/culinary-4.jpg"},
-        {alt: "Eveniment culinar la Drag Restaurant & Catering", title: "Eveniment culinar", src: "/images/events/culinary/culinary-5.jpg"},
-        {alt: "Eveniment culinar la Drag Restaurant & Catering", title: "Eveniment culinar", src: "/images/events/culinary/culinary-6.jpg"},
-        {alt: "Eveniment culinar la Drag Restaurant & Catering", title: "Eveniment culinar", src: "/images/events/culinary/culinary-7.jpg"},
-        {alt: "Eveniment culinar la Drag Restaurant & Catering", title: "Eveniment culinar", src: "/images/events/culinary/culinary-8.jpg"},
-        {alt: "Eveniment culinar la Drag Restaurant & Catering", title: "Eveniment culinar", src: "/images/events/culinary/culinary-9.jpg"},
-        {alt: "Eveniment culinar la Drag Restaurant & Catering", title: "Eveniment culinar", src: "/images/events/culinary/culinary-10.jpg"},
+        {alt: "Eveniment culinar la Drag Restaurant & Catering", title: "Eveniment culinar", src: "/images/events/culinary/culinary-1.png"},
+        {alt: "Eveniment culinar la Drag Restaurant & Catering", title: "Eveniment culinar", src: "/images/events/culinary/culinary-2.png"},
+        {alt: "Eveniment culinar la Drag Restaurant & Catering", title: "Eveniment culinar", src: "/images/events/culinary/culinary-3.png"},
+        {alt: "Eveniment culinar la Drag Restaurant & Catering", title: "Eveniment culinar", src: "/images/events/culinary/culinary-4.png"},
+        {alt: "Eveniment culinar la Drag Restaurant & Catering", title: "Eveniment culinar", src: "/images/events/culinary/culinary-5.png"},
+        {alt: "Eveniment culinar la Drag Restaurant & Catering", title: "Eveniment culinar", src: "/images/events/culinary/culinary-6.png"},
+        {alt: "Eveniment culinar la Drag Restaurant & Catering", title: "Eveniment culinar", src: "/images/events/culinary/culinary-7.png"},
+        {alt: "Eveniment culinar la Drag Restaurant & Catering", title: "Eveniment culinar", src: "/images/events/culinary/culinary-8.png"},
+        {alt: "Eveniment culinar la Drag Restaurant & Catering", title: "Eveniment culinar", src: "/images/events/culinary/culinary-9.png"},
+        {alt: "Eveniment culinar la Drag Restaurant & Catering", title: "Eveniment culinar", src: "/images/events/culinary/culinary-10.png"},
 
       ]
     },
@@ -302,7 +297,7 @@ export const eventsAndServices = [
     ],
     capacity: "până la 140 persoane",
     priceRange: "Conform meniului",
-    image: "/images/events/live-music/live-music-0.jpg",
+    image: "/images/events/live-music/live-music-0.png",
     href: "/evenimente#muzica-live"
   },
   {
@@ -328,7 +323,7 @@ export const eventsAndServices = [
     ],
     capacity: "50-140 persoane",
     priceRange: "de la 100 lei/persoană",
-    image: "/images/events/funerary/funerary-0.jpg",
+    image: "/images/events/funerary/funerary.jpg",
     href: "/evenimente#evenimente-funerare"
   },
   {
@@ -357,7 +352,7 @@ export const eventsAndServices = [
     ],
     capacity: "până la 140 persoane",
     priceRange: "de la 150 lei/persoană (All You Can Eat) • conform meniului (Evenimente tematice)",
-    image: "/images/events/all-you-can-eat/all-you-can-eat-0.jpg",
+    image: "/images/events/all-you-can-eat/all-you-can-eat-0.png",
     href: "/evenimente#all-you-can-eat-evenimente-culinare"
   },
   {

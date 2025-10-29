@@ -69,13 +69,13 @@ export default function ContactDetailed() {
               Contact <span className="text-gold font-dancing">Drag Restaurant & Catering</span> Iași
             </h1>
             <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-              Contactează echipa Drag Restaurant & Catering din Iași pentru o consultanță personalizată și o ofertă adaptată nevoilor tale pentru evenimente și restaurant.
+              Contactează-ne pentru o consultanță personalizată și o ofertă adaptată nevoilor tale pentru evenimente și restaurant.
             </p>
           </header>
 
           {/* Direct Contact - Full Width */}
           <section className="bg-white rounded-3xl px-8" itemScope itemType="https://schema.org/Organization">
-            <h2 className="text-2xl md:text-3xl font-playfair font-bold text-charcoal mb-8 text-center">Informații Contact <span className="text-gold">Drag Restaurant & Catering</span></h2>
+            {/* <h2 className="text-2xl md:text-3xl font-playfair font-bold text-charcoal mb-8 text-center">Informații Contact <span className="text-gold">Drag Restaurant & Catering</span></h2> */}
 
             <address className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 not-italic">
               <article className="text-center">
@@ -92,7 +92,7 @@ export default function ContactDetailed() {
                 <div className="bg-gold/10 p-4 rounded-full w-16 h-16 mx-auto mb-2 flex items-center justify-center">
                   <Mail className="text-gold w-6 h-6" aria-label="Email contact" />
                 </div>
-                <h3 className="font-semibold text-charcoal mb-1">Email Contact</h3>
+                <h3 className="font-semibold text-charcoal mb-1">Email</h3>
                 <a href="mailto:contact@dragcatering.ro" className="text-gold font-semibold hover:underline break-all" itemProp="email">
                   contact@dragcatering.ro
                 </a>
@@ -102,7 +102,7 @@ export default function ContactDetailed() {
                 <div className="bg-gold/10 p-4 rounded-full w-16 h-16 mx-auto mb-2 flex items-center justify-center">
                   <MapPin className="text-gold w-6 h-6" aria-label="Adresa restaurant" />
                 </div>
-                <h3 className="font-semibold text-charcoal mb-1">Adresa Restaurant</h3>
+                <h3 className="font-semibold text-charcoal mb-1">Adresă</h3>
                 <address className="text-charcoal" itemProp="address">
                   <span itemProp="streetAddress">Bulevardul Poitiers 12</span>,<br />
                   <span itemProp="addressLocality">Iași</span> <span itemProp="postalCode">700671</span>, <span itemProp="addressCountry">România</span>
@@ -169,7 +169,7 @@ export default function ContactDetailed() {
 
           {/* Map Section */}
           <section className="bg-white rounded-3xl p-8">
-            <h2 className="text-2xl md:text-3xl font-playfair font-bold text-charcoal mb-8 text-center">Locația <span className="text-gold">Drag Restaurant & Catering</span> în Iași</h2>
+            {/* <h2 className="text-2xl md:text-3xl font-playfair font-bold text-charcoal mb-8 text-center">Locația <span className="text-gold">Drag Restaurant & Catering</span> în Iași</h2> */}
             <div className="grid lg:grid-cols-3 gap-8 items-center">
               {/* Google Maps Embed */}
               <figure className="lg:col-span-2">
@@ -192,7 +192,7 @@ export default function ContactDetailed() {
               {/* Directions Info */}
               <aside className="space-y-6 grid sm:grid-cols-2 lg:grid-cols-1">
                 <article>
-                  <h3 className="font-bold text-charcoal mb-3">Cum Ajungi la Drag Restaurant & Catering</h3>
+                  <h3 className="font-bold text-charcoal mb-3">Cum ajungi?</h3>
                   <dl className="space-y-4 text-gray-600">
                     <div className="flex items-start space-x-3">
                       <Car className="text-gold mt-1 w-[25px] h-[25px]" />
@@ -221,7 +221,7 @@ export default function ContactDetailed() {
                 </article>
 
                 <aside className="bg-gold/10 rounded-xl">
-                  <h4 className="font-bold text-charcoal mb-2">Facilități Drag Restaurant & Catering</h4>
+                  <h4 className="font-bold text-charcoal mb-2">Facilități:</h4>
                   <ul className="text-sm text-gray-600 space-y-1">
                     <li className="flex items-center gap-2"><User className="w-4 h-4 text-gold" /> Acces pentru persoane cu dizabilități</li>
                     <li className="flex items-center gap-2"><Wifi className="w-4 h-4 text-gold" /> WiFi gratuit pentru clienți</li>

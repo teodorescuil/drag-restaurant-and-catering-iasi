@@ -2,6 +2,7 @@ import Script from 'next/script';
 import { Metadata } from 'next';
 import Link from 'next/link';
 import {Phone} from 'lucide-react';
+import PdfVisualiser from '../components/pdf-visualiser/PdfVisualiser';
 
 export const metadata: Metadata = {
   title: 'Meniu Complet Drag Restaurant & Catering - Restaurant și Catering Iași | Preparate Tradiționale Românești',
@@ -293,23 +294,12 @@ export default function FullMenu() {
 
           {/* PDF Viewer Section */}
           <section 
-            className="bg-white rounded-3xl p-6 md:p-8 shadow-xl mb-16"
+            className="p-6 md:p-8 mb-16"
             aria-labelledby="pdf-section-title"
-          >
-            {/* <h2 
-              id="pdf-section-title" 
-              className="text-2xl font-playfair font-bold text-charcoal mb-6 text-center"
-            >
-              Vizualizare Meniu PDF
-            </h2> */}
-            
-            <div className="pdf w-full max-w-6xl mx-auto">
-              <iframe
-                src="/pdfs/meniu-drag-catering.pdf#toolbar=0"
-                className="w-full h-[calc(100vh-200px)] rounded-xl shadow-lg border-2 border-gray-100"
-                title="Meniu Complet Drag Restaurant & Catering - Preparate și Prețuri Restaurant Iași"
-                aria-label="Meniul complet al restaurantului Drag Restaurant & Catering din Iași cu toate preparatele și prețurile"
-                loading="lazy"
+          >            
+            <div className="pdf w-full max-w-6xl mx-auto flex justify-center">
+              <PdfVisualiser 
+                pdfUrl="/pdfs/meniu-drag-catering.pdf"
               />
             </div>
           </section>

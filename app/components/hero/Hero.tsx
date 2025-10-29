@@ -55,7 +55,7 @@ export default function Hero() {
         
         {/* Subtitlu ca H2 pentru ierarhie semantică */}
         <h2 className="text-lg md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed drop-shadow-lg">
-          Fiecare fel de mâncare este o capodoperă creată cu drag și devotament. De la aperitive frumos aranjate la feluri principale impresionante, punem suflet în fiecare preparat pentru a crea artă culinară care încântă atât ochiul, cât și papilele gustative.
+          Fiecare preparat este creat cu drag și devotament, transformând gătitul în artă culinară. Folosim preponderent produse locale de sezon de la producători autohtoni, pentru un gust autentic și proaspăt.
         </h2>
 
         {/* CTA-uri ca link-uri reale (ancore interne) */}

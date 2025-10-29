@@ -30,9 +30,9 @@ export default function EventsDetailed() {
         {/* Contact Section */}
         <div className="mt-16 text-center">
           <h3 className="text-2xl md:text-3xl font-playfair font-bold text-charcoal mb-6">
-            Următorul eveniment vă așteaptă la <span className="text-gold">Drag Restaurant & Catering</span>
+            Următorul Eveniment Vă Așteaptă La <span className="text-gold">Drag Restaurant & Catering</span>
           </h3>
-          <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
+          <p className="text-md md:text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
             Contactați-ne pentru a vă rezerva locul sau pentru o consultanță gratuită despre cum putem organiza evenimentul perfect pentru dumneavoastră.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

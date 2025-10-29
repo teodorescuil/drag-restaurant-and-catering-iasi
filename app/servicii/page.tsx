@@ -55,10 +55,10 @@ export default function EventsDetailed() {
                     <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
                       {/* Carduri condiționale pentru diferite tipuri de servicii */}
                       {service.details?.map(detail => (
-                        <div key={detail.type} className="text-center p-4 bg-gray-50/80 rounded-lg border border-gray-200/50 hover:bg-gray-100/50 transition-colors duration-200">
-                          <div className="text-sm text-gray-500 mb-2">{detail.type}</div>
-                          {detail.description.split(" / ").map(detailInfo => (
-                            <div key={detail.description.concat(detailInfo)} className="text-sm text-charcoal">{detailInfo}</div>
+                        <div key={detail?.type} className="text-center p-4 bg-gray-50/80 rounded-lg border border-gray-200/50 hover:bg-gray-100/50 transition-colors duration-200">
+                          <div className="text-sm text-gray-500 mb-2">{detail?.type}</div>
+                          {detail?.description.split(" / ").map(detailInfo => (
+                            <div key={detail?.description.concat(detailInfo)} className="text-sm text-charcoal">{detailInfo}</div>
                           ))}
                         </div>
                       ))}
@@ -76,7 +76,7 @@ export default function EventsDetailed() {
           <h3 className="text-2xl md:text-3xl font-playfair font-bold text-charcoal mb-6">
             Să Planificăm Următorul Dumneavoastră Eveniment
           </h3>
-          <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
+          <p className="text-gray-600 text-md md:text-lg mb-8 max-w-2xl mx-auto">
             Contactați-ne pentru o consultanță gratuită. Echipa noastră de specialiști vă va ajuta să organizați 
             un eveniment perfect, adaptat exact nevoilor și bugetului dumneavoastră.
           </p>

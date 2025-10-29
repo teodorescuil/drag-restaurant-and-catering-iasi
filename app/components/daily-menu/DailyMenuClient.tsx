@@ -1,5 +1,6 @@
 'use client';
 import { useState, useEffect } from 'react';
+import DailyMenuPlaceholder from '../daily-menu-placeholder/DailyMenuPlaceholder';
 import { Phone } from "lucide-react"
 import {sectionTopTitle, sectionWrapper, sectionTitle, sectionSubtitle} from '../../helpers/constants/styles';
 import {days} from '../../helpers/constants/weekly-menu';
@@ -61,7 +62,7 @@ export default function DailyMenu({currentDayName, currentDayAsDate, foodForAllC
               <MenuByDay menu={menuByDay} isMobile={isMobile} />
             </>
           ) : (
-            <p className="text-gray-600">Te așteptăm luni cu noi selecții proaspete!</p>
+              <DailyMenuPlaceholder />
           )}
         </div>
         
