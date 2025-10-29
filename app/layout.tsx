@@ -1,8 +1,9 @@
 import type { Metadata, Viewport } from "next";
 import Script from "next/script";
 import { Inter, Playfair_Display, Dancing_Script } from "next/font/google";
-// @ts-expect-error: side-effect import of global CSS without type declarations
-import "./globals.css";
+{/* eslint-disable-next-line @typescript-eslint/ban-ts-comment */}
+{/* @ts-expect-error */}
+import './globals.css';
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 

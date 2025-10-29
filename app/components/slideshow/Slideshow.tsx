@@ -50,7 +50,8 @@ export default function SlideShow({ images, lcpIndex = 0 }: Props) {
     window.addEventListener('keydown', onKey);
     dialogRef.current?.focus();
     return () => window.removeEventListener('keydown', onKey);
-  }, [isFullscreen, nextFs, prevFs]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isFullscreen]);
 
   const mainImg = images[currentSlide];
 
