@@ -67,7 +67,7 @@ export const eventsTypes = [
     },
     {
       id: 4,
-      name: "Evenimente Funerare (pomeniri)",
+      name: "Pomeniri/Praznice",
       slug: "evenimente-funerare",
       description: "Spațiu elegant și liniștit pentru organizarea pomenilor, cu meniuri tradiționale și servicii complete, oferite cu respect și discreție.",
       detailedDescription: "La Drag Restaurant & Catering oferim un cadru potrivit pentru organizarea pomenilor și parastaselor, într-o atmosferă liniștită și respectuoasă. Echipa noastră se ocupă cu atenție de fiecare detaliu, de la pregătirea meniurilor tradiționale până la servirea ireproșabilă, pentru ca familia și invitații să se poată concentra asupra momentului de reculegere. Serviciile noastre includ consultanță, organizare completă și suport dedicat pentru desfășurarea evenimentului într-un mod calm și demn.",
@@ -314,7 +314,7 @@ export const eventsAndServices = [
     href: "/evenimente#petreceri-private"
   },
   {
-    title: "Evenimente Funerare (pomeniri)",
+    title: "Pomeniri/Praznice",
     description: "Meniuri tradiționale și servicii discrete, într-un spațiu liniștit și respectuos, dedicat momentelor de reculegere.",
     features: [
       "Meniuri tradiționale personalizate pentru pomeniri",
