@@ -250,6 +250,7 @@ export default function SlideShow({ images, lcpIndex = 0 }: Props) {
         <div>
           {images.slice(0, 3).map((img, i) => (
             <p key={`ns-${i}`}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src={img.src} alt={img.alt} width="800" height="600" />
             </p>
           ))}
