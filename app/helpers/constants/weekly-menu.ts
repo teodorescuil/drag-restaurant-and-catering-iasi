@@ -52,7 +52,7 @@ export const foodWeeklyMenu = [
                     ingredients: "carne de pui, ceapă, ardei gras, roșii sau pastă de roșii, usturoi, ulei, sare, piper, boia dulce, foi de dafin, orez, apă sau supă de pui.",
                     allergens: ["fără alergeni majori (poate conține urme de țelină sau gluten, în funcție de condimentele utilizate)."],
                     image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
-                    },, {
+                    }, {
                     type: "Desert",
                     name: "Surpriza bucătarului",
                     description: "Desertul zilei, pregătit cu ingrediente proaspete și produse locale, oferă mereu o surpriză dulce și autentică.",
