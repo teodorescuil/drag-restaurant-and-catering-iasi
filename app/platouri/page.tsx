@@ -96,7 +96,8 @@ export default function PlatouriPage() {
         >            
             <div className="pdf w-full max-w-6xl mx-auto flex justify-center">
             <PdfVisualiser 
-                pdfUrl="/pdfs/meniu-drag-catering.pdf"
+                pdfUrl="/pdfs/platouri-drag-catering.pdf"
+                widthOfPdf={800}
             />
             </div>
         </section>

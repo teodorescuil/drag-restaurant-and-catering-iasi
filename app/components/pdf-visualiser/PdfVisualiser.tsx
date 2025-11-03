@@ -13,7 +13,7 @@ type FlipBookInstance = {
   };
 };
 
-export default function PdfVisualiser({ pdfUrl }: { pdfUrl: string }) {
+export default function PdfVisualiser({ pdfUrl, widthOfPdf = 600 }: { pdfUrl: string, widthOfPdf?: number }) {
   const flipBookRef = useRef<FlipBookInstance | null>(null);
 
   const [pages, setPages] = useState<string[]>([]);
@@ -97,7 +97,7 @@ export default function PdfVisualiser({ pdfUrl }: { pdfUrl: string }) {
            {/* @ts-expect-error */}
           <HTMLFlipBook
             ref={flipBookRef}
-            width={isMobile ? viewportWidth * 0.9 : 600}
+            width={isMobile ? viewportWidth * 0.9 : widthOfPdf}
             height={isMobile ? viewportHeight * 0.6 : viewportHeight * 0.9}
             showCover={true}
             drawShadow={true}

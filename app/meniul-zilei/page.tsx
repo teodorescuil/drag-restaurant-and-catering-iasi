@@ -184,7 +184,7 @@ function CourseDropdown({
           </div>
 
           <div>
-            <h4 className="font-bold text-charcoal mb-2">Alergeni:</h4>
+            <h4 className="font-bold text-charcoal mb-2">{course.allergens.length > 0 ? "Alergeni:" : ""}</h4>
             <div className="flex flex-wrap gap-2">
               {course.allergens.map((a, j) => (
                 <span
