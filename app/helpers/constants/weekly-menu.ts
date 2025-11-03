@@ -45,7 +45,7 @@ export const foodWeeklyMenu = [
                     image: "https://images.unsplash.com/photo-1546793665-c74683f339c1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
                     },
                     {
-                    type: "Felul întâi",
+                    type: "Felul doi",
                     name: "Pui Țigănesc cu orez",
                     description: "Pui fraged în sos aromat de legume, servit cu orez pufos și plin de savoare.",
                     detailedDescription: "Puiul Țigănesc cu orez este un preparat tradițional românesc, plin de culoare și gust, inspirat din bucătăria rustică. Bucățile de pui sunt rumenite ușor, apoi gătite într-un sos aromat din ceapă, ardei, roșii și condimente, până devin fragede și suculente. Preparatul se servește alături de orez simplu sau ușor condimentat, care absoarbe perfect sosul bogat și parfumat. Rezultatul este o mâncare savuroasă, cu arome intense și texturi echilibrate — ideală pentru un prânz consistent și gustos.",
@@ -117,8 +117,8 @@ export const foodWeeklyMenu = [
                 }
             ], [
                 {
-                    type: "Borș de fasole cu afumătură",
-                    name: "Bruschetta cu roșii și busuioc",
+                    type: "Felul întâi",
+                    name: "Borș de fasole cu afumătură",
                     description: "Ciorbă tradițională cu fasole și afumătură, aromată și ușor acrișoară.",
                     detailedDescription: "Borșul de fasole cu afumătură este o ciorbă tradițională românească, gustoasă și sățioasă, perfectă pentru zilele răcoroase. Fasolea fiartă lent devine moale și aromată, iar afumătura — de obicei coaste sau ciolan afumat — îi oferă un gust intens și plin. Zeama este completată de legume precum morcovi, ceapă, țelină și ardei, iar la final, borșul adaugă acea notă acrișoară specifică preparatelor de casă. Se servește fierbinte, cu ceapă roșie sau ardei iute alături, pentru un plus de savoare autentică.",
                     ingredients: "fasole albă, carne afumată (coaste sau ciolan), ceapă, morcovi, țelină, ardei gras, pastă de roșii, borș, ulei, sare, piper, cimbru, foi de dafin, leuștean",
