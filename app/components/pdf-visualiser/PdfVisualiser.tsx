@@ -119,14 +119,14 @@ export default function PdfVisualiser({ pdfUrl, widthOfPdf = 600 }: { pdfUrl: st
             <>
               <button
                 onClick={handlePrev}
-                className={`absolute top-1/2 transform -translate-y-1/2 bg-transparent ${isMobile ? '-left-6' : '-left-50'}`}
+                className={`absolute top-1/2 transform -translate-y-1/2 bg-transparent cursor-pointer ${isMobile ? '-left-6' : '-left-50'}`}
                 style={{ zIndex: 10 }}
               >
                 <ChevronLeft className="w-8 h-8 text-gray-800 hover:text-gray-600" />
               </button>
               <button
                 onClick={handleNext}
-                className={`absolute top-1/2 transform -translate-y-1/2 bg-transparent ${isMobile ? '-right-6' : '-right-50'}`}
+                className={`absolute top-1/2 transform -translate-y-1/2 bg-transparent cursor-pointer ${isMobile ? '-right-6' : '-right-50'}`}
                 style={{ zIndex: 10 }}
               >
                 <ChevronRight className="w-8 h-8 text-gray-800 hover:text-gray-600" />

@@ -172,11 +172,11 @@ function CourseDropdown({
         </div>
 
         <div className="space-y-4">
-          <div>
+          {/* <div>
             <p className="text-gray-600 text-sm leading-relaxed">
               {course.detailedDescription}
             </p>
-          </div>
+          </div> */}
 
           <div>
             <h4 className="font-bold text-charcoal mb-2">Ingrediente:</h4>
