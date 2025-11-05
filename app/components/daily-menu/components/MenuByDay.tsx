@@ -8,7 +8,6 @@ type Course = {
   type: string;
   name: string;
   description: string;
-  detailedDescription: string;
   ingredients: string;
   allergens: string[];
   image: string;
