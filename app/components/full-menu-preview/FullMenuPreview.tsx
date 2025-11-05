@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Script from 'next/script';
-import {BookOpen } from 'lucide-react';
+import Image from 'next/image';
 import { sectionTopTitle, sectionWrapper, sectionTitle, sectionSubtitle, sectionInfoContent } from '../../helpers/constants/styles';
 
 const CATEGORIES = [
@@ -38,7 +38,7 @@ export default function FullMenuPreview() {
           </div>
 
           <h2 id="full-menu-title" className={sectionTitle}>
-            Descoperă <span className="text-gold font-dancing">Meniul</span> Nostru Complet
+            Descoperă <span className="text-gold font-dancing">Meniul</span> și <span className="text-gold font-dancing">Platourile</span> Noastre
           </h2>
 
           <p className={sectionSubtitle}>
@@ -46,7 +46,7 @@ export default function FullMenuPreview() {
           </p>
         </div>
 
-        <div className="text-center bg-white rounded-2xl p-12 shadow-lg">
+        <div className="text-center py-12 md:px-12">
           <div className="max-w-3xl mx-auto">
 
             {/* Icon decorativ → aria-hidden pentru a nu polua cititoarele de ecran */}
@@ -63,7 +63,7 @@ export default function FullMenuPreview() {
             </p> */}
 
             {/* Legături adânci către secțiuni – utile pentru SEO & UX */}
-            <nav aria-label="Categorii meniu" className="mb-8">
+            {/* <nav aria-label="Categorii meniu" className="mb-8">
               <ul className="flex flex-wrap gap-2 justify-center">
                 {CATEGORIES.map(cat => (
                   <li key={cat.slug}>
@@ -76,9 +76,28 @@ export default function FullMenuPreview() {
                   </li>
                 ))}
               </ul>
-            </nav>
+            </nav> */}
+            <div className='flex flex-col items-center gap-6'>
+              <div className='flex flex-col md:flex-row justify-evenly items-center gap-6'>
+                <Link
+                  href="/meniu"
+                  aria-label="Vezi meniul complet al restaurantului"
+                  // className="primary"
+                >
+                  <Image className='rounded-2xl md:w-80' src="/images/menu-cover.png" alt="Meniu" width={200} height={200} />
+                </Link>
+                <Link
+                  href="/platouri"
+                  aria-label="Vezi platourile restaurantului"
+                  // className="primary"
+                >
+                  <Image className='rounded-2xl md:w-80' src="/images/platter-cover.png" alt="Platouri" width={200} height={200} />
+                </Link>
+              </div>
+              <p className='text-md italic'>Apasă pe imagini pentru a descoperi preparatele noastre.</p>
+            </div>
 
-            <div className="items-center">
+            {/* <div className="items-center">
               <Link
                 href="/meniu"
                 aria-label="Vezi meniul complet al restaurantului"
@@ -87,7 +106,7 @@ export default function FullMenuPreview() {
                 <BookOpen className="w-5 h-5 mr-3" aria-hidden="true"/>
                 Vezi meniul complet
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
