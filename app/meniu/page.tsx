@@ -300,6 +300,7 @@ export default function FullMenu() {
             <div className="pdf w-full max-w-6xl mx-auto flex justify-center">
               <PdfVisualiser 
                 pdfUrl="/pdfs/meniu-drag-catering.pdf"
+                numberOfPages={22}
               />
             </div>
           </section>

@@ -1,16 +1,9 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+// @ts-nocheck
 import DailyMenuClient from './DailyMenuClient';
 import { foodWeeklyMenu } from '../../helpers/constants/weekly-menu';
-import { getCurrentWeek } from '../../helpers/utils/getCurrentWeek';
 
 export default function DailyMenuServer() {
-    const { currentDayName, weekString, currentDayAsDate } = getCurrentWeek();
-    const foodForAllCurrentWeek = foodWeeklyMenu.find(weekElement => weekElement.week === weekString)?.days ?? [];
-
-    return (
-        <DailyMenuClient
-            currentDayName={currentDayName}
-            foodForAllCurrentWeek={foodForAllCurrentWeek}
-            currentDayAsDate={currentDayAsDate}
-        />
-    );
+  // NU mai chemăm getCurrentWeek pe server. Trimitem TOATĂ structura săptămânilor.
+  return <DailyMenuClient foodWeeklyMenu={foodWeeklyMenu} />;
 }

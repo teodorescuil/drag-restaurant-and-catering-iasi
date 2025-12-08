@@ -1,5 +1,5 @@
+import { food, desert } from "./food";
 export const days = ['Luni', 'Marți', 'Miercuri', 'Joi', 'Vineri', 'Sâmbătă', 'Duminică'];
-
 export const englishDays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 
 export const foodWeeklyMenu = [
@@ -7,127 +7,301 @@ export const foodWeeklyMenu = [
         week: '3 noiembrie - 9 noiembrie',
         days: [
              [
-                 {
-                    type: "Felul întâi",
-                    name: "Supă de pui cu tăiței de casă",
-                    description: "Supă de pui cu tăiței de casă – un preparat tradițional românesc, aromat și ușor, cu carne de pui, legume și tăiței de casă fini.",
-                    ingredients: "pui, morcovi, ceapă, rădăcină de pătrunjel, țelină, ardei gras, sare, piper boabe, pătrunjel verde, ou, făină de grâu",
-                    allergens: ["ouă", "gluten", "țelină"],
-                    image: "https://images.unsplash.com/photo-1547592166-23ac45744acd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
-                    },
-                {
-                    type: "Felul doi",
-                    name: "Ceafă de porc în sos de vin roșu cu piure cu usturoi copt",
-                    description: "Ceafă de porc fragedă, gătită în sos de vin roșu aromat, servită cu piure cremos cu usturoi copt.",
-                    ingredients: "ceafă de porc, vin roșu, ceapă, morcov, usturoi, bulion sau pastă de roșii, ulei, unt, cartofi, lapte, sare, piper, rozmarin, foi de dafin",
-                    allergens: ["lapte", "usturoi"],
-                    image: "https://images.unsplash.com/photo-1467003909585-2f8a72700288?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
-                },
-                {
-                    type: "Desert",
-                    name: "Surpriza bucătarului",
-                    description: "Desertul zilei, pregătit cu ingrediente proaspete și produse locale, oferă mereu o surpriză dulce și autentică.",
-                    ingredients: "Variază zilnic în funcție de desertul pregătit",
-                    allergens: [],
-                    image: "https://images.unsplash.com/photo-1601979031466-3ccde7c49a54?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
-                }
+                food["Supă de pui cu tăiței de casă"],
+                food["Ceafă de porc în sos de vin roșu cu piure cu usturoi copt"],
+                desert
             ], [
-                {
-                    type: "Felul întâi",
-                    name: "Ciorbă de afumătură cu tarhon",
-                    description: "Ciorbă tradițională ardelenească, cu afumătură fragedă și aromă intensă de tarhon.",
-                    ingredients: "carne afumată (coaste sau ciolan), morcovi, ceapă, țelină, ardei gras, cartofi, usturoi, tarhon, oțet, smântână, ulei, sare, piper.",
-                    allergens: ["lapte"],
-                    image: "https://images.unsplash.com/photo-1546793665-c74683f339c1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
-                    },
-                    {
-                    type: "Felul doi",
-                    name: "Pui Țigănesc cu orez",
-                    description: "Pui fraged în sos aromat de legume, servit cu orez pufos și plin de savoare.",
-                    ingredients: "carne de pui, ceapă, ardei gras, roșii sau pastă de roșii, usturoi, ulei, sare, piper, boia dulce, foi de dafin, orez, apă sau supă de pui.",
-                    allergens: ["fără alergeni majori (poate conține urme de țelină sau gluten, în funcție de condimentele utilizate)."],
-                    image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
-                    }, {
-                    type: "Desert",
-                    name: "Surpriza bucătarului",
-                    description: "Desertul zilei, pregătit cu ingrediente proaspete și produse locale, oferă mereu o surpriză dulce și autentică.",
-                    ingredients: "Variază zilnic în funcție de desertul pregătit",
-                    allergens: [],
-                    image: "https://images.unsplash.com/photo-1601979031466-3ccde7c49a54?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
-                }
+                food["Ciorbă de afumătură cu tarhon"],
+                food["Pui Țigănesc cu orez"],
+                desert
             ], [
-                {
-                    type: "Felul întâi",
-                    name: "Borș de cartofi dres cu smântână și ou",
-                    description: "Ciorbă tradițională de cartofi, acrișoară și cremoasă, dreasă cu smântână și ou.",
-                    ingredients: "cartofi, ceapă, morcovi, ardei gras, țelină, borș, ou, smântână, ulei, sare, piper, leuștean",
-                    allergens: ["ouă", "lapte", "țelină"],
-                    image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
-                    },
-                    {
-                    type: "Felul doi",
-                    name: "Iahnie de fasole cu cârnați",
-                    description: "Fasole gătită lent în sos aromat de legume, servită cu cârnați afumați.",
-                    ingredients: "fasole albă, cârnați afumați, ceapă, morcov, usturoi, pastă de roșii, ulei, foi de dafin, cimbru, sare, piper",
-                    allergens: ["fără alergeni majori (poate conține urme de muștar sau gluten, în funcție de cârnați și condimente)"],
-                    image: "https://images.unsplash.com/photo-1476124369491-e7addf5db371?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
-                }, {
-                    type: "Desert",
-                    name: "Surpriza bucătarului",
-                    description: "Desertul zilei, pregătit cu ingrediente proaspete și produse locale, oferă mereu o surpriză dulce și autentică.",
-                    ingredients: "Variază zilnic în funcție de desertul pregătit",
-                    allergens: [],
-                    image: "https://images.unsplash.com/photo-1601979031466-3ccde7c49a54?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
-                }
+                food["Borș de cartofi dres cu smântână și ou"],
+                food["Iahnie de fasole cu cârnați"],
+                desert
             ], [
-                {
-                    type: "Felul întâi",
-                    name: "Ciorbă de perișoare",
-                    description: "Ciorbă tradițională cu perișoare fragede din carne tocată, legume și borș acrișor.",
-                    ingredients: "carne tocată de pui, orez, ceapă, morcovi, țelină, ardei gras, ou, borș, pastă de roșii, ulei, sare, piper, leuștean",
-                    allergens: ["ouă", "țelină"],
-                    image: "https://images.unsplash.com/photo-1547592166-23ac45744acd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
-                    },
-                    {
-                    type: "Felul doi",
-                    name: "Chiftele cu sos și piure",
-                    description: "Chiftele fragede în sos de roșii, servite cu piure cremos de cartofi.",
-                    ingredients: "carne tocată (porc sau amestec porc-vită), ceapă, usturoi, ou, pesmet, sare, piper, ulei, pastă de roșii, foi de dafin, zahăr, cartofi, lapte, unt.",
-                    allergens: ["ouă", "lactoză"],
-                    image: "https://images.unsplash.com/photo-1558030006-450675393462?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
-                }, {
-                    type: "Desert",
-                    name: "Surpriza bucătarului",
-                    description: "Desertul zilei, pregătit cu ingrediente proaspete și produse locale, oferă mereu o surpriză dulce și autentică.",
-                    ingredients: "Variază zilnic în funcție de desertul pregătit",
-                    allergens: [],
-                    image: "https://images.unsplash.com/photo-1601979031466-3ccde7c49a54?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
-                }
+                food["Ciorbă de perișoare"],
+                food["Chiftele cu sos și piure"],
+                desert
             ], [
-                {
-                    type: "Felul întâi",
-                    name: "Borș de fasole cu afumătură",
-                    description: "Ciorbă tradițională cu fasole și afumătură, aromată și ușor acrișoară.",
-                    ingredients: "fasole albă, carne afumată (coaste sau ciolan), ceapă, morcovi, țelină, ardei gras, pastă de roșii, borș, ulei, sare, piper, cimbru, foi de dafin, leuștean",
-                    allergens: ["țelină"],
-                    image: "https://images.unsplash.com/photo-1572441713132-51c75654db73?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
-                    },
-                    {
-                    type: "Felul doi",
-                    name: "Varză călită cu ciolan afumat",
-                    description: "Varză fragedă călită lent, servită cu ciolan afumat aromat.",
-                    ingredients: "varză proaspătă, ciolan afumat, ceapă, pastă de roșii, ulei, sare, piper, boia, cimbru, foi de dafin, mărar",
-                    allergens: ["fără alergeni majori (poate conține urme de muștar sau gluten, în funcție de condimentele folosite)."],
-                    image: "https://images.unsplash.com/photo-1574484284002-952d92456975?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
-                },{
-                    type: "Desert",
-                    name: "Surpriza bucătarului",
-                    description: "Desertul zilei, pregătit cu ingrediente proaspete și produse locale, oferă mereu o surpriză dulce și autentică.",
-                    ingredients: "Variază zilnic în funcție de desertul pregătit",
-                    allergens: [],
-                    image: "https://images.unsplash.com/photo-1601979031466-3ccde7c49a54?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
-                }
+                food["Borș de fasole cu afumătură"],
+                food["Varză călită cu ciolan afumat"],
+                desert
             ],
         ]
+    }, {
+        week: '10 noiembrie - 16 noiembrie',
+        days: [
+            //LUNI
+            [
+                food["Borș țărănesc de pui cu tăiței de casă"],
+                food["Friptură de porc cu cartofi țărănești"],
+                desert
+            ], 
+            //MARTI
+            [
+                food["Borș de afumătură făcută cu ciolan"],
+                food["Pui Toscan cu orez"],
+                desert
+            ], 
+            //MIERCURI
+            [
+                food["Ciorbă de perișoare"],
+                food["Tocană de vițel cu piure"],
+                desert
+            ], 
+            //JOI
+            [
+                food["Ciorbă de vită"],
+                food["Friptură de pui cu mămăligă și mujdei"],
+                desert
+            ], 
+            //VINERI
+            [
+                food["Borș de curcan"],
+                food["Stroganof de porc cu orez"],
+                desert,
+                [
+                    food["Borș de fasole acrit cu zeamă de varză"],
+                    food["Falafel cu hummus"],
+                    desert
+                ]
+            ],
+        ],
+    }, {
+        week: '17 noiembrie - 23 noiembrie',
+        days: [
+            //LUNI
+            [
+                food["Borș de pui"],
+                food["Fasole bătută cu cârnați cabanos"],
+                desert,
+                [
+                    food["Borș de legume cu jumeri de păstârnac"],
+                    food["Fasole bătută, conopidă pane și murături"],
+                    desert
+                ]
+            ], 
+            //MARTI
+            [
+                food["Borș de afumătură făcută cu coaste"],
+                food["Chilli con carne cu orez basmati"],
+                desert,
+                [
+                    food["Ciorbă cu mix de ciuperci"],
+                    food["Chilli con vegetale cu orez basmati"],
+                    desert
+                ]
+            ], 
+            //MIERCURI
+            [
+                food["Ciorbă de perișoare"],
+                food["Ostropel de pui cu piure"],
+                desert,
+                [
+                    food["Supă de roșii cu linte"],
+                    food["Chiftele vegetale cu sos și piure"],
+                    desert
+                ]
+            ], 
+            //JOI
+            [
+                food["Ciorbă rădăuțeană"],
+                food["Gulaș de vită"],
+                desert,
+                [
+                    food["Borș de fasole acrit cu zeamă de varză"],
+                    food["Gulaș de ciuperci"],
+                    desert
+                ]
+            ], 
+            //VINERI
+            [
+                food["Ciorbă măcelărească de porc"],
+                food["Ceafă de porc în sos de vin roșu cu piure"],
+                desert,
+                [
+                    food["Ciorbă de perișoare de pește"],
+                    food["Macrou în sos tomat și mămăligă"],
+                    desert
+                ]
+            ],
+        ],
+    }, {
+        week: '24 noiembrie - 30 noiembrie',
+        days: [
+            //LUNI
+            [
+                food["Ciorbă de afumătură cu tarhon"],
+                food["Carne de porc la garniță, mămăligă și brânză de putină"],
+                desert,
+                [
+                    food["Borș de legume acrit cu zeamă de varză"],
+                    food["Ciulama de ciuperci cu mămăligă"],
+                    desert
+                ]
+            ], 
+            //MARTI
+            [
+                food["Ciorbă de perișoare"],
+                food["Șnițele de pui cu piure"],
+                desert,
+                [
+                    food["Borș de pește"],
+                    food["Chiftele de pește cu sos de roșii și piure"],
+                    desert
+                ]
+            ], 
+            //MIERCURI
+            [
+                food["Supă de pui cu tăiței de casă"],
+                food["Iahnie de fasole cu cârnați"],
+                desert,
+                [
+                    food["Borș de cartofi cu sfeclă roșie"],
+                    food["Iahnie de fasole"],
+                    desert
+                ]
+            ], 
+            //JOI
+            [
+                food["Ciorbă de vită"],
+                food["Escalop de porc la tavă cu ciuperci și pilaf"],
+                desert,
+                [
+                    food["Ciorbă falsă de burtă"],
+                    food["Sarmale de post"],
+                    desert
+                ]
+            ], 
+            //VINERI
+            [
+                food["Ciorbă de pui a la grecque"],
+                food["Pui cu smântână și ciuperci și mămăligă"],
+                desert,
+                [
+                    food["Borș de fasole acrit cu zeamă de varză"],
+                    food["Falafel cu hummus"],
+                    desert
+                ]
+            ],
+        ],
+    }, {
+        week: '1 decembrie - 7 decembrie',
+        days: [
+            //LUNI
+            [
+                food["Borș de afumătură"],
+                food["Iahnie de fasole cu ciolan afumat"],
+                desert,
+                [
+                    food["Borș de legume"],
+                    food["Iahnie de fasole"],
+                    desert
+                ]
+            ], 
+            //MARTI
+            [
+                food["Borș de pui"],
+                food["Ceafă de porc la cuptor cu cartofi țărănești"],
+                desert,
+                [
+                    food["Ciorbă de perișoare de pește"],
+                    food["Macrou în sos tomat"],
+                    desert
+                ]
+            ], 
+            //MIERCURI
+            [
+                food["Ciorbă de perișoare"],
+                food["Pui la ceaun cu mămăligă și usturoi"],
+                desert,
+                [
+                    food["Ciorbă de hribi și alte ciuperci"],
+                    food["Chiftele vegetale cu sos și piure"],
+                    desert
+                ]
+            ], 
+            //JOI
+            [
+                food["Borș de fasole cu afumătură acrit cu zeamă de varză"],
+                food["Chiftele cu sos și piure"],
+                desert,
+                [
+                    food["Borș de pește"],
+                    food["Saramură de crap cu mămăligă"],
+                    desert
+                ]
+            ], 
+            //VINERI
+            [
+                food["Ciorbă de burtă"],
+                food["Pilaf cu pulpe la cuptor"],
+                desert,
+                [
+                    food["Ciorbă falsă de burtă"],
+                    food["Ciulama de ciuperci cu mămăligă"],
+                    desert
+                ]
+            ],
+        ],
+    }, {
+        week: '8 decembrie - 14 decembrie',
+        days: [
+            //LUNI
+            [
+                food["Borș de curcan"],
+                food["Stroganof de porc cu orez"],
+                desert,
+                [
+                    food["Supă de roșii cu linte"],
+                    food["Chilli con vegetale cu orez basmati"],
+                    desert
+                ]
+            ], 
+            //MARTI
+            [
+                food["Ciorbă rădăuțeană"],
+                food["Varză murată călită cu ciolan și kaizer"],
+                desert,
+                [
+                    food["Borș de pește"],
+                    food["Macrou prăjit cu mămăligă și usturoi"],
+                    desert
+                ]
+            ], 
+            //MIERCURI
+            [
+                food["Borș de afumătură"],
+                food["Carne de porc la garniță, mămăligă și brânză de putină"],
+                desert,
+                [
+                    food["Ciorbă de hribi și alte ciuperci"],
+                    food["Sarmale de post"],
+                    desert
+                ]
+            ], 
+            //JOI
+            [
+                food["Ciorbă de perișoare"],
+                food["Tocană de vițel cu prune uscate și piure"],
+                desert,
+                [
+                    food["Borș de fasole acrit cu zeamă de varză"],
+                    food["Gulaș de ciuperci"],
+                    desert
+                ]
+            ], 
+            //VINERI
+            [
+                food["Ciorbă de vită"],
+                food["Pui Toscan cu orez"],
+                desert,
+                [
+                    food["Borș de cartofi cu sfeclă roșie"],
+                    food["Praz cu măsline și pâinea casei"],
+                    desert
+                ]
+            ],
+        ],
     }
 ]

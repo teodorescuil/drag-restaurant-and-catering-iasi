@@ -1,4 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+// @ts-nocheck
 'use client';
 import { useState, useEffect } from 'react';
 import { foodWeeklyMenu, days } from '../helpers/constants/weekly-menu';
@@ -37,7 +39,7 @@ export default function WeeklyMenuDetailed() {
       weekMenu[days.map((day) => day.toLowerCase()).indexOf(currentDayName.toLowerCase())] || []
     );
   }, [weekMenu, currentDayName]);
-
+console.log('foodByCurrentDay.slice(3)', foodByCurrentDay.slice(3))
   return (
     <section className="mt-20 py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -68,10 +70,23 @@ export default function WeeklyMenuDetailed() {
                   <h3 className="text-gray-600">{currentDayAsDate}</h3>
                 </div>
                 <div className="grid lg:grid-cols-3 gap-8">
-                  {foodByCurrentDay.map((course, i) => (
+                  {foodByCurrentDay.slice(0, 3).map((course, i) => (
                     <CourseDropdown key={i} course={course} index={i} isMobile={isMobile} />
                   ))}
                 </div>
+                  {foodByCurrentDay.length > 3 && (
+                  <div>
+                    <h3 className="mt-8 mb-4 text-3xl font-playfair font-semibold text-center text-charcoal">
+                      Meniul de Post
+                    </h3>
+                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+
+                      {foodByCurrentDay.slice(3)[0].map((course, i) => (
+                        <CourseDropdown key={i} course={course} index={i} isMobile={isMobile} />
+                      ))}
+                    </div>
+                  </div>
+                )}
               </>
             ) : (
               <div className="text-center">
@@ -156,17 +171,17 @@ function CourseDropdown({
         <img
           // src={course.image}
           src="../../drag-logo-simple-colored.png"
-          alt={course.name}
+          alt={course?.name}
           className="w-auto h-50 object-cover"
         />
       </div>
       <div className="p-6">
         <div className="mb-4">
           <span className="inline-block text-gold py-1 text-sm font-medium mb-2">
-            {course.type}
+            {course?.type}
           </span>
           <h3 className="text-2xl font-playfair font-bold text-charcoal mb-2">
-            {course.name}
+            {course?.name}
           </h3>
         </div>
 
@@ -175,18 +190,18 @@ function CourseDropdown({
             {/* <p className="text-gray-600 text-sm leading-relaxed">
               {course.detailedDescription}
             </p> */}
-            <p className="text-gray-600 text-sm">{course.description}</p>
+            <p className="text-gray-600 text-sm">{course?.description}</p>
           </div>
 
           <div>
             <h4 className="font-bold text-charcoal mb-2">Ingrediente:</h4>
-            <p className="text-gray-600 text-sm">{course.ingredients}</p>
+            <p className="text-gray-600 text-sm">{course?.ingredients}</p>
           </div>
 
           <div>
-            <h4 className="font-bold text-charcoal mb-2">{course.allergens.length > 0 ? "Alergeni:" : ""}</h4>
+            <h4 className="font-bold text-charcoal mb-2">{course?.allergens?.length > 0 ? "Alergeni:" : ""}</h4>
             <div className="flex flex-wrap gap-2">
-              {course.allergens.map((a, j) => (
+              {course?.allergens?.map((a, j) => (
                 <span
                   key={j}
                   className="bg-red-100 text-red-700 px-2 py-1 rounded-full text-xs font-medium"

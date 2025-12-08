@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
 import SocialButtons from "../SocialButtons";
-import { pages } from "@/app/helpers/constants/pages";
+import { pages } from "../../helpers/constants/pages";
 
 export default function Footer() {
   const year = new Date().getFullYear();

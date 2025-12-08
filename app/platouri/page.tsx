@@ -98,6 +98,7 @@ export default function PlatouriPage() {
             <PdfVisualiser 
                 pdfUrl="/pdfs/platouri-drag-catering.pdf"
                 widthOfPdf={800}
+                numberOfPages={17}
             />
             </div>
         </section>

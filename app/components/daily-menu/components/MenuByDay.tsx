@@ -19,9 +19,10 @@ type Props = {
 };
 
 export default function MenuByDate({ menu, isMobile }: Props) {
+  const list: Course[] = Array.isArray(menu[0]) ? (menu[0] as Course[]) : (menu as Course[]);
   return (
     <div className="grid md:grid-cols-3 gap-8">
-      {menu.map((course, index) => (
+      {list.map((course, index) => (
         <MenuCard key={index} idx={index} course={course} isMobile={isMobile} />
       ))}
     </div>
