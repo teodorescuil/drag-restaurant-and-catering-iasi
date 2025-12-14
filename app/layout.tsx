@@ -4,6 +4,8 @@ import { Inter, Playfair_Display, Dancing_Script } from "next/font/google";
 import './globals.css';
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
+import 'swiper/css';
+import "swiper/css/pagination";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
 const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair", display: "swap" });

@@ -142,9 +142,9 @@ export default function DailyMenuClient({ foodWeeklyMenu, overrideDateYmd }: Pro
         </div>
 
         <div className="text-center mt-12">
-          <a href="tel:+40741664241" className="primary">
+          <a href="tel:+40755253253" className="primary">
             <Phone className="w-5 h-5 mr-3" fill="currentColor" aria-hidden="true" />
-            +40 741 664 241
+            +40 755 253 253
           </a>
         </div>
       </div>

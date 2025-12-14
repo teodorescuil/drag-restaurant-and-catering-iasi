@@ -37,11 +37,11 @@ export default function EventsDetailed() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
-              href="tel:0754824625" 
+              href="tel:0741664241" 
               className="primary"
             >
               <i className="fas fa-phone mr-3"></i>
-              0754 824 625
+              0741 664 241
             </a>
             {/* <a 
               href="#contact" 

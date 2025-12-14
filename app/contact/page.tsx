@@ -83,7 +83,7 @@ export default function ContactDetailed() {
                   <Phone className="text-gold w-6 h-6" aria-label="Telefon contact" />
                 </div>
                 <h3 className="font-semibold text-charcoal mb-1">Telefon Rezervări</h3>
-                <a href="tel:0754824625" className="text-gold font-semibold text-lg hover:underline" itemProp="telephone">
+                <a href="tel:0741664241" className="text-gold font-semibold text-lg hover:underline" itemProp="telephone">
                   +40 741 664 241
                 </a>
               </article>

@@ -1,8 +1,6 @@
 'use client'
-import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { ChevronRight, ChevronDown } from 'lucide-react';
 
 type Course = {
   type: string;
@@ -18,12 +16,12 @@ type Props = {
   isMobile: boolean;
 };
 
-export default function MenuByDate({ menu, isMobile }: Props) {
+export default function MenuByDate({ menu }: Props) {
   const list: Course[] = Array.isArray(menu[0]) ? (menu[0] as Course[]) : (menu as Course[]);
   return (
-    <div className="grid md:grid-cols-3 gap-8">
+    <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
       {list.map((course, index) => (
-        <MenuCard key={index} idx={index} course={course} isMobile={isMobile} />
+        <MenuCard key={index} course={course} />
       ))}
     </div>
   );
@@ -31,58 +29,20 @@ export default function MenuByDate({ menu, isMobile }: Props) {
 
 function MenuCard({
   course,
-  isMobile,
-  idx,
 }: {
   course: Course;
-  isMobile: boolean;
-  idx: number;
 }) {
-  const [isOpen, setIsOpen] = useState(false);
-  const panelId = `menu-panel-${idx}`;
-
-  // Only used on mobile (compact row with arrow + type + name)
- const MobileHeader = () => (
-  <button
-    type="button"
-    onClick={() => setIsOpen((s) => !s)}
-    className="flex w-full items-start px-4 py-3 text-left gap-3"
-    aria-expanded={isOpen}
-    aria-controls={panelId}
-  >
-    {isOpen ? (
-      <ChevronDown className="w-5 h-5 shrink-0" aria-hidden="true" />
-    ) : (
-      <ChevronRight className="w-5 h-5 shrink-0" aria-hidden="true" />
-    )}
-
-    {/* Show type + name ONLY when closed */}
-    {!isOpen && (
-      <span className="flex flex-col w-full min-w-0">
-        <span className="text-gold text-sm font-medium">
-          {course.type}
-        </span>
-
-        <span className="text-base font-semibold text-charcoal whitespace-normal break-words">
-          {course.name}
-        </span>
-      </span>
-    )}
-  </button>
-);
-
-
 
   // Card body content (shared between desktop & mobile-open)
   const CardBody = ({ withInnerLink }: { withInnerLink: boolean }) => (
-    <>
+    <div className="flex items-center px-4 py-6 w-full">
       <Image
         src={/* course.image || */ '/drag-logo-simple-colored.png'}
         alt={`${course.type}: ${course.name}`}
-        width={400}
-        height={300}
+        width={200}
+        height={200}
         sizes="(min-width: 768px) 33vw, 90vw"
-        className="w-48 h-48 object-cover group-hover:scale-105 transition-transform duration-300 mx-auto"
+        className="w-30 h-30 object-cover group-hover:scale-105 transition-transform duration-300 "
         loading="lazy"
       />
       <div className="p-6">
@@ -90,11 +50,10 @@ function MenuCard({
           <span className="inline-block text-gold py-1 text-sm font-medium mb-2">
             {course.type}
           </span>
-          <h3 className="text-xl font-playfair font-semibold text-charcoal">
+          <h3 className="text-xl font-playfair font-semibold text-charcoal wrap-break-word">
             {course.name}
           </h3>
         </div>
-        <p className="text-gray-600 text-sm">{course.description}</p>
 
         {withInnerLink ? (
           <Link
@@ -107,30 +66,14 @@ function MenuCard({
           <p className="mt-2 text-gray-500 text-sm hover:underline">Vezi detalii</p>
         )}
       </div>
-    </>
+    </div>
   );
 
-  if (!isMobile) {
-    // DESKTOP: whole card is a link (original behavior)
-    return (
-      <Link href="/meniul-zilei" className="block">
-        <article className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group daily-menu-card">
-          <CardBody withInnerLink={false} />
-        </article>
-      </Link>
-    );
-  }
-
-  // MOBILE: dropdown behavior
   return (
-    <div className="flex flex-col bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300 group daily-menu-card">
-      <MobileHeader />
-      {isOpen && (
-        <div id={panelId} className="border-t border-gray-100">
-          {/* On mobile-open, we include the inner Link on "Vezi detalii" */}
-          <CardBody withInnerLink />
-        </div>
-      )}
-    </div>
+    <Link href="/meniul-zilei" className="block">
+      <article className="flex h-full bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group daily-menu-card">
+        <CardBody withInnerLink={false} />
+      </article>
+    </Link>
   );
 }

@@ -105,7 +105,7 @@ export default function Event({ index, event, isMobile }: EventProps) {
         </div> */}
         <nav className="flex flex-row justify-start">
           <a 
-            href="tel:0754824625" 
+            href="tel:0741664241" 
             className="secondary"
           >
             <Phone className="mr-3 w-5 h-5" fill="white" />

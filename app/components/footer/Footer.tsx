@@ -56,17 +56,31 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold text-white mb-4">Contact</h3>
             <address className="not-italic text-gray-300 text-sm space-y-3">
-              <p className="flex items-center justify-center md:justify-start">
+              <div className="flex items-start justify-center md:justify-start">
                 <Phone className="text-gold mr-2 w-4 h-4" aria-hidden="true" />
-                <a
-                  href="tel:+40741664241"
-                  aria-label="Sună Drag Restaurant & Catering la +40 741 664 241"
-                  className="hover:text-gold/80 transition-colors duration-200"
-                >
-                  +40 741 664 241
-                </a>
-              </p>
-
+                <div className="flex flex-col">
+                  <div>
+                    <p>Comenzi restaurant:</p>
+                    <a
+                      href="tel:+400755253253"
+                      aria-label="Sună Drag Restaurant & Catering la +40 0755 253 253"
+                      className="hover:text-gold/80 transition-colors duration-200"
+                    >
+                      +40 755 253 253
+                    </a>
+                  </div>
+                  <div>
+                    <p>Evenimente și comenzi platouri:</p>
+                    <a
+                      href="tel:+40741664241"
+                      aria-label="Sună Drag Restaurant & Catering la +40 741 664 241"
+                      className="hover:text-gold/80 transition-colors duration-200"
+                    >
+                      +40 741 664 241
+                    </a>
+                  </div>
+                </div>
+              </div>
               <p className="flex items-center justify-center md:justify-start">
                 <Mail className="text-gold mr-2 w-4 h-4" aria-hidden="true" />
                 <a

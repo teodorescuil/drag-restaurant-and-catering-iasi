@@ -27,6 +27,7 @@
   --gold: 34 59% 63%; /* #d3a56e */
   --charcoal: 0 0% 10%; /* #1a1a1a */
   --cream: 45 50% 96%; /* #f8f7f4 */
+  --red: 0 75% 60%; /* #ff4d4d */
 }
 
 .dark {
@@ -197,10 +198,37 @@
   transition-duration: 150ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   min-width: 250px;
+  text-align: center;
 }
 
 .primary:hover {
   background-color: hsl(var(--gold) / 0.9);
+}
+
+.primary-red {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(var(--red));
+  border-width: 2px;
+  border-style: solid;
+  border-color: hsl(var(--red));
+  color: #fff;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  min-width: 250px;
+  text-align: center;
+}
+
+.primary-red:hover {
+  background-color: hsl(var(--red) / 0.7);
 }
 
 .secondary {
@@ -366,3 +394,23 @@ a {
   margin: 0 auto;
 }
 
+/* Dots container (poziționare) */
+.swiper-pagination {
+  bottom: -4px !important; /* MUTĂ DOTS MAI JOS */
+}
+
+/* Dots inactive */
+.swiper-pagination-bullet {
+  background: hsl(var(--charcoal)) !important; /* culoare alb semi */
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+  margin: 0 6px !important;
+  transition: transform 0.2s ease;
+}
+
+/* Dot activ */
+.swiper-pagination-bullet-active {
+  background: hsl(var(--gold)) !important; /* Auriu */
+  transform: scale(1.6);
+}

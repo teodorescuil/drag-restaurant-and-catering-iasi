@@ -272,7 +272,66 @@ export const foodWeeklyMenu = [
             //MIERCURI
             [
                 food["Borș de afumătură"],
-                food["Carne de porc la garniță, mămăligă și brânză de putină"],
+                food["Friptură de porc cu cartofi țărănești"],
+                desert,
+                [
+                    food["Ciorbă de hribi și alte ciuperci"],
+                    food["Sarmale de post"],
+                    desert
+                ]
+            ], 
+            //JOI
+            [
+                food["Ciorbă de perișoare"],
+                food["Tocană de vițel cu prune uscate și piure"],
+                desert,
+                [
+                    food["Borș de fasole acrit cu zeamă de varză"],
+                    food["Gulaș de ciuperci"],
+                    desert
+                ]
+            ], 
+            //VINERI
+            [
+                food["Ciorbă de vită"],
+                food["Pui Toscan cu orez"],
+                desert,
+                [
+                    food["Borș de cartofi cu sfeclă roșie"],
+                    food["Praz cu măsline și pâinea casei"],
+                    desert
+                ]
+            ],
+        ],
+    }, {
+        week: '15 decembrie - 21 decembrie',
+        days: [
+            //LUNI
+            [
+                food["Borș de afumătură cu cartofi acrit cu zeamă de varză"],
+                food["Escalop de porc cu ciuperci și piure de cartofi"],
+                desert,
+                [
+                    food["Borș de legume acrit cu zeamă de varză"],
+                    food["Fasole bătută"],
+                    desert
+                ]
+            ], 
+            //MARTI
+            [
+                food["Ciorbă rădăuțeană"],
+                food["Varză murată călită cu ciolan și kaizer"],
+                desert,
+                [
+                    food["Borș de pește"],
+                    food["Macrou prăjit cu mămăligă și usturoi"],
+                    desert
+                ]
+            ], 
+            //MIERCURI
+            [
+                food["Borș de afumătură"],
+                food["Friptură de porc cu cartofi țărănești"],
                 desert,
                 [
                     food["Ciorbă de hribi și alte ciuperci"],

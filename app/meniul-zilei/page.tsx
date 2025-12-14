@@ -106,7 +106,7 @@ console.log('foodByCurrentDay.slice(3)', foodByCurrentDay.slice(3))
             Meniul se actualizează săptămânal pentru a asigura prospețimea ingredientelor de sezon.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="tel:0754824625" className="primary">
+            <a href="tel:0755253253" className="primary">
               <Phone className="w-5 h-5 mr-3" fill="currentColor" aria-hidden="true" />
               Comandă prin Telefon
             </a>

@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { Phone } from 'lucide-react';
-import PdfVisualiser from '../components/pdf-visualiser/PdfVisualiser';
+import PlatesTabs from '../components/plates-tabs/plates-tabs';
 
 export const metadata: Metadata = {
   title: 'Platouri Drag Catering - Restaurant și Catering Iași | Preparate Tradiționale Românești',
@@ -72,7 +72,7 @@ export default function PlatouriPage() {
     <>
       <main itemScope itemType="https://schema.org/Menu" className="mt-20 py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <header className="text-center mb-16">
+          <header className="text-center mb-8">
             <div className="inline-block bg-gold/10 px-6 py-2 rounded-full mb-6">
               <span className="text-gold font-semibold text-sm uppercase tracking-wider">Platouri</span>
             </div>
@@ -90,18 +90,10 @@ export default function PlatouriPage() {
             </p>
           </header>
 
-        <section 
-            className="p-6 md:p-8 mb-16"
-            aria-labelledby="pdf-section-title"
-        >            
-            <div className="pdf w-full max-w-6xl mx-auto flex justify-center">
-            <PdfVisualiser 
-                pdfUrl="/pdfs/platouri-drag-catering.pdf"
-                widthOfPdf={800}
-                numberOfPages={17}
-            />
-            </div>
-        </section>
+          <section className="mb-20">
+            {/* Componentele cu tab-uri și carduri pentru platouri */}
+            <PlatesTabs />
+          </section>
 
           <section className="text-center p-8 bg-gradient-to-r from-gold/10 to-cream/30 rounded-3xl">
             <h2 className="text-3xl font-playfair font-bold text-charcoal mb-4">
@@ -120,12 +112,12 @@ export default function PlatouriPage() {
                 Contactează-ne
               </Link>
               <a 
-                href="tel:0754824625" 
+                href="tel:0741664241" 
                 className="secondary"
-                aria-label="Sună la numărul 0754824625 pentru rezervări"
+                aria-label="Sună la numărul 0741664241 pentru rezervări"
               >
                 <Phone className="w-5 h-5 mr-3" fill="currentColor" aria-hidden="true" />
-                +40 754 824 625
+                +40 741 664 241
               </a>
             </div>
           </section>

@@ -2,7 +2,7 @@ import Script from 'next/script';
 import { Metadata } from 'next';
 import Link from 'next/link';
 import {Phone} from 'lucide-react';
-import PdfVisualiser from '../components/pdf-visualiser/PdfVisualiser';
+import MenuTabs from '../components/menu-tabs/menu-tabs';
 
 export const metadata: Metadata = {
   title: 'Meniu Complet Drag Restaurant & Catering - Restaurant și Catering Iași | Preparate Tradiționale Românești',
@@ -148,112 +148,6 @@ export default function FullMenu() {
     ]
   };
 
-  // Array cu toate categoriile de produse pentru grid
-  // const categories = [
-  //   {
-  //     icon: "🍲",
-  //     title: "Ciorbe",
-  //     bg: "from-orange-50 to-orange-100 border-orange-200",
-  //     description: "Ciorbă de pui, burtă, văcuță, legume, fasole, perișoare, rădăuțeană"
-  //   },
-  //   {
-  //     icon: "🥟",
-  //     title: "Aperitive",
-  //     bg: "from-green-50 to-green-100 border-green-200",
-  //     description: "Cremă de brânză, pate de pui, salată de vinete, hummus"
-  //   },
-  //   {
-  //     icon: "🥗",
-  //     title: "Salate",
-  //     bg: "from-emerald-50 to-emerald-100 border-emerald-200",
-  //     description: "Salată grecească, cu ton, asortată, de varză, de sfeclă cu hrean"
-  //   },
-  //   {
-  //     icon: "🍝",
-  //     title: "Paste",
-  //     bg: "from-yellow-50 to-yellow-100 border-yellow-200",
-  //     description: "Spaghetti Carbonara și alte specialități"
-  //   },
-  //   {
-  //     icon: "🍖",
-  //     title: "Platouri Calde",
-  //     bg: "from-red-50 to-red-100 border-red-200",
-  //     description: "Platoul Gurmandului, Platou Pui, Platou Drag"
-  //   },
-  //   {
-  //     icon: "🐟",
-  //     title: "Preparate din Pește",
-  //     bg: "from-blue-50 to-blue-100 border-blue-200",
-  //     description: "Hamsii, Somon la grătar, Păstrăv"
-  //   },
-  //   {
-  //     icon: "🍗",
-  //     title: "Preparate din Pui",
-  //     bg: "from-amber-50 to-amber-100 border-amber-200",
-  //     description: "Piept de pui, pulpe la grătar, pui copt lent, șnițel, crispy, coaste, kebab"
-  //   },
-  //   {
-  //     icon: "🥩",
-  //     title: "Carne de Porc, Vită și Miel",
-  //     bg: "from-rose-50 to-rose-100 border-rose-200",
-  //     description: "Ceafă de porc, cârnați, aripioare, antricot de vită, fălcuțe de vițel, pastramă de miel, tochitură moldovenească"
-  //   },
-  //   {
-  //     icon: "🌱",
-  //     title: "Preparate Vegane",
-  //     bg: "from-lime-50 to-lime-100 border-lime-200",
-  //     description: "Nuggets vegani, burger vegan, salată grecească cu brânză vegană"
-  //   },
-  //   {
-  //     icon: "🍔",
-  //     title: "Burgeri",
-  //     bg: "from-purple-50 to-purple-100 border-purple-200",
-  //     description: "Gourmand Burger, Classic Burger, Cheeseburger"
-  //   },
-  //   {
-  //     icon: "🍕",
-  //     title: "Pizza",
-  //     bg: "from-indigo-50 to-indigo-100 border-indigo-200",
-  //     description: "Diavola, Italia, Salami, Margherita, Quattro Formaggi, Quattro Stagioni, Vegetariana, Tonno, Gourmand, Orientală, Rustica, Pollo, Drag, Mortadella, Carnivore, Hawaii, Prosciutto e Funghi, Carbonara, Funghi"
-  //   },
-  //   {
-  //     icon: "🍟",
-  //     title: "Garnituri",
-  //     bg: "from-stone-50 to-stone-100 border-stone-200",
-  //     description: "Piure, cartofi pai, cartofi rustici, barabule coapte, legume la grătar"
-  //   },
-  //   {
-  //     icon: "🥫",
-  //     title: "Sosuri și Extra",
-  //     bg: "from-orange-50 to-orange-100 border-orange-200",
-  //     description: "Sosuri diverse (verdețuri, iaurt, rozé, ketchup etc.), pâinea casei, murături, focaccia"
-  //   },
-  //   {
-  //     icon: "🍰",
-  //     title: "Deserturi",
-  //     bg: "from-pink-50 to-pink-100 border-pink-200",
-  //     description: "Clătite cu ciocolată, clătite cu dulceață, papanași, lava cake, înghețată asortată"
-  //   },
-  //   {
-  //     icon: "🥤",
-  //     title: "Răcoritoare & Cafea",
-  //     bg: "from-cyan-50 to-cyan-100 border-cyan-200",
-  //     description: "Apă, sucuri, limonadă, ceaiuri, cafea, ciocolată caldă"
-  //   },
-  //   {
-  //     icon: "🍺",
-  //     title: "Băuturi Alcoolice",
-  //     bg: "from-teal-50 to-teal-100 border-teal-200",
-  //     description: "Bere (draft, brună, blondă, fără alcool, radler), cocktailuri, whisky, rom, gin, rachiu, lichior"
-  //   },
-  //   {
-  //     icon: "🍷",
-  //     title: "Crame de Vinuri",
-  //     bg: "from-violet-50 to-violet-100 border-violet-200",
-  //     description: "Vinuri albe, roșii, roze, spumante, vinul casei"
-  //   }
-  // ];
-
   return (
     <>
       {/* Structured Data Script */}
@@ -292,17 +186,9 @@ export default function FullMenu() {
             </div>
           </header>
 
-          {/* PDF Viewer Section */}
-          <section 
-            className="p-6 md:p-8 mb-16"
-            aria-labelledby="pdf-section-title"
-          >            
-            <div className="pdf w-full max-w-6xl mx-auto flex justify-center">
-              <PdfVisualiser 
-                pdfUrl="/pdfs/meniu-drag-catering.pdf"
-                numberOfPages={22}
-              />
-            </div>
+          <section className="mb-20">
+            {/* Componentele cu tab-uri și carduri pentru meniu */}
+            <MenuTabs />
           </section>
 
           {/* Content Section pentru SEO */}
@@ -393,12 +279,12 @@ export default function FullMenu() {
                 Contactează-ne
               </Link>
               <a 
-                href="tel:0754824625" 
+                href="tel:0755253253" 
                 className="secondary"
-                aria-label="Sună la numărul 0754824625 pentru rezervări"
+                aria-label="Sună la numărul 0755253253 pentru comenzi și rezervări"
               >
                 <Phone className="w-5 h-5 mr-3" fill="currentColor" aria-hidden="true" />
-                +40 741 664 241
+                0755 253 253
               </a>
             </div>
           </section>
