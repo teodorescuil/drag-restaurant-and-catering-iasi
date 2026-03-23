@@ -1,5 +1,56 @@
 export const menuFood = [
     {
+        id: 'specialitati-paste',
+        label: 'Specialități de Paște',
+        items: [
+            {
+                id: 'drob-de-miel',
+                category: 'Vită & miel',
+                name: 'Drob de miel',
+                weight: '',
+                price: '135 RON/kg',
+                description:
+                    'Organe de miel (ficat, plămâni, inimă), ouă, ceapă verde, mărar, pătrunjel, usturoi, sare, piper, ulei.',
+                image: null,
+            }, {
+                id: 'drob-de-pui-si-porc',
+                category: 'Paște',
+                name: 'Drob de pui și porc',
+                weight: '',
+                price: '80 RON/kg',
+                description:
+                    'Carne de pui și porc, organe de pui, ouă, ceapă verde, mărar, pătrunjel, usturoi, sare, piper, ulei.',
+                image: null,
+            }, {
+                id: 'oua-rosii',
+                category: 'Paște',
+                name: 'Ouă roșii',
+                weight: '',
+                price: '3 RON/Bucata',
+                description:
+                    '',
+                image: null,
+            }, {
+                id: 'oua-umplute',
+                category: 'Paște',
+                name: 'Ouă umplute',
+                weight: '',
+                price: '65 RON/kg',
+                description:
+                    '',
+                image: null,
+            }, {
+                id: 'umar-de-miel-copt-si-afumat',
+                category: 'Paște',
+                name: 'Umăr de miel copt și afumat',
+                weight: '',
+                price: '200 RON/kg',
+                description:
+                    '',
+                image: null,
+            },
+        ]
+    }, {
         id: 'ciorbe-supe',
         label: 'Ciorbe & supe',
         items: [
@@ -312,16 +363,15 @@ export const menuFood = [
             price: '35 RON',
             description: 'Piept de pui, făină, ou, cartofi pai, maioneză, ketchup.',
             image: null,
-            },
-            {
-            id: 'coaste-pui-pane-cartofi-usturoi',
-            category: 'Pui',
-            name: 'Coaste de pui pane cu cartofi pai și sos de maioneză cu usturoi',
-            weight: '150 g / 150 g / 50 g',
-            price: '36 RON',
-            description:
-                'Coaste de pui pane, cartofi pai, maioneză, usturoi.',
-            image: null,
+            }, {
+                id: 'coaste-pui-pane-cartofi-usturoi',
+                category: 'Pui',
+                name: 'Coaste de pui pane cu cartofi pai și sos de maioneză cu usturoi',
+                weight: '150 g / 150 g / 50 g',
+                price: '36 RON',
+                description:
+                    'Coaste de pui pane, cartofi pai, maioneză, usturoi.',
+                image: null,
             },
         ],
     },
@@ -348,18 +398,51 @@ export const menuFood = [
             description:
                 'Fălcuțe de vițel Black Angus, rozmarin, cartofi, unt, lapte, vin roșu, anason, portocale.',
             image: null,
-            },
-            {
-            id: 'pastrama-miel-cartofi-iaurt',
-            category: 'Vită & miel',
-            name: 'Pastramă de miel, cartofi rustici, sos de iaurt, salată de ceapă roșie cu pătrunjel',
-            weight: '200 g / 200 g / 50 g / 30 g',
-            price: '105 RON',
-            description:
-                'Pastramă de miel, cartofi, usturoi, mentă, iaurt grecesc, ceapă roșie, mărar, oțet, ulei, pătrunjel.',
-            image: null,
-            },
+            }, {
+                id: 'pastrama-miel-cartofi-iaurt',
+                category: 'Vită & miel',
+                name: 'Pastramă de miel, cartofi rustici, sos de iaurt, salată de ceapă roșie cu pătrunjel',
+                weight: '200 g / 200 g / 50 g / 30 g',
+                price: '105 RON',
+                description:
+                    'Pastramă de miel, cartofi, usturoi, mentă, iaurt grecesc, ceapă roșie, mărar, oțet, ulei, pătrunjel.',
+                image: null,
+            }, 
         ],
+    },
+    {
+        id: 'afumaturi-vita',
+        label: 'Afumături vită',
+        items: [
+            {
+                id: 'brisket-argentina',
+                category: 'Afumături vită',
+                name: 'Brisket Argentina',
+                weight: '',
+                price: '250 RON/kg',
+                description:
+                    '',
+                image: null,
+            }, {
+                id: 'short-ribs',
+                category: 'Afumături vită',
+                name: 'Short Ribs',
+                weight: '',
+                price: '195 RON/kg',
+                description:
+                    '',
+                image: null,
+            }, {
+                id: 'pulled-beef',
+                category: 'Afumături vită',
+                name: 'Pulled Beef',
+                weight: '',
+                price: '195 RON/kg',
+                description:
+                    '',
+                image: null,
+            },
+        ]
     },
     {
         id: 'preparate-porc',
@@ -370,7 +453,7 @@ export const menuFood = [
             category: 'Porc',
             name: 'Mici cu cartofi pai și muștar',
             weight: '200 g / 200 g / 50 g / 30 g',
-            price: '52 RON',
+            price: '39 RON',
             description:
                 'Carne de porc și vită, cartofi pai, muștar, ulei de floarea-soarelui.',
             image: null,
@@ -380,7 +463,7 @@ export const menuFood = [
             category: 'Porc',
             name: 'Aripioară de porc gătită lent cu piure de cartofi',
             weight: '350 g / 150 g / 80 g',
-            price: '39 RON',
+            price: '59 RON',
             description:
                 'Aripioară de porc, cartofi, unt, gogoșari la oțet, piper, boia, lapte.',
             image: null,
@@ -390,7 +473,7 @@ export const menuFood = [
             category: 'Porc',
             name: 'Cârnați de porc cu brânză șvaițer, cartofi prăjiți și sos roze',
             weight: '150 g / 150 g / 50 g',
-            price: '59 RON',
+            price: '45 RON',
             description:
                 'Cârnați de porc cu brânză șvaițer, cartofi pai, maioneză, ketchup.',
             image: null,
@@ -493,47 +576,198 @@ export const menuFood = [
         id: 'pizza',
         label: 'Pizza',
         items: [
-            {
-            id: 'pizza-italia',
-            category: 'Pizza',
-            name: 'Pizza Italia',
-            weight: '580 g',
-            price: '64 RON',
-            description:
-                'Blat pizza, sos de roșii, mozzarella fior di latte, prosciutto crudo, roșii cherry, parmezan.',
-            image: null,
-            },
-            {
-            id: 'pizza-salami',
-            category: 'Pizza',
-            name: 'Pizza Salami',
-            weight: '490 g',
-            price: '47 RON',
-            description:
-                'Blat pizza, sos de roșii, mozzarella fior di latte, salam Milano.',
-            image: null,
-            },
-            {
-            id: 'pizza-diavola',
-            category: 'Pizza',
-            name: 'Pizza Diavola',
-            weight: '500 g',
-            price: '49 RON',
-            description:
-                'Blat pizza, sos de roșii, mozzarella fior di latte, salam picant Ventricina, ulei de măsline, ardei iute.',
-            image: null,
-            },
-            {
-            id: 'pizza-margherita',
-            category: 'Pizza',
-            name: 'Pizza Margherita',
-            weight: '450 g',
-            price: '37 RON',
-            description:
-                'Blat pizza, sos de roșii, mozzarella fior di latte, busuioc, ulei de măsline, oregano.',
-            image: null,
-            },
-        ],
+                {
+                    id: 'pizza-margherita',
+                    category: 'Pizza',
+                    name: 'Pizza Margherita',
+                    weight: '450 g',
+                    price: '37 RON',
+                    description:
+                    'Blat pizza, sos de roșii, mozzarella fior di latte, busuioc, ulei de măsline, oregano.',
+                    image: null,
+                },
+                {
+                    id: 'pizza-salami',
+                    category: 'Pizza',
+                    name: 'Pizza Salami',
+                    weight: '490 g',
+                    price: '47 RON',
+                    description:
+                    'Blat pizza, sos de roșii, mozzarella fior di latte, salam Milano.',
+                    image: null,
+                },
+                {
+                    id: 'pizza-diavola',
+                    category: 'Pizza',
+                    name: 'Pizza Diavola',
+                    weight: '500 g',
+                    price: '49 RON',
+                    description:
+                    'Blat pizza, sos de roșii, mozzarella fior di latte, salam picant Ventricina, ulei de măsline, ardei iute.',
+                    image: null,
+                },
+                {
+                    id: 'pizza-italia',
+                    category: 'Pizza',
+                    name: 'Pizza Italia',
+                    weight: '580 g',
+                    price: '64 RON',
+                    description:
+                    'Blat pizza, sos de roșii, mozzarella fior di latte, prosciutto crudo, roșii cherry, parmezan.',
+                    image: null,
+                },
+                {
+                    id: 'pizza-quattro-formaggi',
+                    category: 'Pizza',
+                    name: 'Pizza Quattro Formaggi',
+                    weight: '450 g',
+                    price: '55 RON',
+                    description:
+                    'Blat pizza, mozzarella fior di latte, brânză Brie, blue cheese, parmezan, ulei de măsline.',
+                    image: null,
+                },
+                {
+                    id: 'pizza-quattro-stagioni',
+                    category: 'Pizza',
+                    name: 'Pizza Quattro Stagioni',
+                    weight: '650 g',
+                    price: '52 RON',
+                    description:
+                    'Blat pizza, sos de roșii, mozzarella fior di latte, prosciutto crudo, măsline Kalamata, ciuperci, anghinare marinată, ulei de măsline.',
+                    image: null,
+                },
+                {
+                    id: 'pizza-vegetariana',
+                    category: 'Pizza',
+                    name: 'Pizza Vegetariana',
+                    weight: '520 g',
+                    price: '47 RON',
+                    description:
+                    'Blat pizza, sos de roșii, mozzarella fior di latte, ardei copți, ceapă roșie, pătrunjel, măsline, porumb, fulgi de drojdie inactivă, mix de salată.',
+                    image: null,
+                },
+                {
+                    id: 'pizza-tonno',
+                    category: 'Pizza',
+                    name: 'Pizza Tonno',
+                    weight: '580 g',
+                    price: '55 RON',
+                    description:
+                    'Blat pizza, sos de roșii, mozzarella fior di latte, ton în ulei, ceapă roșie, măsline Kalamata, lămâie.',
+                    image: null,
+                },
+                {
+                    id: 'pizza-gourmand',
+                    category: 'Pizza',
+                    name: 'Pizza Gourmand',
+                    weight: '620 g',
+                    price: '65 RON',
+                    description:
+                    'Blat pizza, mozzarella fior di latte, carne burger vită, ceapă crocantă, dulceață de ardei iute, usturoi, pătrunjel, brânză Brie.',
+                    image: null,
+                },
+                {
+                    id: 'pizza-orientala',
+                    category: 'Pizza',
+                    name: 'Pizza Orientală',
+                    weight: '650 g',
+                    price: '64 RON',
+                    description:
+                    'Blat pizza, sos de roșii, mozzarella fior di latte, cartofi pai, carne de pui kebab, sos de maioneză cu usturoi, ceapă roșie, ulei de măsline, pătrunjel, oțet.',
+                    image: null,
+                },
+                {
+                    id: 'pizza-rustica',
+                    category: 'Pizza',
+                    name: 'Pizza Rustica',
+                    weight: '620 g',
+                    price: '56 RON',
+                    description:
+                    'Blat pizza, sos de roșii, mozzarella fior di latte, bacon, cârnați, ardei kapia, ceapă roșie.',
+                    image: null,
+                },
+                {
+                    id: 'pizza-pollo',
+                    category: 'Pizza',
+                    name: 'Pizza Pollo',
+                    weight: '620 g',
+                    price: '48 RON',
+                    description:
+                    'Blat pizza, sos de roșii, mozzarella fior di latte, piept de pui, porumb, ciuperci, roșii cherry, ulei de măsline.',
+                    image: null,
+                },
+                {
+                    id: 'pizza-drag',
+                    category: 'Pizza',
+                    name: 'Pizza Drag',
+                    weight: '650 g',
+                    price: '61 RON',
+                    description:
+                    'Blat pizza, sos de roșii, mozzarella fior di latte, kaizer afumat, măsline, ouă, brânză de oaie la putină, ceapă verde.',
+                    image: null,
+                },
+                {
+                    id: 'pizza-mortadella',
+                    category: 'Pizza',
+                    name: 'Pizza Mortadella',
+                    weight: '620 g',
+                    price: '55 RON',
+                    description:
+                    'Blat pizza, sos de roșii, mozzarella fior di latte, mortadella, pesto de busuioc, roșii cherry, ricotta.',
+                    image: null,
+                },
+                {
+                    id: 'pizza-carnivore',
+                    category: 'Pizza',
+                    name: 'Pizza Carnivore',
+                    weight: '550 g',
+                    price: '54 RON',
+                    description:
+                    'Blat pizza, sos de roșii, mozzarella fior di latte, cârnați, prosciutto cotto, bacon, salam Milano.',
+                    image: null,
+                },
+                {
+                    id: 'pizza-hawaii',
+                    category: 'Pizza',
+                    name: 'Pizza Hawaii',
+                    weight: '620 g',
+                    price: '47 RON',
+                    description:
+                    'Blat pizza, sos de roșii, mozzarella fior di latte, prosciutto cotto, ananas, oregano.',
+                    image: null,
+                },
+                {
+                    id: 'pizza-prosciutto-funghi',
+                    category: 'Pizza',
+                    name: 'Pizza Prosciutto e Funghi',
+                    weight: '580 g',
+                    price: '51 RON',
+                    description:
+                    'Blat pizza, sos de roșii, mozzarella fior di latte, prosciutto cotto, ciuperci.',
+                    image: null,
+                },
+                {
+                    id: 'pizza-carbonara',
+                    category: 'Pizza',
+                    name: 'Pizza Carbonara',
+                    weight: '580 g',
+                    price: '51 RON',
+                    description:
+                    'Blat pizza, mozzarella fior di latte, smântână de gătit, parmezan, ou, bacon, usturoi.',
+                    image: null,
+                },
+                {
+                    id: 'pizza-funghi',
+                    category: 'Pizza',
+                    name: 'Pizza Funghi',
+                    weight: '560 g',
+                    price: '47 RON',
+                    description:
+                    'Blat pizza, sos de roșii, mozzarella fior di latte, ciuperci, măsline.',
+                    image: null,
+                },
+                ]
+
     },
     {
         id: 'garnituri',

@@ -7,12 +7,29 @@ export const desert = {
 
 export const food = {
     ///// ÎNTÂI: preparatele FILTRATE /////
-
     "Borș de curcan": {
         type: "Felul întâi",
         name: "Borș de curcan",
         ingredients: "carne de curcan, morcovi, ceapă, țelină, ardei gras, roșii, borș, ulei, sare, piper, leuștean",
         allergens: ["țelină"]
+    },
+    "Ciorbă de curcan": {
+        type: "Felul întâi",
+        name: "Ciorbă de curcan",
+        ingredients: "carne de curcan, morcovi, ceapă, țelină, ardei gras, roșii, ulei, sare, piper, leuștean",
+        allergens: ["țelină"]
+    },
+    "Ciorbă de legume": {
+        type: "Felul întâi",
+        name: "Ciorbă de legume",
+        ingredients: "morcovi, ceapă, țelină, ardei gras, cartofi, dovlecei, fasole verde, roșii sau pastă de roșii, borș, ulei, sare, piper, pătrunjel.",
+        allergens: []
+    },
+    "Borș cu fasole și afumătură acrit cu zeamă de varză": {
+        type: "Felul întâi",
+        name: "Borș cu fasole și afumătură acrit cu zeamă de varză",
+        ingredients: "fasole boabe, afumătură (ciolan sau costiță afumată), ceapă, morcovi, țelină, păstârnac, ardei gras, roșii sau suc de roșii, ulei, zeamă de varză, foi de dafin, cimbru, leuștean, sare, piper.",
+        allergens: []
     },
     "Stroganof de porc cu orez": {
         type: "Felul principal",
@@ -20,10 +37,28 @@ export const food = {
         ingredients: "cotlet  de porc, ciuperci, ceapă, smântână, pastă de roșii, orez, ulei, sare, piper",
         allergens: ["lapte"]
     },
+    "Ciorbă de curcan a la greque": {
+        type: "Felul întâi",
+        name: "Ciorbă de curcan a la greque",
+        ingredients: "carne de curcan, morcovi, ceapă, țelină, ardei gras, orez, ouă, smântână, lămâie, ulei, sare, piper, pătrunjel.",
+        allergens: ["ouă", "lapte"]
+    },
     "Supă de roșii cu linte": {
         type: "Felul întâi",
         name: "Supă de roșii cu linte",
         ingredients: "roșii, linte roșie, morcovi, ceapă, țelină, ardei gras, usturoi, ulei, sare, piper, busuioc, pătrunjel",
+        allergens: ["țelină"]
+    },
+    "Supă de linte": {
+        type: "Fel principal",
+        name: "Supă de linte",
+        ingredients: "linte, ceapă, morcov, ardei, roșii sau pastă de roșii, usturoi, ulei, sare, piper, foi de dafin, apă.",
+        allergens: []
+    },
+    "Supă de roșii": {
+        type: "Felul întâi",
+        name: "Supă de roșii",
+        ingredients: "roșii, morcovi, ceapă, țelină, ardei gras, usturoi, ulei, sare, piper, busuioc, pătrunjel",
         allergens: ["țelină"]
     },
     "Chilli con vegetale cu orez basmati": {
@@ -77,6 +112,12 @@ export const food = {
         type: "Felul principal",
         name: "Sarmale de post",
         ingredients: "varză murată, orez, ceapă, ciuperci, morcov, ardei gras, pastă de roșii, ulei, sare, piper, cimbru, mărar, foi de dafin",
+        allergens: []
+    },
+    "Sarmale de post cu mămăliguță": {
+        type: "Fel principal",
+        name: "Sarmale de post cu mămăliguță",
+        ingredients: "varză murată sau foi de varză, orez, ceapă, morcov, pastă de roșii, ulei, condimente (sare, piper, cimbru, foi de dafin), apă, mălai.",
         allergens: []
     },
     "Ciorbă de perișoare": {
@@ -156,7 +197,19 @@ export const food = {
     "Ciorbă de afumătură cu tarhon": {
         type: "Felul întâi",
         name: "Ciorbă de afumătură cu tarhon",
-        ingredients: "carne afumată (coaste sau ciolan), morcovi, ceapă, țelină, ardei gras, cartofi, usturoi, tarhon, oțet, smântână, ulei, sare, piper.",
+        ingredients: "carne afumată (coaste sau ciolan), morcovi, ceapă, țelină, ardei gras, cartofi, usturoi, tarhon, oțet, ulei, sare, piper.",
+        allergens: ["lapte"]
+    },
+    "Ciorbă de afumătură": {
+        type: "Felul întâi",
+        name: "Ciorbă de afumătură",
+        ingredients: "carne afumată (ciolan sau costiță), morcovi, ceapă, țelină, ardei gras, cartofi, roșii sau pastă de roșii, usturoi, pătrunjel, borș sau zeamă de varză, ulei, sare, piper.",
+        allergens: []
+    },
+    "Borș de afumătură cu tarhon": {
+        type: "Felul întâi",
+        name: "Borș de afumătură cu tarhon",
+        ingredients: "carne afumată (coaste sau ciolan), morcovi, ceapă, țelină, ardei gras, cartofi, usturoi, tarhon, oțet, ulei, sare, piper.",
         allergens: ["lapte"]
     },
     "Borș de cartofi dres cu smântână și ou": {
@@ -164,6 +217,12 @@ export const food = {
         name: "Borș de cartofi dres cu smântână și ou",
         ingredients: "cartofi, ceapă, morcovi, ardei gras, țelină, borș, ou, smântână, ulei, sare, piper, leuștean",
         allergens: ["ouă", "lapte", "țelină"]
+    },
+    "Borș de cartofi dres cu smântână vegetală": {
+        type: "Felul întâi",
+        name: "Borș de cartofi dres cu smântână vegetală",
+        ingredients: "cartofi, ceapă, morcovi, ardei gras, țelină, borș, smântână vegetală, ulei, sare, piper, leuștean",
+        allergens: ["țelină"]
     },
     "Borș de fasole cu afumătură": {
         type: "Felul întâi",
@@ -189,11 +248,11 @@ export const food = {
         ingredients: "coaste de porc afumate, morcovi, ceapă, țelină, ardei gras, cartofi, roșii, borș, ulei, sare, piper, leuștean, pătrunjel",
         allergens: ["țelină"]
     },
-    "Ciorbă cu mix de ciuperci": {
+    "Ciorbă de ciuperci": {
         type: "Felul întâi",
-        name: "Ciorbă cu mix de ciuperci",
-        ingredients: "ciuperci champignon, hribi, ghebe, morcovi, ceapă, țelină, ardei gras, cartofi, borș, ulei, sare, piper, leuștean, pătrunjel",
-        allergens: ["țelină"]
+        name: "Ciorbă de ciuperci",
+        ingredients: "ciuperci, ceapă, morcovi, țelină, ardei gras, cartofi, smântână, usturoi, ulei, sare, piper, pătrunjel, borș.",
+        allergens: ["lapte"]
     },
     "Ciorbă măcelărească de porc": {
         type: "Felul întâi",
@@ -269,7 +328,25 @@ export const food = {
         type: "Felul doi",
         name: "Varză călită cu ciolan afumat",
         ingredients: "varză proaspătă, ciolan afumat, ceapă, pastă de roșii, ulei, sare, piper, boia, cimbru, foi de dafin, mărar",
-        allergens: ["fără alergeni majori (poate conține urme de muștar sau gluten, în funcție de condimentele folosite)."]
+        allergens: []
+    },
+    "Varză călită cu kaizer și ciolan": {
+        type: "Felul doi",
+        name: "Varză călită cu kaizer și ciolan",
+        ingredients: "varză proaspătă, ciolan afumat, kaizer, ceapă, pastă de roșii, ulei, sare, piper, boia, cimbru, foi de dafin, mărar",
+        allergens: []
+    },
+    "Varză călită": {
+        type: "Fel principal",
+        name: "Varză călită",
+        ingredients: "varză albă, ceapă, pastă de roșii, ulei, sare, piper, cimbru, foi de dafin, mărar",
+        allergens: []
+    },
+    "Bulgur cu legume și piftele cu sos": {
+        type: "Fel principal",
+        name: "Bulgur cu legume și piftele cu sos",
+        ingredients: "bulgur, morcovi, ardei gras, dovlecei, ceapă, ulei, sare, piper, carne tocată (porc sau amestec), ouă, usturoi, pesmet, pastă de roșii.",
+        allergens: ["gluten", "ouă"]
     },
     "Falafel cu hummus": {
         type: "Felul principal",
@@ -306,6 +383,18 @@ export const food = {
         ingredients: "cartofi, morcovi, dovlecel, linte, ceapă, usturoi, roșii, pastă de roșii, ulei, sare, piper, boia dulce, făină",
         allergens: ["gluten"]
     },
+    "Chiftele vegetale cu sos de roșii și piure": {
+        type: "Felul doi",
+        name: "Chiftele vegetale cu sos de roșii și piure",
+        ingredients: "cartofi, morcovi, ceapă, usturoi, dovlecel, făină de grâu, pesmet, ulei, roșii sau pastă de roșii, sare, piper, pătrunjel.",
+        allergens: ["gluten"]
+    },
+    "Chiftele vegetale cu piure de cartofi": {
+        type: "Fel principal",
+        name: "Chiftele vegetale cu piure de cartofi",
+        ingredients: "cartofi, ceapă, morcov, dovlecel sau ciuperci, usturoi, făină de grâu, pesmet, ulei, sare, piper, mărar sau pătrunjel, lapte vegetal sau apă.",
+        allergens: ["gluten"]
+    },
     "Gulaș de vită": {
         type: "Felul principal",
         name: "Gulaș de vită",
@@ -315,6 +404,24 @@ export const food = {
         type: "Felul principal",
         name: "Ceafă de porc în sos de vin roșu cu piure",
         ingredients: "ceafă de porc, vin roșu, ceapă, usturoi, morcovi, pastă de roșii, cartofi, unt, lapte, ulei, sare, piper, cimbru",
+        allergens: ["lapte"]
+    },
+    "Pulpe de pui marinate în sos de iaurt cu bulgur și legume coapte": {
+        type: "Fel principal",
+        name: "Pulpe de pui marinate în sos de iaurt cu bulgur și legume coapte",
+        ingredients: "pulpe de pui dezosate și fără piele, iaurt, usturoi, lămâie, ulei de măsline, sare, piper, boia, oregano, bulgur, ardei gras, dovlecei, vinete, ceapă roșie.",
+        allergens: ["lapte", "gluten"]
+    },
+    "Cartofi țărănești cu ceapă caramelizată, bacon și cârnați umpluți cu cașcaval": {
+        type: "Felul principal",
+        name: "cârnați umpluți cu cașcaval, bacon, cartofi țărănești cu ceapă caramelizată",
+        ingredients: "cartofi, ceapă, bacon, cârnați umpluți cu cașcaval, ulei, sare, piper, boia",
+        allergens: ["lapte"]
+    },
+    "Pulled pork cu cartofi copți și sos cheddar": {
+        type: "Fel principal",
+        name: "Pulled pork cu cartofi copți și sos cheddar",
+        ingredients: "ceafă de porc, sos BBQ, usturoi, boia afumată, sare, piper, cartofi, unt, lapte, brânză cheddar",
         allergens: ["lapte"]
     },
     "Macrou în sos tomat și mămăligă": {
@@ -335,6 +442,12 @@ export const food = {
         ingredients: "ciuperci (champignon sau hribi), ceapă, usturoi, făină, lapte sau smântână, unt sau ulei, sare, piper, mărar, mămăligă (mălai, apă, sare)",
         allergens: ["lapte", "gluten"]
     },
+    "Ciulama de ciuperci cu mămăligă (de post)": {
+        type: "Felul doi",
+        name: "Ciulama de ciuperci cu mămăligă",
+        ingredients: "ciuperci, ceapă, usturoi, făină de grâu, ulei, apă sau supă de legume, sare, piper, pătrunjel, mălai, apă, sare.",
+        allergens: ["gluten"]
+    },
     "Șnițele de pui cu piure": {
         type: "Felul principal",
         name: "Șnițele de pui cu piure",
@@ -344,8 +457,14 @@ export const food = {
     "Chiftele de pește cu sos de roșii și piure": {
         type: "Felul principal",
         name: "Chiftele de pește cu sos de roșii și piure",
-        ingredients: "pește alb (merluciu, cod), ceapă, usturoi, ouă, pesmet, sare, piper, roșii sau pastă de roșii, ulei, foi de dafin, cartofi, lapte, unt",
+        ingredients: "pește alb, ceapă, usturoi, ouă, pesmet, sare, piper, roșii sau pastă de roșii, ulei, foi de dafin, cartofi, lapte, unt",
         allergens: ["pește", "ouă", "gluten", "lapte"]
+    },
+    "Paste cu sos de ciuperci": {
+        type: "Fel principal",
+        name: "Paste cu sos de ciuperci",
+        ingredients: "paste (fără ou), ciuperci champignon, ceapă, usturoi, smântână vegetală pentru gătit, ulei de măsline, sare, piper, pătrunjel",
+        allergens: ["gluten"]
     },
     "Iahnie de fasole": {
         type: "Felul principal",
@@ -385,6 +504,18 @@ export const food = {
         ingredients: "crap, roșii, ardei capia copți, ceapă, usturoi, ulei, apă, sare, piper, foi de dafin, pătrunjel, mălai (pentru mămăligă)",
         allergens: ["pește"]
     },
+    "Aripioare de pui cu sote de ceapă caramelizată și mămăliguță": {
+        type: "Fel principal",
+        name: "Aripioare de pui cu sote de ceapă caramelizată și mămăliguță",
+        ingredients: "aripioare de pui, ceapă, mălai, ulei, unt, sare, piper, boia, usturoi, zahăr.",
+        allergens: ["lapte", "gluten"]
+    },
+    "Aripioare de pui BBQ cu cartofi prăjiți": {
+        type: "Fel principal",
+        name: "Aripioare de pui BBQ cu cartofi prăjiți",
+        ingredients: "aripioare de pui, sos BBQ, usturoi, boia dulce, sare, piper, ulei, cartofi, ketchup (opțional)",
+        allergens: []
+    },
     "Pilaf cu pulpe la cuptor": {
         type: "Felul principal",
         name: "Pilaf cu pulpe la cuptor",
@@ -395,6 +526,18 @@ export const food = {
         name: "Ciorbă falsă de burtă",
         ingredients: "ciuperci pleurotus, morcovi, ceapă, ardei gras, țelină, usturoi, ou, smântână, oțet, ulei, sare, piper, foi de dafin"
     },
+    "Ciorbă de păstăi dreasă cu smântână vegetală": {
+        type: "Felul întâi",
+        name: "Ciorbă de păstăi dreasă cu smântână vegetală",
+        ingredients: "păstăi de fasole verde, ceapă, morcovi, țelină, cartofi, usturoi, ulei, smântână vegetală, borș sau oțet, sare, piper, pătrunjel.",
+        allergens: []
+    },
+    "Hummus cu falafel": {
+        type: "Felul doi",
+        name: "Hummus cu falafel",
+        ingredients: "năut, tahini (pastă de susan), usturoi, suc de lămâie, ulei de măsline, sare, chimen, pătrunjel, năut pentru falafel, ceapă, usturoi, coriandru, pătrunjel, făină de grâu sau pesmet, ulei pentru prăjit.",
+        allergens: ["gluten", "susan"]
+    },
     "Ciorbă de pui a la grecque": {
         type: "Felul întâi",
         name: "Ciorbă de pui a la grecque",
@@ -403,6 +546,12 @@ export const food = {
     },
 
     ///neadaugate in excel
+    "Tocană de purcel la cuptor cu piure": {
+        type: "Felul doi",
+        name: "Tocană de purcel făcută încet la cuptor cu piure",
+        ingredients: "carne de purcel, ceapă, usturoi, ulei, pastă de roșii, sare, piper, boia, cimbru, foi de dafin, cartofi, unt, lapte",
+        allergens: ["lapte"]
+    },
     "Borș de afumătură cu cartofi acrit cu zeamă de varză": {
         type: "Felul întâi",
         name: "Borș de afumătură cu cartofi acrit cu zeamă de varză",
@@ -420,7 +569,360 @@ export const food = {
         name: "Fasole bătută",
         ingredients: "fasole boabe, ceapă, usturoi, ulei, sare, piper",
         allergens: []
-    }
+    },
+    "Borș de vită": {
+        type: "Felul întâi",
+        name: "Borș de vită",
+        ingredients: "carne de vită , ceapă, morcovi, țelină, păstârnac, ardei, cartofi, roșii sau bulion, borș, leuștean, sare, piper, ulei",
+        allergens: ["țelină"]
+    },
+    "Saramură de pui cu mămăligă": {
+        type: "Felul principal",
+        name: "Saramură de pui cu mămăligă",
+        ingredients: "carne de pui, ardei capia, roșii, usturoi, ceapă, ardei iute, cimbru, foi de dafin, apă, sare, piper, mălai, sare pentru mămăligă",
+        allergens: []
+    },
+    "Ciorbă de perișoare a la grecque": {
+        type: "Felul întâi",
+        name: "Ciorbă de perișoare a la grecque",
+        ingredients: "carne tocată, orez, ceapă, ou, morcovi, țelină, păstârnac, ardei, smântână, lămâie, ouă pentru dres, orez, leuștean sau pătrunjel, sare, piper",
+        allergens: ["ouă", "lapte", "țelină"]
+    },
 
+    "Chilli con vegetale cu cartof copt": {
+        type: "Fel principal",
+        name: "Chilli con vegetale cu cartof copt",
+        ingredients: "fasole roșie, porumb, ardei, ceapă, usturoi, morcov, roșii cuburi, ardei iute, condimente chilli, ulei, sare, piper, cartofi pentru copt",
+        allergens: []
+    },
+
+    "Spată de porc făcută încet la cuptor în sos de vin roșu și piure cu usturoi copt": {
+        type: "Fel principal",
+        name: "Spată de porc făcută încet la cuptor în sos de vin roșu și piure cu usturoi copt",
+        ingredients: "spată de porc, vin roșu, ceapă, morcov, țelină, usturoi, bulion, condimente, cartofi, unt, lapte, usturoi copt, sare, piper",
+        allergens: ["lapte", "țelină"]
+    },
+
+    "Borș de fasole": {
+        type: "Felul întâi",
+        name: "Borș de fasole",
+        ingredients: "fasole boabe, ceapă, morcov, țelină, ardei, roșii sau bulion, borș, ulei, sare, piper, leuștean",
+        allergens: ["țelină"]
+    },
+
+    "Cod pane cu cartofi natur": {
+        type: "Fel principal",
+        name: "Cod pane cu cartofi natur",
+        ingredients: "cod, ou, făină, pesmet, ulei pentru prăjit, cartofi, unt, pătrunjel, sare, piper",
+        allergens: ["pește", "ouă", "gluten", "lapte"]
+    },
+
+    "Borș de cartofi acrit cu lapte acru și dres cu ou": {
+        type: "Felul întâi",
+        name: "Borș de cartofi acrit cu lapte acru și dres cu ou",
+        ingredients: "cartofi, ceapă, morcov, țelină, ardei, borș, lapte acru, ouă, ulei, sare, piper, pătrunjel sau leuștean",
+        allergens: ["lapte", "ouă", "țelină"]
+    },
+
+    "Fasole prăjită cu cârnați": {
+        type: "Fel principal",
+        name: "Fasole prăjită cu cârnați",
+        ingredients: "fasole fiartă, ceapă, usturoi, ulei, bulion, cârnați afumați, sare, piper, foi de dafin",
+        allergens: []
+    },
+    "Fasole prăjită cu murături": {
+        type: "Fel principal",
+        name: "Fasole prăjită cu murături",
+        ingredients: "fasole boabe, ceapă, ulei, pastă de roșii sau bulion, usturoi, sare, piper, foi de dafin, murături asortate (castraveți murați, gogonele sau varză murată).",
+        allergens: []
+    },
+    "Borș cu sfeclă": {
+        type: "Felul întâi",
+        name: "Borș cu sfeclă",
+        ingredients: "sfeclă roșie, cartofi, ceapă, morcov, țelină, borș, ulei, sare, piper, mărar sau leuștean",
+        allergens: ["țelină"]
+    },
+    "Fasole prăjită de post": {
+        type: "Garnitură / Fel secundar",
+        name: "Fasole prăjită de post",
+        ingredients: "fasole fiartă, ceapă, usturoi, ulei, bulion sau pastă de roșii, sare, piper, foi de dafin",
+        allergens: []
+    },
+    "Ciorbă de fasole cu kaizer": {
+        type: "Felul întâi",
+        name: "Ciorbă de fasole cu kaizer",
+        ingredients: "fasole boabe, kaizer afumat, ceapă, morcov, țelină, ardei, roșii sau bulion, ulei, sare, piper, foi de dafin, leuștean",
+        allergens: ["țelină"]
+    },
+    "Ostropel de pui și mămăligă": {
+        type: "Fel principal",
+        name: "Ostropel de pui și mămăligă",
+        ingredients: "pui (pulpe sau piept), usturoi, ceapă, roșii sau bulion, ulei, sare, piper, foi de dafin, mălai, apă, sare pentru mămăligă",
+        allergens: []
+    },
+    "Supă cremă de ciuperci": {
+        type: "Felul întâi",
+        name: "Supă cremă de ciuperci",
+        ingredients: "ciuperci, ceapă, usturoi, cartofi, smântână, unt sau ulei, supă de legume, sare, piper",
+        allergens: ["lapte"]
+    },
+    "Supă cremă de ciuperci (de post)": {
+        type: "Felul întâi",
+        name: "Supă cremă de ciuperci",
+        ingredients: "ciuperci, ceapă, usturoi, cartofi, ulei, supă de legume, sare, piper",
+        allergens: []
+    },
+    "Supa cremă de legume": {
+        type: "Felul întâi",
+        name: "Supa cremă de legume",
+        ingredients: "cartofi, morcovi, țelină, dovlecel, ardei gras, ceapă, usturoi, ulei, sare, piper, pătrunjel",
+        allergens: ["țelină"]
+    },
+    "Păstăi sote cu usturoi și mămăligă": {
+        type: "Fel principal / Garnitură",
+        name: "Păstăi sote cu usturoi și mămăligă",
+        ingredients: "păstăi de fasole verde, usturoi, ulei, sare, piper, mălai, apă, sare pentru mămăligă",
+        allergens: []
+    },
+    "Păstrăv cu mămăliguță și mujdei": {
+        type: "Felul doi",
+        name: "Păstrăv cu mămăliguță și mujdei",
+        ingredients: "păstrăv, mălai, usturoi, ulei, sare, piper, apă",
+        allergens: ["pește"]
+    },
+    "Mâncărică de cartofi cu cârnați și murături": {
+        type: "Fel principal",
+        name: "Mâncărică de cartofi cu cârnați și murături",
+        ingredients: "cartofi, cârnați afumați, ceapă, ardei gras, pastă de roșii, usturoi, foi de dafin, ulei, sare, piper, boia, murături asortate.",
+        allergens: []
+    },
+    "Mâncărică de cartofi cu murături": {
+        type: "Fel principal",
+        name: "Mâncărică de cartofi cu murături",
+        ingredients: "cartofi, ceapă, ardei gras, pastă de roșii, usturoi, foi de dafin, ulei, sare, piper, boia, murături asortate.",
+        allergens: []
+    },
+    "Mâncărică de cartofi": {
+        type: "Fel principal",
+        name: "Mâncărică de cartofi",
+        ingredients: "cartofi, ceapă, ardei gras, pastă de roșii, usturoi, foi de dafin, boia, ulei, sare, piper, pătrunjel.",
+        allergens: []
+    },
+    "Ciorbă de cartofi dreasă cu smântână vegană": {
+        type: "Felul întâi",
+        name: "Ciorbă de cartofi dreasă cu smântână vegană",
+        ingredients: "cartofi, ceapă, morcovi, țelină, usturoi, smântână vegetală pentru gătit, ulei, sare, piper, foi de dafin, leuștean",
+        allergens: ["țelină"]
+    },
+    "Ciorbă de pui": {
+        type: "Felul întâi",
+        name: "Ciorbă de pui",
+        ingredients: "carne de pui (pulpe sau piept), ceapă, morcovi, țelină, păstârnac, ardei, cartofi, tăiței sau orez, ulei, sare, piper, pătrunjel",
+        allergens: ["țelină", "gluten"]
+    },
+    "Tocană de vită cu piure de cartofi": {
+        type: "Fel principal",
+        name: "Tocană de vită cu piure de cartofi",
+        ingredients: "carne de vită, ceapă, morcov, usturoi, roșii sau bulion, ulei, sare, piper, cartofi, lapte, unt",
+        allergens: ["lapte"]
+    },
+    "Ciorbă de fasole": {
+        type: "Felul întâi",
+        name: "Ciorbă de fasole",
+        ingredients: "fasole boabe, ceapă, morcov, țelină, ardei, roșii sau bulion, ulei, sare, piper, foi de dafin, leuștean",
+        allergens: ["țelină"]
+    },
+    "Sarmale cu ciuperci și mămăligă": {
+        type: "Fel principal",
+        name: "Sarmale cu ciuperci și mămăligă",
+        ingredients: "frunze de varză murată, ciuperci, ceapă, orez, morcov, ulei, pastă de roșii, sare, piper, cimbru, foi de dafin, mălai, apă, sare pentru mămăligă",
+        allergens: []
+    },
+    "Cârnați cu cașcaval": {
+        type: "Felul principal",
+        name: "Cârnați cu cașcaval",
+        ingredients: "cârnați, cașcaval, ulei",
+        allergens: ["lapte"]
+    },
+    "Borș de perișoare": {
+        type: "Felul principal",
+        name: "Borș de perișoare",
+        ingredients: "carne tocată, orez, ceapă, morcov, țelină, păstârnac, ou, borș, ulei, sare, piper, pătrunjel",
+        allergens: ["ou", "gluten"]
+    },
+    "Mici cu cartofi pai": {
+        type: "Felul principal",
+        name: "Mici cu cartofi pai",
+        ingredients: "carne tocată de porc și vită, usturoi, condimente, bicarbonat, cartofi, ulei, sare",
+        allergens: []
+    },
+    "Borș de legume dres cu smântână și zdrențe de ou": {
+        type: "Ciorbă",
+        name: "Borș de legume dres cu smântână și zdrențe de ou",
+        ingredients: "morcovi, ceapă, țelină, ardei, cartofi, borș, ouă, smântână, ulei, sare, verdeață",
+        allergens: ["ouă", "lapte"]
+    },
+    "Tocană de ceapă cu aripi și mămăligă": {
+        type: "Felul principal",
+        name: "Tocană de ceapă cu aripi și mămăligă",
+        ingredients: "aripi de pui, ceapă, mălai, ulei, sare, piper"
+    },
+    "Mămăligă cu brânză și smântână": {
+        type: "Felul principal",
+        name: "Mămăligă cu brânză și smântână",
+        ingredients: "mălai, brânză, smântână, ulei, sare, piper"
+    },
+    "Friptură de porc cu mămăligă și brânză de burduf": {
+        type: "Felul principal",
+        name: "Friptură de porc cu mămăligă și brânză de burduf",
+        ingredients: "carne de porc, mălai, brânză de burduf, ulei, sare, piper"
+    },
+    "Friptură de vită înăbușită și piure de cartofi cu usturoi": {
+        type: "Fel principal",
+        name: "Friptură de vită înăbușită și piure de cartofi cu usturoi",
+        ingredients: "carne de vită, ceapă, morcovi, usturoi, ulei, sare, piper, cimbru, cartofi, unt, lapte.",
+        allergens: ["lapte"]
+    },
+    "Friptură de porc cu mămăligă și brânză de putină": {
+        type: "Fel principal",
+        name: "Friptură de porc cu mămăligă și brânză de putină",
+        ingredients: "carne de porc (ceafă, pulpă sau costiță), usturoi, ulei sau untură, sare, piper, cimbru, mălai, brânză de burduf.",
+        allergens: ["lapte"]
+    },
+    "Cotlet de porc vânătoresc": {
+        type: "Felul principal",
+        name: "Cotlet de porc vânătoresc",
+        ingredients: "cotlet de porc, ciuperci, ceapă, usturoi, vin roșu, ulei, sare, piper"
+    },
+    "Cotlet de porc vânătoresc cu piure": {
+        type: "Fel principal",
+        name: "Cotlet de porc vânătoresc cu piure",
+        ingredients: "cotlet de porc, ceapă, ciuperci, ardei, roșii sau pastă de roșii, usturoi, ulei, sare, piper, boia, cartofi, lapte, unt.",
+        allergens: ["lapte"]
+    },
+    "Tocană de cartofi cu cârnați": {
+        type: "Felul principal",
+        name: "Tocană de cartofi cu cârnați",
+        ingredients: "cartofi, cârnați, ceapă, ulei, sare, piper"
+    },
+    "Supă de pui cu găluște": {
+        type: "Felul întâi",
+        name: "Supă de pui cu găluște",
+        ingredients: "carne de pui, ouă, griș, morcovi, ceapă, sare"
+    },
+    "Salată a la Rousse": {
+        type: "Felul principal",
+        name: "Salată a la Rousse",
+        ingredients: "cartofi, morcovi, mazăre, castraveți murați, ouă, maioneză, muștar, sare, piper.",
+        allergens: ["ouă", "muștar"]
+    },
+    "Ciorbă de burtă cu ciuperci": {
+        type: "Felul întâi",
+        name: "Ciorbă de burtă cu ciuperci",
+        ingredients: "ciuperci pleurotus, ceapă, morcovi, țelină, usturoi, smântână vegetală pentru gătit, oțet, ulei, sare, piper, foi de dafin",
+        allergens: ["țelină"]
+    },
+    "Borș de cartofi cu sfeclă": {
+        type: "Felul întâi",
+        name: "Borș de cartofi cu sfeclă",
+        ingredients: "sfeclă roșie, cartofi, ceapă, morcovi, țelină, ardei gras, roșii sau pastă de roșii, usturoi, ulei, borș, sare, piper, leuștean, pătrunjel.",
+        allergens: []
+    },
+    "Supă cremă de ciuperci cu crutoane": {
+        type: "Felul întâi",
+        name: "Supă cremă de ciuperci cu crutoane",
+        ingredients: "ciuperci, ceapă, cartofi, usturoi, ulei, supă de legume, sare, piper, crutoane, pătrunjel.",
+        allergens: ["gluten"]
+    },
+    "Salată orientală de post": {
+        type: "Felul principal",
+        name: "Salată orientală de post",
+        ingredients: "cartofi, ceapă roșie, castraveți murați, măsline, ulei, oțet, sare, piper, pătrunjel.",
+        allergens: []
+    },
+    "Sarmale cu mămăligă": {
+        type: "Felul principal",
+        name: "Sarmale cu mămăligă",
+        ingredients: "carne tocată, varză murată, orez, ceapă, mălai, ulei, sare, piper"
+    },
+    "Șnițele de soia cu piure de cartofi": {
+        type: "Fel principal",
+        name: "Șnițele de soia cu piure de cartofi",
+        ingredients: "cartofi, ulei, sare, piper, șnițele de soia, făină, pesmet, usturoi, apă minerală.",
+        allergens: ["soia", "gluten"]
+    },
+    "Șnițele de soia și bulgur cu legume coapte": {
+        type: "Felul doi",
+        name: "Șnițele de soia și bulgur cu legume coapte",
+        ingredients: "șnițele de soia, bulgur, dovlecel, ardei, vinete, ceapă, usturoi, ulei, sare, piper, boia",
+        allergens: ["gluten", "soia"]
+    },
+    "Tocană de cartofi cu murături": {
+        type: "Felul doi",
+        name: "Tocană de cartofi cu murături",
+        ingredients: "cartofi, ceapă, morcovi, ardei gras, roșii sau pastă de roșii, usturoi, ulei, boia dulce, foi de dafin, sare, piper, pătrunjel, murături asortate.",
+        allergens: []
+    },
+    "Mușchiuleț de porc cu sos alb și ciuperci, piure de cartofi": {
+        type: "Felul doi",
+        name: "Mușchiuleț de porc cu sos alb și ciuperci, piure de cartofi",
+        ingredients: "mușchiuleț de porc, ciuperci champignon, smântână pentru gătit, usturoi, ceapă, unt, ulei, sare, piper, cartofi, lapte",
+        allergens: ["lapte"]
+    },
+    //desert
+    "Gogoși": {
+        type: "Desert",
+        name: "Gogoși",
+        ingredients: "făină de grâu, drojdie, zahăr, apă, ulei, sare, zahăr pudră.",
+        allergens: ["gluten"]
+    },
+    "Clătite cu gem": {
+        type: "Desert",
+        name: "Clătite cu gem",
+        ingredients: "făină de grâu, apă minerală, zahăr, ulei, sare, gem.",
+        allergens: ["gluten"]
+    },
+    "Clătite cu dulceață (de post)": {
+        type: "Desert",
+        name: "Clătite cu dulceață",
+        ingredients: "făină de grâu, apă minerală, zahăr, ulei, sare, dulceașă.",
+        allergens: ["gluten"]
+    },
+    "Salam de biscuiți (de post)": {
+        type: "Desert",
+        name: "Salam de biscuiți",
+        ingredients: "biscuiți simpli, zahăr, cacao, margarină vegetală, esență de rom, nucă sau rahat, lapte vegetal sau apă.",
+        allergens: ["gluten", "nuci"]
+    },
+    "Măr copt cu scorțișoară": {
+        type: "Desert",
+        name: "Măr copt cu scorțișoară",
+        ingredients: "mere, zahăr sau miere, scorțișoară, nucă (opțional), stafide (opțional).",
+        allergens: ["nuci"]
+    },
+    "Negresă (de post)": {
+        type: "Desert",
+        name: "Negresă",
+        ingredients: "făină de grâu, zahăr, cacao, apă minerală sau apă, ulei, praf de copt, esență de rom sau vanilie.",
+        allergens: ["gluten"]
+    },
+    "Budincă de griș cu dulceață de afine (de post)": {
+        type: "Desert",
+        name: "Budincă de griș cu dulceață de afine",
+        ingredients: "apă sau lapte vegetal, griș de grâu, zahăr, dulceață de afine, esență de vanilie.",
+        allergens: ["gluten"]
+    },
+    "Prăjitură cu morcov și nuci (de post)": {
+        type: "Desert",
+        name: "Prăjitură cu morcov și nuci",
+        ingredients: "făină de grâu, morcov ras, zahăr, nuci, ulei, apă minerală sau apă, praf de copt, scorțișoară, esență de vanilie.",
+        allergens: ["gluten", "nuci"]
+    },
+    "Plăcintă cu măr": {
+        type: "Desert",
+        name: "Plăcintă cu măr",
+        ingredients: "mere, făină, zahăr, margarină, scorțișoară, sare",
+        allergens: []
+    },
 };
 

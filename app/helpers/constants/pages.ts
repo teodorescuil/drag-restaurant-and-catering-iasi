@@ -11,7 +11,7 @@ export const pagesRo = {
 
 export const pagesR = [
     {
-        section: '/', 
+        section: '', 
         title: pagesRo.home,
     }, {
         section: 'meniul-zilei', 

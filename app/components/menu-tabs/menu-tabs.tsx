@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Tabs from '../tabs/tabs';
 
@@ -41,13 +41,30 @@ export default function MenuTabs() {
 
   const drinkCategoryIds = new Set(drinkCategories.map((c) => c.id));
 
-  const [activeCategoryId, setActiveCategoryId] = useState<string>(allCategories[0]?.id);
+  const [activeCategoryId, setActiveCategoryId] = useState<string>('');
 
   const activeCategory =
     allCategories.find((category) => category.id === activeCategoryId) ??
     allCategories[0];
 
   const isDrinksCategory = drinkCategoryIds.has(activeCategoryId);
+
+  useEffect(() => {
+    const hash = window.location.hash.replace('#', '');
+    if (hash && allCategories.some((c) => c.id === hash)) {
+      setActiveCategoryId(hash);
+    } else {
+      setActiveCategoryId(allCategories[0].id);
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  // Update URL hash when activeCategoryId changes
+  useEffect(() => {
+    if (activeCategoryId) {
+      window.location.hash = activeCategoryId;
+    }
+  }, [activeCategoryId]); 
 
   return (
     <>
@@ -66,36 +83,35 @@ export default function MenuTabs() {
         </div>
       )}
 
-    {/* 💧 LISTĂ PENTRU BĂUTURI: 1 coloană pe mobile, 2 coloane la lg */}
-    {isDrinksCategory && (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-8">
-        {activeCategory.items.map((item) => (
-        <div
-            key={item.id}
-            className="flex items-start justify-between gap-3 border-b pb-3 border-gold/40"
-        >
-            <div className="flex-1 min-w-0">
-            <h3 className="text-base font-playfair font-semibold text-charcoal break-words">
-                {item.name}
-            </h3>
+      {/* 💧 LISTĂ PENTRU BĂUTURI: 1 coloană pe mobile, 2 coloane la lg */}
+      {isDrinksCategory && (
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-8">
+          {activeCategory.items.map((item) => (
+            <div
+              key={item.id}
+              className="flex items-start justify-between gap-3 border-b pb-3 border-gold/40"
+            >
+              <div className="flex-1 min-w-0">
+                <h3 className="text-base font-playfair font-semibold text-charcoal break-words">
+                  {item.name}
+                </h3>
 
-            {item.weight && (
-                <p className="text-sm text-gray-600">{item.weight}</p>
-            )}
+                {item.weight && (
+                  <p className="text-sm text-gray-600">{item.weight}</p>
+                )}
 
-            {item.description && (
-                <p className="text-sm text-gray-700 mt-1">{item.description}</p>
-            )}
+                {item.description && (
+                  <p className="text-sm text-gray-700 mt-1">{item.description}</p>
+                )}
+              </div>
+
+              <span className="flex-shrink-0 inline-flex items-center text-gold text-sm font-semibold whitespace-nowrap">
+                {item.price}
+              </span>
             </div>
-
-            <span className="flex-shrink-0 inline-flex items-center text-gold text-sm font-semibold whitespace-nowrap">
-            {item.price}
-            </span>
+          ))}
         </div>
-        ))}
-    </div>
-    )}
-
+      )}
 
       {/* 🍽️ MÂNCARE = CARDURI cu imagine în stânga */}
       {!isDrinksCategory && (

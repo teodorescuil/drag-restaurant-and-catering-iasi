@@ -12,15 +12,16 @@ const nextConfig: NextConfig = {
 
     return config;
   },
-  output: 'standalone',
+  output: 'export',
+  trailingSlash: true,
   images: { unoptimized: true },
-  async redirects() {
-    return [{
-      source: "/:path((?!_next/|favicon\\.ico|robots\\.txt|sitemap\\.xml|static/|images/|assets/|health\\.html).*)",
-      has: [{ type: "host", value: "dragcatering.ro" }],
-      destination: "https://www.dragcatering.ro/:path*",
-      permanent: true,
-    }];
-  },
+  // async redirects() {
+  //   return [{
+  //     source: "/:path((?!_next/|favicon\\.ico|robots\\.txt|sitemap\\.xml|static/|images/|assets/|health\\.html).*)",
+  //     has: [{ type: "host", value: "dragcatering.ro" }],
+  //     destination: "https://www.dragcatering.ro/:path*",
+  //     permanent: true,
+  //   }];
+  // },
 };
 export default nextConfig;
